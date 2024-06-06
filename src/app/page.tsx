@@ -4,13 +4,14 @@ import Header from "../components/ui/Header";
 import Hero from "../components/ui/Hero";
 import Services from "../components/ui/Services";
 import BeforeAfter from "../components/ui/BeforeAfter";
+
 import Contact from "../components/ui/Contact";
 
 const LandingPage = () => {
   return (
-    <div key="1" className="min-h-[100dvh] flex flex-col">
+    // Wrapping the landing page with PackageProvider
+    <>
       <Header />
-      {/* Each section now includes an id that matches the href in your Header links */}
       <section id="hero">
         <Hero />
       </section>
@@ -26,7 +27,7 @@ const LandingPage = () => {
       <section id="contact">
         <Contact />
       </section>
-    </div>
+    </>
   );
 };
 

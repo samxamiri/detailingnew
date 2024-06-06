@@ -27,12 +27,7 @@ const Header = () => {
         >
           Gallery
         </Link>
-        <Link
-          href="/#about"
-          className="text-sm font-medium hover:underline underline-offset-4"
-        >
-          About
-        </Link>
+
         <Link
           href="/#contact"
           className="text-sm font-medium hover:underline underline-offset-4"
