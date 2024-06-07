@@ -1,10 +1,38 @@
+"use client";
+
+import React, { useState } from "react";
+import axios from "axios";
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    chosenPackage: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
   const packageOptions = [
     "Basic Detailing",
     "Interior Only",
     "Exterior Only",
     "The All In One",
   ];
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post("/api/sendEmail", formData);
+      alert("Message sent successfully");
+    } catch (error) {
+      alert("Error sending message");
+    }
+  };
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
@@ -19,15 +47,20 @@ const Contact = () => {
               schedule an appointment.
             </p>
           </div>
-          <form className="w-full max-w-lg">
+          <form className="w-full max-w-lg" onSubmit={handleSubmit}>
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3 mb-6">
                 <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                   Chosen Package
                 </label>
                 <div className="relative">
-                  <select className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-                    <option value="" disabled selected>
+                  <select
+                    name="chosenPackage"
+                    value={formData.chosenPackage}
+                    onChange={handleChange}
+                    className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  >
+                    <option value="" disabled>
                       Select a package
                     </option>
                     {packageOptions.map((pkg, index) => (
@@ -55,6 +88,9 @@ const Contact = () => {
                   First Name
                 </label>
                 <input
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-first-name"
                   type="text"
@@ -69,6 +105,9 @@ const Contact = () => {
                   Last Name
                 </label>
                 <input
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-last-name"
                   type="text"
@@ -80,15 +119,37 @@ const Contact = () => {
               <div className="w-full px-3">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  htmlFor="grid-password"
+                  htmlFor="grid-email"
                 >
                   E-mail
                 </label>
                 <input
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-password"
+                  id="grid-email"
                   type="email"
                   placeholder="example@email.com"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="grid-phone"
+                >
+                  Phone Number
+                </label>
+                <input
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  id="grid-phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
                 />
               </div>
             </div>
@@ -101,6 +162,9 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="grid-message"
                   placeholder="Your message..."
@@ -111,7 +175,7 @@ const Contact = () => {
             <div className="flex justify-center mt-6">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
+                type="submit"
               >
                 Send Message
               </button>

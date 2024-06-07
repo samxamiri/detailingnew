@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/ui/PackageContext.client.js"
+    "src/components/ui/PackageContext.client.js",
+    "src/pages/api/sendEmail.js"
   ],
   "exclude": ["node_modules"]
 }
