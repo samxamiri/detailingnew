@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="px-4 lg:px-6 h-16 flex items-center">
+    <header className="px-4 lg:px-6 h-24 flex items-center">
       <Link href="/" className="flex items-center">
         <Image
           src="/images/logo/logo.jpg"
           alt="Pristine Auto Detailing"
-          width={50}
-          height={50}
-          className="w-12 h-12"
+          width={100}
+          height={100}
+          className="w-24 h-24"
         />
         <span className="sr-only">Pristine Auto Detailing</span>
       </Link>
