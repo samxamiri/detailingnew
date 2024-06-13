@@ -45,7 +45,7 @@ const Services = () => {
   );
 };
 
-const ServiceItem = ({ title, description }) => {
+const ServiceItem = ({ title, description }: any) => {
   return (
     <div className="grid gap-1">
       <h3 className="text-lg font-bold">{title}</h3>
