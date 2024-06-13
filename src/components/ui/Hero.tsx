@@ -13,7 +13,7 @@ const Hero = () => {
           width="800"
           height="600"
         >
-          <source src="/video-placeholder.mp4" type="video/mp4" />
+          <source src="/videos/velosterdoorpanel.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="flex flex-col justify-center space-y-4">

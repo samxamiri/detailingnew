@@ -11,13 +11,16 @@ const Packages = () => {
       features: [
         "Exterior hand wash",
         "Rim clean & tire shine",
-        "Spray wax (3 months of protection)",
         "Vacuum",
         "Interior wipe down (dashboard, door panels, center console, cup holders)",
-        "Windows, floor mats & door jambs",
       ],
       description:
         "A thorough exterior wash and interior cleaning to restore your vehicle's shine.",
+      additionalPricing: {
+        sedan: "+$10",
+        suv: "+$20",
+        extraLarge: "+$30",
+      },
     },
     {
       title: "Interior Only",
@@ -25,12 +28,16 @@ const Packages = () => {
       features: [
         "Interior wipe down (dashboard, door panels, center console, cup holders)",
         "Deep vacuum",
-        "Windows, floor mats & door jambs",
         "Carpet & seat shampoo",
         "Leather cleaner and conditioner (if applicable)",
       ],
       description:
         "Deep interior cleaning including shampooing of carpets and seats, plus luxury detailing.",
+      additionalPricing: {
+        sedan: "+$10",
+        suv: "+$20",
+        extraLarge: "+$30",
+      },
     },
     {
       title: "Exterior Only",
@@ -43,13 +50,23 @@ const Packages = () => {
       ],
       description:
         "The ultimate package for maintaining a pristine look and adding a long lasting protective coating.",
+      additionalPricing: {
+        sedan: "+$10",
+        suv: "+$20",
+        extraLarge: "+$30",
+      },
     },
     {
       title: "The All In One",
-      price: "$200",
+      price: "$220",
       features: ["Exterior only package", "Interior Only Package"],
       description:
         "Comprehensive detailing package designed for those who demand the best for their car.",
+      additionalPricing: {
+        sedan: "+$10",
+        suv: "+$20",
+        extraLarge: "+$30",
+      },
     },
   ];
 
@@ -95,8 +112,21 @@ const Packages = () => {
                   <li key={fIndex}>{feature}</li>
                 ))}
               </ul>
+              <p className="text-xs mt-4">
+                Sedan: {packageDetail.additionalPricing.sedan}, SUV:{" "}
+                {packageDetail.additionalPricing.suv}, Extra Large:{" "}
+                {packageDetail.additionalPricing.extraLarge}
+              </p>
             </div>
           ))}
+        </div>
+        {/* Star Notes Section */}
+        <div className="text-sm text-gray-600 dark:text-gray-400 mt-6 mb-12 text-center">
+          <p>* Not all carpet stains are guaranteed to be removed.</p>
+          <p>
+            * All packages require access to a water hose and a power outlet
+            near the car.
+          </p>
         </div>
       </div>
     </section>

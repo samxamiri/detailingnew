@@ -1,3 +1,4 @@
+// src/components/ui/Contact.client.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -181,6 +182,19 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        </div>
+        {/* Footer Section */}
+        <div className="mt-12 text-center text-gray-700">
+          <p>Contact us directly:</p>
+          <p>
+            Phone: <a href="tel:+15147724554">514-772-4554</a>
+          </p>
+          <p>
+            Email:{" "}
+            <a href="mailto:samsmobiledetatiling@gmail.com">
+              samsmobiledetatiling@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </section>
