@@ -1,4 +1,3 @@
-// src/components/ui/Packages.client.tsx
 import Link from "next/link";
 import { Button } from "@/components/ui/button"; // Ensure the path is correct based on your project structure
 
@@ -74,19 +73,17 @@ const Packages = () => {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Our Packages
-            </h2>
-            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Choose from our comprehensive detailing packages to find the
-              perfect solution for your vehicle.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            Our Packages
+          </h2>
+          <p className="max-w-[900px] text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
+            Choose from our comprehensive detailing packages to find the perfect
+            solution for your vehicle.
+          </p>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-4 lg:gap-12">
           {packageDetails.map((packageDetail, index) => (
-            <div
+            <article
               key={index}
               className="bg-white rounded-lg shadow-md p-6 dark:bg-gray-950"
             >
@@ -117,10 +114,9 @@ const Packages = () => {
                 {packageDetail.additionalPricing.suv}, Extra Large:{" "}
                 {packageDetail.additionalPricing.extraLarge}
               </p>
-            </div>
+            </article>
           ))}
         </div>
-        {/* Star Notes Section */}
         <div className="text-sm text-gray-600 dark:text-gray-400 mt-6 mb-12 text-center">
           <p>* Not all carpet stains are guaranteed to be removed.</p>
           <p>

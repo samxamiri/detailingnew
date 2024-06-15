@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import Image from "next/image";
 
 interface ImagePair {
   before: string;
@@ -13,16 +14,6 @@ interface BeforeAfterProps {
 
 const BeforeAfter: React.FC<BeforeAfterProps> = ({ imagePairs }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Preload images
-  useEffect(() => {
-    imagePairs.forEach((pair) => {
-      const imgBefore = new Image();
-      imgBefore.src = pair.before;
-      const imgAfter = new Image();
-      imgAfter.src = pair.after;
-    });
-  }, [imagePairs]);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imagePairs.length);
@@ -43,19 +34,33 @@ const BeforeAfter: React.FC<BeforeAfterProps> = ({ imagePairs }) => {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-          <div className="flex flex-col items-center">
-            <img
-              alt="Before"
-              className="aspect-[3/2] overflow-hidden rounded-xl object-cover h-full w-full"
+          <div
+            className="flex flex-col items-center relative w-full"
+            style={{ height: "50vh" }}
+          >
+            {" "}
+            {/* Using viewport height */}
+            <Image
+              alt="Before - detailing transformation showing initial state"
               src={before}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-xl overflow-hidden"
             />
             <h3 className="mt-2 text-lg font-bold">Before</h3>
           </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="After"
-              className="aspect-[3/2] overflow-hidden rounded-xl object-cover h-full w-full"
+          <div
+            className="flex flex-col items-center relative w-full"
+            style={{ height: "50vh" }}
+          >
+            {" "}
+            {/* Using viewport height */}
+            <Image
+              alt="After - detailing transformation showing final state"
               src={after}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-xl overflow-hidden"
             />
             <h3 className="mt-2 text-lg font-bold">After</h3>
           </div>
@@ -64,6 +69,7 @@ const BeforeAfter: React.FC<BeforeAfterProps> = ({ imagePairs }) => {
           <button
             onClick={handleNext}
             className="inline-flex items-center justify-center rounded-md bg-gray-900 px-8 py-2 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+            aria-label="View next image pair"
           >
             Next
           </button>

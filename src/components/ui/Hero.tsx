@@ -1,4 +1,3 @@
-// components/HeroSection.js
 import Link from "next/link";
 
 const Hero = () => {
@@ -10,27 +9,31 @@ const Hero = () => {
           autoPlay
           loop
           muted
+          preload="metadata"
           width="800"
           height="600"
         >
           <source src="/videos/ezyZip.mp4" type="video/mp4" />
           Your browser does not support the video tag.
+          {/* Fallback content if video is not supported */}
+          <div>Fallback content for non-supporting browsers</div>
         </video>
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
-              {"Elevate Your Ride with Sam's Mobile Detailing"}
+              Elevate Your Ride with Sam's Mobile Detailing
             </h1>
             <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-              Experience the ultimate in car care with our comprehensive
-              detailing services. Transform your vehicle from dull to dazzling
-              with our expert touch.
+              <strong>Experience the ultimate in car care</strong> with our
+              comprehensive detailing services. Transform your vehicle from dull
+              to dazzling with our expert touch.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
             <Link
               href="#packages"
               className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+              aria-label="Book detailing packages now"
             >
               Book Now
             </Link>

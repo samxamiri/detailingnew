@@ -1,4 +1,5 @@
-// src/components/ServicesSection.tsx
+import React from "react";
+
 const Services = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
@@ -8,7 +9,7 @@ const Services = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               Our Detailing Services
             </h2>
-            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="max-w-[900px] text-gray-500 md:text-xl lg:text-base xl:text-xl dark:text-gray-400">
               From a simple wash to a complete transformation, we offer a range
               of detailing services to meet your needs.
             </p>
@@ -47,10 +48,10 @@ const Services = () => {
 
 const ServiceItem = ({ title, description }: any) => {
   return (
-    <div className="grid gap-1">
+    <article className="grid gap-1">
       <h3 className="text-lg font-bold">{title}</h3>
       <p className="text-sm text-gray-500 dark:text-gray-400">{description}</p>
-    </div>
+    </article>
   );
 };
 
