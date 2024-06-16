@@ -6,7 +6,7 @@ const Packages = () => {
   const packageDetails = [
     {
       title: "Basic Detailing",
-      price: "$85",
+      price: "$95",
       features: [
         "Exterior hand wash",
         "Rim clean & tire shine",
@@ -16,14 +16,13 @@ const Packages = () => {
       description:
         "A thorough exterior wash and interior cleaning to restore your vehicle's shine.",
       additionalPricing: {
-        sedan: "+$10",
         suv: "+$20",
         extraLarge: "+$30",
       },
     },
     {
-      title: "Interior Only",
-      price: "$120",
+      title: "Interior Deluxe",
+      price: "$150",
       features: [
         "Interior wipe down (dashboard, door panels, center console, cup holders)",
         "Deep vacuum",
@@ -33,13 +32,12 @@ const Packages = () => {
       description:
         "Deep interior cleaning including shampooing of carpets and seats, plus luxury detailing.",
       additionalPricing: {
-        sedan: "+$10",
         suv: "+$20",
         extraLarge: "+$30",
       },
     },
     {
-      title: "Exterior Only",
+      title: "Exterior Deluxe",
       price: "$140",
       features: [
         "Hand wash",
@@ -50,19 +48,17 @@ const Packages = () => {
       description:
         "The ultimate package for maintaining a pristine look and adding a long lasting protective coating.",
       additionalPricing: {
-        sedan: "+$10",
         suv: "+$20",
         extraLarge: "+$30",
       },
     },
     {
       title: "The All In One",
-      price: "$220",
+      price: "$250",
       features: ["Exterior only package", "Interior Only Package"],
       description:
         "Comprehensive detailing package designed for those who demand the best for their car.",
       additionalPricing: {
-        sedan: "+$10",
         suv: "+$20",
         extraLarge: "+$30",
       },
@@ -110,8 +106,7 @@ const Packages = () => {
                 ))}
               </ul>
               <p className="text-xs mt-4">
-                Sedan: {packageDetail.additionalPricing.sedan}, SUV:{" "}
-                {packageDetail.additionalPricing.suv}, Extra Large:{" "}
+                SUV: {packageDetail.additionalPricing.suv}, Extra Large:{" "}
                 {packageDetail.additionalPricing.extraLarge}
               </p>
             </article>
