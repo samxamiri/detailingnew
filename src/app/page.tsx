@@ -1,10 +1,13 @@
 import React from "react";
-import Packages from "../components/ui/Packages";
+// import Packages from "../components/ui/Packages";
 import Header from "../components/ui/Header";
 import Hero from "../components/ui/Hero";
-import Services from "../components/ui/Services";
+// import Services from "../components/ui/Services";
 import BeforeAfter from "../components/ui/BeforeAfter";
 import Contact from "../components/ui/Contact";
+import AboutUs from "../components/ui/AboutUs";
+import Benefits from "../components/ui/Benefits";
+import Workflow from "../components/ui/Workflow";
 
 const imagePairs = [
   {
@@ -41,15 +44,22 @@ const LandingPage = () => {
       <section id="hero">
         <Hero />
       </section>
-      <section id="services">
-        <Services />
+      <section id="aboutUs">
+        <AboutUs />
+      </section>
+      <section id="benefits">
+        <Benefits />
+      </section>
+      <section id="workflow">
+        <Workflow />
       </section>
       <section id="gallery">
         <BeforeAfter imagePairs={imagePairs} />
       </section>
-      <section id="packages">
+
+      {/* <section id="packages">
         <Packages />
-      </section>
+      </section> */}
       <section id="contact">
         <Contact />
       </section>
