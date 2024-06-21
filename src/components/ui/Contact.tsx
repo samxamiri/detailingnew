@@ -28,7 +28,10 @@ const Contact = () => {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      await axios.post("/api/sendEmail", formData);
+      await axios.post("/api/sendEmail", {
+        ...formData,
+        subject: "Customer Inquiry from Sam's Mobile Detailing",
+      });
       alert("Message sent successfully");
     } catch (error) {
       alert("Error sending message");
@@ -191,8 +194,8 @@ const Contact = () => {
           </p>
           <p>
             Email:{" "}
-            <a href="mailto:samsmobiledetatiling@gmail.com">
-              samsmobiledetatiling@gmail.com
+            <a href="mailto:samsmobiledetailing@gmail.com">
+              samsmobiledetailing@gmail.com
             </a>
           </p>
         </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 
 const InstagramIcon = () => (
   <svg
@@ -23,12 +24,18 @@ const Header = () => {
     <>
       <div className="bg-gray-900 text-white py-2">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center max-w-7xl">
-          <div className="flex items-center gap-2">
-            <span>555-555-5555</span>
-            <span>info@pristineautodetailing.com</span>
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
+              <PhoneIcon className="h-5 w-5" />
+              <span>514-772-4554</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <EnvelopeIcon className="h-5 w-5" />
+              <span>samsmobiledetatiling@gmail.com</span>
+            </div>
           </div>
           <Link
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/sams.mobiledetails/"
             aria-label="Follow us on Instagram"
             target="_blank"
             rel="noopener noreferrer"
@@ -53,7 +60,7 @@ const Header = () => {
           </Link>
           <nav className="flex gap-4 sm:gap-6" aria-label="Main navigation">
             <Link
-              href="/#services"
+              href="/services"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
               Services
@@ -65,13 +72,13 @@ const Header = () => {
               Gallery
             </Link>
             <Link
-              href="/#packages"
+              href="/packages"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
               Packages
             </Link>
             <Link
-              href="/#contact"
+              href="/contact"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
               Contact
