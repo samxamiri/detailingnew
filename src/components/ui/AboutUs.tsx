@@ -10,12 +10,10 @@ const AboutUs = () => {
               Who Are We?
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Pristine Auto Detailing is a family-owned business that has been
-              providing top-notch car care services for over 20 years. Our team
-              of experienced technicians is dedicated to transforming vehicles
-              of all makes and models, restoring them to their showroom-like
-              condition. We take pride in our attention to detail and commitment
-              to customer satisfaction.
+              Sam's Mobile Detailing is run by a passionate one-man team based
+              in West Island. Dedicated to cars and detailing, I offer my
+              services to help take care of your vehicles, ensuring they last
+              longer and look their best.
             </p>
           </div>
         </div>

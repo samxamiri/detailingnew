@@ -10,6 +10,7 @@ import Benefits from "../components/ui/Benefits";
 import Workflow from "../components/ui/Workflow";
 import Contact from "../components/ui/Contact";
 import Layout from "../components/ui/Layout";
+import Separator from "../components/ui/Separator";
 
 const imagePairs = [
   {
