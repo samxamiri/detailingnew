@@ -10,10 +10,10 @@ const AboutUs = () => {
               Who Are We?
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              ["Sam's Mobile Detailing is run by a passionate one-man team based
+              Sam's Mobile Detailing is run by a passionate one-man team based
               in West Island. Dedicated to cars and detailing, I offer my
               services to help take care of your vehicles, ensuring they last
-              longer and look their best."]
+              longer and look their best.
             </p>
           </div>
         </div>

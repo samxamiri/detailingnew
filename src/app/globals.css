@@ -26,6 +26,10 @@
     --radius: 0.5rem;
   }
 
+  .checkmark {
+    font-size: 1.25em; /* Adjust the size as needed */
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
