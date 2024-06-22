@@ -9,10 +9,10 @@ const Packages = () => {
       title: "Basic Interior",
       basePrice: "$50",
       prices: {
-        miniSports: "$50",
-        sedan: "$70",
-        suv: "$90",
-        extraLarge: "$110",
+        miniSports: "$55",
+        sedan: "$80",
+        suv: "$110",
+        extraLarge: "$135",
       },
       features: [
         { text: "Quick wipe down on all interior surfaces", available: true },
@@ -20,11 +20,7 @@ const Packages = () => {
           text: "Complete interior Vacuum",
           available: true,
         },
-        { text: "Leather seat cleaning", available: true },
-        {
-          text: "Interior glass",
-          available: true,
-        },
+
         { text: "Leather seat cleaning & conditioning", available: true },
         { text: "Interior glass", available: true },
         { text: "Carpet/Upholstery shampoo", available: false },
@@ -69,10 +65,10 @@ const Packages = () => {
       title: "Basic Exterior",
       basePrice: "$80",
       prices: {
-        miniSports: "$80",
-        sedan: "$100",
-        suv: "$120",
-        extraLarge: "$170",
+        miniSports: "$40",
+        sedan: "$65",
+        suv: "$80",
+        extraLarge: "$110",
       },
       features: [
         { text: "Wheels/tires/wheel wells", available: true },
@@ -111,6 +107,22 @@ const Packages = () => {
       ],
       description:
         "An extensive exterior cleaning to make your car shine and protect it from the elements.",
+    },
+    {
+      title: "Basic Complete Detail",
+      basePrice: "$140",
+      prices: {
+        miniSports: "$90",
+        sedan: "$100",
+        suv: "$115",
+        extraLarge: "$135",
+      },
+      features: [
+        { text: "Basic Interior Only", available: true },
+        { text: "Basic Exterior Only", available: true },
+      ],
+      description:
+        "Combines our thorough interior and exterior cleaning packages for a complete vehicle transformation.",
     },
     {
       title: "Complete Detail",
