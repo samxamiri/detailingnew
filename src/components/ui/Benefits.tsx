@@ -5,6 +5,7 @@ import {
   SparklesIcon as SparkleIcon,
   ClockIcon,
 } from "@heroicons/react/20/solid"; // Correct path for Heroicons v2
+import Link from "next/link"; // Ensure you import Link from Next.js
 
 function Benefits() {
   return (
@@ -52,6 +53,13 @@ function Benefits() {
               Book your appointment at a time that works best for you.
             </p>
           </div>
+        </div>
+        <div className="flex justify-center mt-12">
+          <Link href="#">
+            <button className="inline-flex h-12 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300">
+              View Pricing
+            </button>
+          </Link>
         </div>
       </div>
     </section>

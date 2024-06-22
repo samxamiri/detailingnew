@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ServiceArea: React.FC = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 m dark:bg-gray-800">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <img
@@ -41,12 +41,12 @@ const ServiceArea: React.FC = () => {
                 <span>No more stress.</span>
               </li>
             </ul>
-            <Link
+            {/* <Link
               href="/contact"
               className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
             >
               Book Online Now
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
