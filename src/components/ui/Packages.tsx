@@ -21,7 +21,7 @@ const Packages: React.FC = () => {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="max-w-[1600px] text-left text-lg sm:text-xl md:text-2xl text-gray-800 dark:text-gray-400 leading-relaxed mb-6">
+            <p className="max-w-[600px] text-gray-800 md:text-3xl dark:text-gray-400">
               Finding a simple and straightforward price for auto detailing
               should be easy! That’s why we don’t offer 1,000 different pricing
               options with different auto detailing packages. We got tired of
@@ -36,7 +36,7 @@ const Packages: React.FC = () => {
         {/* Div 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex flex-col justify-center">
-            <p className="max-w-[1600px] text-left text-lg sm:text-xl md:text-2xl text-gray-800 dark:text-gray-400 leading-relaxed mb-6">
+            <p className="max-w-[600px] text-gray-800 md:text-3xl dark:text-gray-400">
               Below you will find 3 options: An interior detail, an exterior
               detail, and a complete detail with average prices associated with
               each. After speaking with our customers, we found that all they

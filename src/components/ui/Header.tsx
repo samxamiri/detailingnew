@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import { useState, useEffect, useRef } from "react";
 
 const InstagramIcon = () => (
   <svg
@@ -19,6 +22,29 @@ const InstagramIcon = () => (
 );
 
 const Header = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const handleToggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <div className="bg-gray-900 text-white py-2">
@@ -60,12 +86,30 @@ const Header = () => {
             >
               Pricing
             </Link>
-            <Link
-              href="/detailingServices"
-              className="text-base font-medium hover:underline underline-offset-4"
-            >
-              Detailing Services
-            </Link>
+            <div className="relative" ref={dropdownRef}>
+              <button
+                className="text-base font-medium hover:underline underline-offset-4"
+                onClick={handleToggleDropdown}
+              >
+                Detailing Services
+              </button>
+              {dropdownOpen && (
+                <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-md">
+                  <Link
+                    href="/interiorDetailingServices"
+                    className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
+                  >
+                    Interior Detailing
+                  </Link>
+                  <Link
+                    href="/exteriorDetailingServices"
+                    className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
+                  >
+                    Exterior Detailing
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link
               href="/about"
               className="text-base font-medium hover:underline underline-offset-4"
