@@ -6,19 +6,19 @@ const ExteriorServices: React.FC = () => {
       title: "Car Wash",
       description:
         "A traditional car wash blasts your vehicle’s paint with harsh products and chemicals only to damage the paint long term! Only in DETAILING can we take a nasty car and restore its beautiful finish. Let’s face it... in Montreal our cars are subject to crazy weather... that’s why auto detailing Montreal is HERE!",
-      image: "/images/services/exterior-detailing.jpg",
+      image: "/images/other/carwash.png",
     },
     {
       title: "Paint Decontamination",
       description:
         "If we want to truly detail your car’s paint... car washing won’t be enough. After the car wash stage, it’s necessary to use specific detailing tools and products to clean the paint of everything that won’t come off during the wash process... If you don’t, it’s like a cavity that doesn’t get filled. There will be serious problems down the road.",
-      image: "/images/services/interior-detailing.jpg",
+      image: "/images/other/decontamination.jpg",
     },
     {
       title: "Paint Protection",
       description:
         "Finally, the paint is protected with a long-term durability coating to ensure that the paint is protected for months and even YEARS depending on the product. Your car is a HUGE investment... don’t drive it unprotected.",
-      image: "/images/services/paint-correction.jpg",
+      image: "/images/other/paintprotection.jpg",
     },
   ];
 
@@ -83,7 +83,7 @@ const ExteriorServices: React.FC = () => {
               alt="Exterior Detailing"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
-              src="/placeholder.svg"
+              src="/images/other/shiny.jpg"
               width="800"
             />
           </div>

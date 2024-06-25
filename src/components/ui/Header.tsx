@@ -4,7 +4,11 @@ import Link from "next/link";
 import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 import { useState, useEffect, useRef } from "react";
 
-const InstagramIcon = () => (
+interface IconProps {
+  className?: string;
+}
+
+const InstagramIcon: React.FC<IconProps> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
@@ -13,7 +17,7 @@ const InstagramIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="h-6 w-6"
+    className={className}
   >
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
     <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -56,7 +60,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <EnvelopeIcon className="h-5 w-5" />
-              <span className="text-sm">samsmobiledetatiling@gmail.com</span>
+              <span className="text-sm">samsmobiledetailing@gmail.com</span>
             </div>
           </div>
           <Link
@@ -73,7 +77,7 @@ const Header = () => {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4 lg:py-6 max-w-7xl">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl">
-              Sam's Auto Detailing
+              Sam's Mobile Detailing
             </h1>
             <span className="sr-only">
               Go to homepage of Pristine Auto Detailing

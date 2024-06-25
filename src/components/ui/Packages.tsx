@@ -21,7 +21,7 @@ const Packages: React.FC = () => {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <p className="max-w-[600px] text-gray-800 md:text-3xl dark:text-gray-400">
+            <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
               Finding a simple and straightforward price for auto detailing
               should be easy! That’s why we don’t offer 1,000 different pricing
               options with different auto detailing packages. We got tired of
@@ -36,7 +36,7 @@ const Packages: React.FC = () => {
         {/* Div 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex flex-col justify-center">
-            <p className="max-w-[600px] text-gray-800 md:text-3xl dark:text-gray-400">
+            <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
               Below you will find 3 options: An interior detail, an exterior
               detail, and a complete detail with average prices associated with
               each. After speaking with our customers, we found that all they
@@ -95,15 +95,15 @@ const Packages: React.FC = () => {
               <div className="grid gap-2 mt-4">
                 <div>
                   <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$150</p>
+                  <p className="text-gray-500 dark:text-gray-400">$135</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$80</p>
+                  <p className="text-gray-500 dark:text-gray-400">$95</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$100</p>
+                  <p className="text-gray-500 dark:text-gray-400">$80</p>
                 </div>
               </div>
             </div>
@@ -117,15 +117,15 @@ const Packages: React.FC = () => {
               <div className="grid gap-2 mt-4">
                 <div>
                   <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$180</p>
+                  <p className="text-gray-500 dark:text-gray-400">$205</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$100</p>
+                  <p className="text-gray-500 dark:text-gray-400">$135</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$120</p>
+                  <p className="text-gray-500 dark:text-gray-400">$95</p>
                 </div>
               </div>
             </div>
@@ -139,15 +139,15 @@ const Packages: React.FC = () => {
               <div className="grid gap-2 mt-4">
                 <div>
                   <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$220</p>
+                  <p className="text-gray-500 dark:text-gray-400">$275</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$130</p>
+                  <p className="text-gray-500 dark:text-gray-400">$200</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$150</p>
+                  <p className="text-gray-500 dark:text-gray-400">$120</p>
                 </div>
               </div>
             </div>
@@ -161,15 +161,15 @@ const Packages: React.FC = () => {
               <div className="grid gap-2 mt-4">
                 <div>
                   <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$250</p>
+                  <p className="text-gray-500 dark:text-gray-400">$320</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$150</p>
+                  <p className="text-gray-500 dark:text-gray-400">$230</p>
                 </div>
                 <div>
                   <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$180</p>
+                  <p className="text-gray-500 dark:text-gray-400">$175</p>
                 </div>
               </div>
             </div>

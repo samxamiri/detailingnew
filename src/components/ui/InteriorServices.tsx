@@ -42,7 +42,7 @@ const InteriorServices: React.FC = () => {
               alt="No More 'Halfway' Detailing"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
-              src="/placeholder.svg"
+              src="/images/other/weathermat.png"
               width="800"
             />
           </div>
@@ -76,12 +76,12 @@ const InteriorServices: React.FC = () => {
                   <li>All hard interior plastics</li>
                   <li>All vinyl or rubber surfaces</li>
                   <li>Everywhere the eye can and can’t see</li>
-                  <li>Complete interior steam cleaning</li>
-                  <li>Spot and stain treatment</li>
+                  {/* <li>Complete interior steam cleaning</li> */}
+                  {/* <li>Spot and stain treatment</li> */}
                   <li>Carpet shampoo</li>
-                  <li>Interior hot water extraction</li>
+                  {/* <li>Interior hot water extraction</li> */}
                   <li>Door jamb detail</li>
-                  <li>Headliner detail</li>
+                  {/* <li>Headliner detail</li> */}
                   <li>All interior glass</li>
                   <li>Interior vacuuming on every necessary surface</li>
                   <li>Complete interior protection</li>

@@ -12,7 +12,7 @@ import Contact from "../components/ui/Contact";
 import Layout from "../components/ui/Layout";
 import DetailingPrices from "../components/ui/DetailingPrices";
 import Services from "../components/ui/services";
-import Footer from "@/components/ui/footer";
+import Footer from "@/components/ui/Footer";
 
 const imagePairs = [
   {

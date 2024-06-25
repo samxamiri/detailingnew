@@ -1,3 +1,5 @@
+// src/components/ui/Footer.tsx
+
 import Link from "next/link";
 
 const InstagramIcon = ({ className }: { className: string }) => (
@@ -20,18 +22,15 @@ const InstagramIcon = ({ className }: { className: string }) => (
 const Footer = () => {
   return (
     <footer className="w-full bg-gray-900 text-gray-50 py-12">
-      {" "}
-      {/* Increased padding */}
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <h2 className="text-2xl font-bold">Sam's Auto Detailing, Montreal</h2>{" "}
-          {/* Increased text size */}
+          <h2 className="text-2xl font-bold">Sam's Auto Detailing, Montreal</h2>
           <div className="flex space-x-4">
-            {" "}
-            {/* Increased spacing */}
-            <Link href="https://www.instagram.com" aria-label="Instagram">
-              <InstagramIcon className="h-8 w-8 hover:text-gray-400" />{" "}
-              {/* Increased icon size */}
+            <Link
+              href="https://www.instagram.com/sams.mobiledetails/"
+              aria-label="Instagram"
+            >
+              <InstagramIcon className="h-8 w-8 hover:text-gray-400" />
             </Link>
           </div>
         </div>
