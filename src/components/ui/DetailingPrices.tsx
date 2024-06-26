@@ -4,7 +4,7 @@ import Link from "next/link";
 const AutoDetailingPrices: React.FC = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12 max-w-7xl mx-auto">
+      <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="flex-1 flex flex-col justify-center space-y-4 text-center lg:text-left lg:ml-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
@@ -19,10 +19,10 @@ const AutoDetailingPrices: React.FC = () => {
               </span>
             </p>
           </div>
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex w-full justify-center lg:justify-start">
             <Link
-              className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full"
               href="/pricing"
+              className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full"
               prefetch={false}
             >
               Prices
