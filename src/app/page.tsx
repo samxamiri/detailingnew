@@ -3,14 +3,16 @@ import React from "react";
 import Header from "../components/ui/Header";
 import Hero from "../components/ui/Hero";
 // import Services from "../components/ui/Services";
-import BeforeAfter from "../components/ui/BeforeAfter";
+// import BeforeAfter from "../components/ui/BeforeAfter";
 import ServiceArea from "../components/ui/ServiceArea";
-import AboutUs from "../components/ui/AboutUs";
+
 import Benefits from "../components/ui/Benefits";
-import Workflow from "../components/ui/Workflow";
+// import Workflow from "../components/ui/Workflow";
 import Contact from "../components/ui/Contact";
 import Layout from "../components/ui/Layout";
-import Separator from "../components/ui/Separator";
+import DetailingPrices from "../components/ui/DetailingPrices";
+import Services from "../components/ui/services";
+import Footer from "@/components/ui/Footer";
 
 const imagePairs = [
   {
@@ -47,23 +49,29 @@ const LandingPage = () => {
       <section id="hero">
         <Hero />
       </section>
-      <section id="aboutUs">
-        <AboutUs />
+      <section id="detailingPrices">
+        <DetailingPrices />
+      </section>
+      <section id="services">
+        <Services />
       </section>
       <section id="benefits">
         <Benefits />
       </section>
-      <section id="workflow">
+      {/* <section id="workflow">
         <Workflow />
-      </section>
-      <section id="gallery">
+      </section> */}
+      {/* <section id="gallery">
         <BeforeAfter imagePairs={imagePairs} />
-      </section>
+      </section> */}
       <section id="serviceArea">
         <ServiceArea />
       </section>
       <section id="contact">
         <Contact />
+      </section>
+      <section id="footer">
+        <Footer />
       </section>
     </>
   );

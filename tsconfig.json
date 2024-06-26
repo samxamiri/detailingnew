@@ -28,7 +28,8 @@
     ".next/types/**/*.ts",
     "src/components/ui/PackageContext.client.js",
     "src/pages/api/sendEmail.js",
-    "heroicons.d.ts"
-, "src/pages/services.tsx"  ],
+    "heroicons.d.ts",
+    "src/pages/detailing-services.tsx"
+  ],
   "exclude": ["node_modules"]
 }
