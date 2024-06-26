@@ -10,7 +10,6 @@ const Packages: React.FC = () => {
             The Simplest Auto Detailing Prices <br /> In Montreal
           </h1>
         </div>
-
         {/* Div 1 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex items-center justify-center">
@@ -32,7 +31,6 @@ const Packages: React.FC = () => {
             </p>
           </div>
         </div>
-
         {/* Div 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex flex-col justify-center">
@@ -54,7 +52,6 @@ const Packages: React.FC = () => {
             />
           </div>
         </div>
-
         {/* Big Bold Header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl mb-6">
@@ -64,7 +61,6 @@ const Packages: React.FC = () => {
             what I do… literally!
           </h2>
         </div>
-
         <div className="flex justify-center mt-12">
           <Link
             href="/contact"
@@ -73,7 +69,6 @@ const Packages: React.FC = () => {
             Call Us Anytime!
           </Link>
         </div>
-
         {/* Detailing Prices Section */}
         <div className="mt-16">
           <div className="text-center mb-12">
@@ -92,18 +87,36 @@ const Packages: React.FC = () => {
                 src="/images/types/mini.webp"
               />
               <h3 className="text-xl font-bold mt-4">Sports/Mini</h3>
-              <div className="grid gap-2 mt-4">
+              <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  <h4 className="font-semibold">Regular</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$95</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                  </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$95</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$80</p>
+                  <h4 className="font-semibold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$55</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$40</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,18 +127,36 @@ const Packages: React.FC = () => {
                 src="/images/types/sedan.webp"
               />
               <h3 className="text-xl font-bold mt-4">Sedan</h3>
-              <div className="grid gap-2 mt-4">
+              <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$205</p>
+                  <h4 className="font-semibold">Regular</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$205</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$95</p>
+                  </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$135</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$95</p>
+                  <h4 className="font-semibold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$100</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$70</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -136,18 +167,36 @@ const Packages: React.FC = () => {
                 src="/images/types/suv.webp"
               />
               <h3 className="text-xl font-bold mt-4">SUV</h3>
-              <div className="grid gap-2 mt-4">
+              <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$275</p>
+                  <h4 className="font-semibold">Regular</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$275</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$200</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$120</p>
+                  </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$200</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$120</p>
+                  <h4 className="font-semibold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$115</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -158,19 +207,86 @@ const Packages: React.FC = () => {
                 src="/images/types/van.webp"
               />
               <h3 className="text-xl font-bold mt-4">Pickup/Van</h3>
-              <div className="grid gap-2 mt-4">
+              <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Complete Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$320</p>
+                  <h4 className="font-semibold">Regular</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$320</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$230</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$175</p>
+                  </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Interior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$230</p>
+                  <h4 className="font-semibold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold">Exterior Detail</h4>
-                  <p className="text-gray-500 dark:text-gray-400">$175</p>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-5xl mb-6">
+              What Is Removed In The Basic Package?
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">For Interior</h3>
+              <div className="text-left">
+                <ul className="pl-5 inline-block">
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Door jambs
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Headliner
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Upholstery shampoo/stain
+                    removal
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Carpet Shampoo/stain removal
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Full Interior Protection
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4">For Exterior</h3>
+              <div className="text-left">
+                <ul className="pl-5 inline-block">
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Clay Bar/Decontamination
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Door Jambs
+                  </li>
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Tire Dressing
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
