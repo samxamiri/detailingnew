@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import Link from "next/link"; // Import Link from next/link
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,12 +46,11 @@ const Contact = () => {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">
               Contact us today with any questions! We answer 24/7!
             </h2>
-            <a
-              href="/contact"
-              className="inline-flex h-16 items-center justify-center rounded-md bg-gray-900 px-20 text-2xl font-bold text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90"
-            >
-              Contact Us!
-            </a>
+            <Link href="/contact">
+              <a className="inline-flex h-16 items-center justify-center rounded-md bg-gray-900 px-20 text-2xl font-bold text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90">
+                Contact Us!
+              </a>
+            </Link>
           </div>
         </div>
         {/* <form className="w-full max-w-lg" onSubmit={handleSubmit} id="contactForm">
