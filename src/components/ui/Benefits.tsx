@@ -5,6 +5,7 @@ import {
   SparklesIcon as SparkleIcon,
   ClockIcon,
 } from "@heroicons/react/20/solid"; // Correct path for Heroicons v2
+import Link from "next/link"; // Ensure you import Link from Next.js
 
 function Benefits() {
   return (
@@ -21,16 +22,8 @@ function Benefits() {
             </p>
           </div>
         </div>
-        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-4 lg:gap-12">
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[200px]">
-            <AwardIcon className="w-12 h-12 mb-4" />
-            <h3 className="text-xl font-bold mb-2">Expert Technicians</h3>
-            <p className="text-gray-500 dark:text-gray-400">
-              Our team of experienced professionals are dedicated to delivering
-              exceptional results.
-            </p>
-          </div>
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[200px]">
+        <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
+          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[330px]">
             <WrenchIcon className="w-12 h-12 mb-4" />
             <h3 className="text-xl font-bold mb-2">Advanced Techniques</h3>
             <p className="text-gray-500 dark:text-gray-400">
@@ -38,20 +31,27 @@ function Benefits() {
               finish.
             </p>
           </div>
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[200px]">
+          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[400px]">
             <SparkleIcon className="w-12 h-12 mb-4" />
             <h3 className="text-xl font-bold mb-2">Guaranteed Results</h3>
             <p className="text-gray-500 dark:text-gray-400">
               You can trust us to transform your vehicle to showroom condition.
             </p>
           </div>
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[200px]">
+          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[330px]">
             <ClockIcon className="w-12 h-12 mb-4" />
             <h3 className="text-xl font-bold mb-2">Convenient Scheduling</h3>
             <p className="text-gray-500 dark:text-gray-400">
               Book your appointment at a time that works best for you.
             </p>
           </div>
+        </div>
+        <div className="flex justify-center mt-12">
+          <Link href="/pricing">
+            <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full">
+              View Pricing
+            </button>
+          </Link>
         </div>
       </div>
     </section>
