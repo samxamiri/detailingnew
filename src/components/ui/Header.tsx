@@ -77,7 +77,7 @@ const Header = () => {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4 lg:py-6 max-w-7xl">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl">
-              Sam's Mobile Detailing
+              Sam&apos;s Mobile Detailing
             </h1>
             <span className="sr-only">
               Go to homepage of Pristine Auto Detailing
