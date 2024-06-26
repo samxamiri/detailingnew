@@ -46,24 +46,24 @@ export default function AboutComponent() {
                 <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
                   Finding an auto detailer in Montreal who knows what your car
                   needs, and can give it to you at a price that makes sense,
-                  should be easy to find right? Well for me…it wasn’t.
+                  should be easy to find right? Well for me…it wasn&apos;t.
                 </p>
                 <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
                   I searched high and low throughout Montreal to find a
                   dependable mobile auto detailer who I could trust and all I
                   found were crazy prices, detailers who show up late (if at
-                  all), and half hearted jobs that left me unsatisfied. That’s
-                  why Sam's Mobile Detailing was born.
+                  all), and half hearted jobs that left me unsatisfied.
+                  That&apos;s why Sam&apos;s Mobile Detailing was born.
                 </p>
                 <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
                   While I have always had a passion for auto detailing, I knew
                   that we could deliver the very thing that I wanted in the form
                   of a great detailing experience to local customers in Montreal
-                  in a way that I couldn’t find. In my experience, our mobile
-                  detailing customers want four things:
+                  in a way that I couldn&apos;t find. In my experience, our
+                  mobile detailing customers want four things:
                   <ul className="mt-8 mb-8">
                     {" "}
-                    <li>1. A price that won’t hurt their wallet.</li>
+                    <li>1. A price that won&apos;t hurt their wallet.</li>
                     <li>
                       2. A clear expectation of what is, and is not possible
                       with their vehicle.
