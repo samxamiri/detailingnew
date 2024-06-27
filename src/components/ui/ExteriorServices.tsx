@@ -6,7 +6,7 @@ const ExteriorServices: React.FC = () => {
       title: "Car Wash",
       description:
         "A traditional car wash blasts your vehicle’s paint with harsh products and chemicals only to damage the paint long term! Only in DETAILING can we take a nasty car and restore its beautiful finish. Let’s face it... in Montreal our cars are subject to crazy weather... that’s why auto detailing Montreal is HERE!",
-      image: "/images/other/carwash.png",
+      image: "/images/other/carwash.PNG",
     },
     {
       title: "Paint Decontamination",
