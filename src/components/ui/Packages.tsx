@@ -14,7 +14,7 @@ const Packages: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex items-center justify-center">
             <img
-              src="/images/other/rinse.png"
+              src="/images/other/rinse.PNG"
               alt="Detailing Image 1"
               className="w-full h-[400px] rounded-xl object-cover"
             />
@@ -46,7 +46,7 @@ const Packages: React.FC = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/images/other/wash.png"
+              src="/images/other/wash.PNG"
               alt="Detailing Image 2"
               className="w-full h-[400px] rounded-xl object-cover"
             />
@@ -92,30 +92,32 @@ const Packages: React.FC = () => {
                   <h4 className="font-semibold">Regular</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $135-$185
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$95</p>
+                    <p className="text-gray-500 dark:text-gray-400">$95-$145</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                    <p className="text-gray-500 dark:text-gray-400">$80-$120</p>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$90</p>
+                    <p className="text-gray-500 dark:text-gray-400">$90-$140</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$55</p>
+                    <p className="text-gray-500 dark:text-gray-400">$55-$105</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$40</p>
+                    <p className="text-gray-500 dark:text-gray-400">$40-$90</p>
                   </div>
                 </div>
               </div>
@@ -132,30 +134,36 @@ const Packages: React.FC = () => {
                   <h4 className="font-semibold">Regular</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$205</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $205-$255
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $135-$185
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$95</p>
+                    <p className="text-gray-500 dark:text-gray-400">$95-$145</p>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$100</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $100-$150
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                    <p className="text-gray-500 dark:text-gray-400">$80-$120</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$70</p>
+                    <p className="text-gray-500 dark:text-gray-400">$70-$120</p>
                   </div>
                 </div>
               </div>
@@ -172,30 +180,40 @@ const Packages: React.FC = () => {
                   <h4 className="font-semibold">Regular</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$275</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $275-$325
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$200</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $200-$250
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$120</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $120-$170
+                    </p>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$115</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $115-$165
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $110-$160
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                    <p className="text-gray-500 dark:text-gray-400">$80-$130</p>
                   </div>
                 </div>
               </div>
@@ -212,30 +230,42 @@ const Packages: React.FC = () => {
                   <h4 className="font-semibold">Regular</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$320</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $320-$370
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$230</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $230-$280
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$175</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $175-$225
+                    </p>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $135-$185
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $135-$185
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $110-$160
+                    </p>
                   </div>
                 </div>
               </div>
