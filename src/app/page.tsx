@@ -46,12 +46,13 @@ const LandingPage = () => {
   return (
     <>
       <Head>
-        <title>Sam's Mobile Detailing</title>
+        <title>Sam&apos;s Mobile Detailing</title>
         <meta
           name="description"
           content="Sam's Mobile Detailing offers interior, exterior and complete detailing services in Montreal and surrounding areas. No need to deal with having to drop off your car at a shop, we come to you!"
         />
       </Head>
+
       <Header />
       <section id="hero">
         <Hero />
