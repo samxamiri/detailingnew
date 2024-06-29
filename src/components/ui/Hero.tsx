@@ -1,10 +1,35 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    const videoElement = document.getElementById("hero-video");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoElement.src = videoElement.dataset.src;
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(videoElement);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-light">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <video
+          id="hero-video"
           className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
           autoPlay
           loop
@@ -12,8 +37,9 @@ const Hero = () => {
           preload="metadata"
           width="800"
           height="600"
+          data-src="/videos/Ezyzip.mp4"
         >
-          <source src="/videos/ezyZip.mp4" type="video/mp4" />
+          <source type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="flex flex-col justify-center space-y-4">
