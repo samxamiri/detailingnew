@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          Mobile Auto Detailing in Montreal | Sam's Mobile Detailing
+          Mobile Auto Detailing in Montreal | Sam&apos;s Mobile Detailing
         </title>
         <meta
           name="description"
