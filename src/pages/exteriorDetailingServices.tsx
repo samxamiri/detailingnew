@@ -40,7 +40,7 @@ const ExteriorServicesPage: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://www.samsmobiledetailing.ca/images/other/decontamination.jpg"
+          content="https://www.samsmobiledetailing.ca/images/other/decontamination.webp"
         />
         <meta property="og:image:alt" content="Exterior car detailing" />
         <meta property="og:image:type" content="image/png" />

@@ -9,7 +9,7 @@ const ServiceArea: React.FC = () => {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <img
-            src="/images/other/mtlmap.png"
+            src="/images/other/mtlmap.webp"
             alt="Service Area Map"
             className="w-full h-full object-cover rounded-lg"
           />

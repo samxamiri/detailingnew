@@ -34,7 +34,7 @@ const AutoDetailingPrices: React.FC = () => {
             alt="Auto Detailing Prices"
             className="aspect-[4/3] overflow-hidden rounded-xl object-cover w-full"
             height="600"
-            src="/images/other/wax.PNG" // Replace with your image path
+            src="/images/other/wax.webp" // Replace with your image path
             width="800"
           />
         </div>

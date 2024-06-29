@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://www.samsmobiledetailing.ca/images/other/rinse.PNG"
+          content="https://www.samsmobiledetailing.ca/images/other/rinse.webp"
         />
         <meta property="og:image:alt" content="Car detailing packages" />
         <meta property="og:image:type" content="image/png" />

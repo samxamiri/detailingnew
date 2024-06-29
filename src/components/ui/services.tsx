@@ -9,7 +9,7 @@ const Services: React.FC = () => {
           alt="Auto Detailing Services"
           className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
           height="600"
-          src="/images/other/wheel.PNG" // Replace with your image path
+          src="/images/other/wheel.webp" // Replace with your image path
           width="800"
         />
         <div className="flex flex-col justify-center space-y-4">

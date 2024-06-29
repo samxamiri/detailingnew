@@ -42,6 +42,7 @@ const Hero = () => {
           width="800"
           height="600"
           data-src="/videos/Ezyzip.mp4"
+          poster="/images/video-poster.jpg"
         >
           <source type="video/mp4" />
           Your browser does not support the video tag.

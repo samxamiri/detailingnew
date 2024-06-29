@@ -40,7 +40,7 @@ const InteriorServicesPage: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://www.samsmobiledetailing.ca/images/other/weathermat.png"
+          content="https://www.samsmobiledetailing.ca/images/other/weathermat.webp"
         />
         <meta property="og:image:alt" content="Interior car detailing" />
         <meta property="og:image:type" content="image/png" />

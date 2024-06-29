@@ -40,7 +40,7 @@ const InteriorServices: React.FC = () => {
               alt="No More 'Halfway' Detailing"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
-              src="/images/other/weathermat.png"
+              src="/images/other/weathermat.webp"
               width="800"
             />
           </div>
