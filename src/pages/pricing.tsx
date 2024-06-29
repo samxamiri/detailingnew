@@ -8,7 +8,8 @@ const Pricing: React.FC = () => {
     <Layout>
       <Head>
         <title>
-          Affordable Car Detailing Packages in Montreal | Sam's Mobile Detailing
+          Affordable Car Detailing Packages in Montreal | Sam&apos;s Mobile
+          Detailing
         </title>
         <meta
           name="description"
