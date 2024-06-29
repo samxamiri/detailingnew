@@ -5,12 +5,16 @@ import { useEffect } from "react";
 
 const Hero = () => {
   useEffect(() => {
-    const videoElement = document.getElementById("hero-video");
+    const videoElement = document.getElementById(
+      "hero-video"
+    ) as HTMLVideoElement | null;
+    if (!videoElement) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            videoElement.src = videoElement.dataset.src;
+            videoElement.src = videoElement.dataset.src!;
             observer.disconnect();
           }
         });
