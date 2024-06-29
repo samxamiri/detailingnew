@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://www.samsmobiledetailing.ca" />
         <meta
           property="og:image"
-          content="https://www.samsmobiledetailing.ca/images/other/wheel.png"
+          content="https://www.samsmobiledetailing.ca/images/other/wheel.webp"
         />
         <meta property="og:image:alt" content="Mobile Auto Detailing" />
         <meta property="og:image:type" content="image/jpeg" />

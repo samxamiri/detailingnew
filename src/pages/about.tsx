@@ -37,7 +37,7 @@ const AboutPage: React.FC = () => {
         />
         <meta
           property="og:image"
-          content="https://www.samsmobiledetailing.ca/images/other/foam.png"
+          content="https://www.samsmobiledetailing.ca/images/other/foam.webp"
         />
         <meta
           property="og:image:alt"

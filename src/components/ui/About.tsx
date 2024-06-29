@@ -30,14 +30,14 @@ export default function AboutComponent() {
                     alt="About 1"
                     className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
                     height="800"
-                    src="/images/other/foam.png"
+                    src="/images/other/foam.webp"
                     width="800"
                   />
                   <img
                     alt="About 2"
                     className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
                     height="800"
-                    src="/images/other/q5.png"
+                    src="/images/other/q5.webp"
                     width="800"
                   />
                 </div>
