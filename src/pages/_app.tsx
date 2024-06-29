@@ -6,10 +6,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Sam&apos;s Mobile Detailing</title>
+        <title>
+          Mobile Auto Detailing in Montreal | Sam's Mobile Detailing
+        </title>
         <meta
           name="description"
-          content="Sam's Mobile Detailing offers interior, exterior and complete detailing services in Montreal and surrounding areas. No need to deal with having to drop off your car at a shop, we come to you!"
+          content="Experience the best mobile auto detailing in Montreal. Our expert services will transform your vehicle from dull to dazzling. Book now!"
+        />
+        <meta
+          name="keywords"
+          content="mobile auto detailing near me, car detailing near me, car cleaning near me, vehicle detailing near me, best car detailing near me"
         />
       </Head>
       <Component {...pageProps} />
