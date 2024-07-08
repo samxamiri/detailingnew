@@ -52,7 +52,7 @@ const Header = () => {
   return (
     <>
       <div className="bg-gray-900 text-white py-2">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex flex-wrap justify-between items-center max-w-7xl">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <PhoneIcon className="h-5 w-5" />
@@ -74,7 +74,7 @@ const Header = () => {
         </div>
       </div>
       <header className="w-full bg-white shadow">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4 lg:py-6 max-w-7xl">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex flex-wrap justify-between items-center py-4 lg:py-6 max-w-7xl">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl">
               Sam&apos;s Mobile Detailing
@@ -83,7 +83,10 @@ const Header = () => {
               Go to homepage of Pristine Auto Detailing
             </span>
           </Link>
-          <nav className="flex gap-4 sm:gap-6" aria-label="Main navigation">
+          <nav
+            className="flex flex-wrap gap-4 sm:gap-6"
+            aria-label="Main navigation"
+          >
             <Link
               href="/pricing"
               className="text-base font-medium hover:underline underline-offset-4"
