@@ -12,7 +12,7 @@ const ExteriorServices: React.FC = () => {
       title: "Paint Decontamination",
       description:
         "If we want to truly detail your car’s paint... car washing won’t be enough. After the car wash stage, it’s necessary to use specific detailing tools and products to clean the paint of everything that won’t come off during the wash process... If you don’t, it’s like a cavity that doesn’t get filled. There will be serious problems down the road.",
-      image: "/images/other/decontamination.webp",
+      image: "/images/other/decontamination (1).webp",
     },
     {
       title: "Paint Protection",
@@ -72,7 +72,7 @@ const ExteriorServices: React.FC = () => {
                   <li>Complete Exterior Car Wash</li>
                   <li>Paint Decontamination</li>
                   <li>Clay Bar Treatment</li>
-                  <li>Chemical Decontamination</li>
+
                   <li>Wheel, Wheel Well, & Tire Detail</li>
                   <li>Bug Detail</li>
                   <li>Complete Paint Protection on All Exterior Surfaces</li>
