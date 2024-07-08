@@ -55,7 +55,7 @@ const InteriorServices: React.FC = () => {
               alt="Interior Detailing"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
-              src="/images/other/airgun.png"
+              src="/images/other/airgun.webp"
               width="800"
             />
             <div className="flex flex-col justify-center space-y-4">

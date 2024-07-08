@@ -41,7 +41,7 @@ const Hero = () => {
           preload="metadata"
           width="800"
           height="600"
-          data-src="/videos/Ezyzip.mp4"
+          data-src="/videos/video.mp4"
           poster="/images/other/videoposter.webp"
         >
           <source type="video/mp4" />

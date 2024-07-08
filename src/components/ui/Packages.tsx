@@ -14,7 +14,7 @@ const Packages: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex items-center justify-center">
             <img
-              src="/images/other/rinse.PNG"
+              src="/images/other/rinse.webp"
               alt="Detailing Image 1"
               className="w-full h-[400px] rounded-xl object-cover"
             />
@@ -46,7 +46,7 @@ const Packages: React.FC = () => {
           </div>
           <div className="flex items-center justify-center">
             <img
-              src="/images/other/wash.PNG"
+              src="/images/other/wash.webp"
               alt="Detailing Image 2"
               className="w-full h-[400px] rounded-xl object-cover"
             />
@@ -109,15 +109,17 @@ const Packages: React.FC = () => {
                   <h4 className="font-semibold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$90-$140</p>
+                    <p className="text-gray-500 dark:text-gray-400">
+                      $105-$155
+                    </p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$55-$105</p>
+                    <p className="text-gray-500 dark:text-gray-400">$70-$120</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$40-$90</p>
+                    <p className="text-gray-500 dark:text-gray-400">$55-$105</p>
                   </div>
                 </div>
               </div>
@@ -291,14 +293,15 @@ const Packages: React.FC = () => {
                     <span className="mr-2">❌</span>Headliner
                   </li>
                   <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Upholstery shampoo/stain
-                    removal
+                    <span className="mr-2">❌</span>Upholstery & Carpet
+                    shampoo/stain removal
+                  </li>
+
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Interior Glass
                   </li>
                   <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Carpet Shampoo/stain removal
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Full Interior Protection
+                    <span className="mr-2">❌</span>Weather mat wash
                   </li>
                 </ul>
               </div>
@@ -308,7 +311,7 @@ const Packages: React.FC = () => {
               <div className="text-left">
                 <ul className="pl-5 inline-block">
                   <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Clay Bar/Decontamination
+                    <span className="mr-2">❌</span>Clay Bar
                   </li>
                   <li className="text-red-600 flex items-center">
                     <span className="mr-2">❌</span>Door Jambs
