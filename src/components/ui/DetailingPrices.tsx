@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AutoDetailingPrices: React.FC = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="flex-1 flex flex-col justify-center space-y-4 text-center lg:text-left lg:ml-12">
           <div className="space-y-2">

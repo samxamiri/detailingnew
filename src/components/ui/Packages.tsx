@@ -11,7 +11,7 @@ const Packages: React.FC = () => {
           </h1>
         </div>
         {/* Div 1 */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex items-center justify-center">
             <img
               src="/images/other/rinse.webp"
@@ -30,18 +30,25 @@ const Packages: React.FC = () => {
               every time at a price point that works for you?
             </p>
           </div>
-        </div>
+        </div> */}
         {/* Div 2 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="flex flex-col justify-center">
+            <div className="mb-6">
+              <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
+                Below you will find <strong>3 options</strong>: An{" "}
+                <strong>interior </strong>
+                detail, an <strong>exterior</strong> detail, and a{" "}
+                <strong>complete</strong> detail with average prices associated
+                with each.
+              </p>
+            </div>
             <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
-              Below you will find 3 options: An interior detail, an exterior
-              detail, and a complete detail with average prices associated with
-              each. After speaking with our customers, we found that all they
-              really wanted was a fantastic auto detailing experience every
-              time, so we are simplifying things! Whether you want an interior
-              detail, an exterior detail, or a complete detail, we want to raise
-              your car to the highest level of perfection that is possible!
+              After speaking with our customers, we found that all they really
+              wanted was a fantastic auto detailing experience every time, so we
+              are simplifying things! Whether you want an interior detail, an
+              exterior detail, or a complete detail, we want to raise your car
+              to the highest level of perfection that is possible!
             </p>
           </div>
           <div className="flex items-center justify-center">
