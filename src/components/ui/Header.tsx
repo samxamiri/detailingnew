@@ -27,10 +27,15 @@ const InstagramIcon: React.FC<IconProps> = ({ className }) => (
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleToggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleToggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -73,8 +78,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <header className="w-full bg-white shadow">
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex flex-wrap justify-between items-center py-4 lg:py-6 max-w-7xl">
+      <header className="w-full bg-white shadow relative">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4 lg:py-6 max-w-7xl">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl">
               Sam&apos;s Mobile Detailing
@@ -83,25 +88,47 @@ const Header = () => {
               Go to homepage of Pristine Auto Detailing
             </span>
           </Link>
+          <button
+            className="hamburger-button lg:hidden text-gray-700 focus:outline-none"
+            onClick={handleToggleMobileMenu}
+            aria-label="Toggle mobile menu"
+          >
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
           <nav
-            className="flex flex-wrap gap-4 sm:gap-6"
+            className={`${
+              mobileMenuOpen ? "block" : "hidden"
+            } lg:flex flex-col lg:flex-row lg:items-center lg:gap-4 sm:gap-6 w-full lg:w-auto absolute lg:static top-full left-0 bg-white shadow-lg lg:shadow-none`}
             aria-label="Main navigation"
           >
             <Link
               href="/pricing"
-              className="text-base font-medium hover:underline underline-offset-4"
+              className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
               Pricing
             </Link>
             <div className="relative" ref={dropdownRef}>
               <button
-                className="text-base font-medium hover:underline underline-offset-4"
+                className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
                 onClick={handleToggleDropdown}
               >
                 Detailing Services
               </button>
               {dropdownOpen && (
-                <div className="absolute top-full mt-2 w-48 bg-white shadow-lg rounded-md">
+                <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md">
                   <Link
                     href="/interiorDetailingServices"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
@@ -119,7 +146,7 @@ const Header = () => {
             </div>
             <Link
               href="/about"
-              className="text-base font-medium hover:underline underline-offset-4"
+              className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
               About
             </Link>

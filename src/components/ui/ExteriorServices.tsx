@@ -65,14 +65,15 @@ const ExteriorServices: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
-                  Exterior Detailing Services
-                </h2>
+                <div className="mb-8">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
+                    Exterior Detailing Services
+                  </h2>
+                </div>
                 <ul className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400 list-disc list-inside">
-                  <li>Complete Exterior Car Wash</li>
-                  <li>Paint Decontamination</li>
+                  <li>Foam Bath</li>
+                  <li>Contact Wash</li>
                   <li>Clay Bar Treatment</li>
-
                   <li>Wheel, Wheel Well, & Tire Detail</li>
                   <li>Bug Detail</li>
                   <li>Complete Paint Protection on All Exterior Surfaces</li>
