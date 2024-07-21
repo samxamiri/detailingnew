@@ -17,8 +17,7 @@ function Benefits() {
               Benefits of Booking with Us
             </h2>
             <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Discover the advantages of choosing Pristine Auto Detailing for
-              your car care needs.
+              Discover the advantages of choosing us for your car care needs.
             </p>
           </div>
         </div>
@@ -47,7 +46,7 @@ function Benefits() {
           </div>
         </div>
         <div className="flex justify-center mt-12">
-          <Link href="/pricing">
+          <Link href="/detailing-prices">
             <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full">
               View Pricing
             </button>
