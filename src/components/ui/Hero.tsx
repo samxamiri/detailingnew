@@ -1,18 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-light">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
-        <img
-          className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
-          src="/images/other/polestar.jpg"
-          alt="Car Detailing"
-          width="800"
-          height="600"
-        />
+        <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
+          <Image
+            src="/images/other/polestar.webp"
+            alt="Car Detailing"
+            layout="responsive"
+            width={800}
+            height={600}
+            priority
+          />
+        </div>
         <div className="order-2 lg:order-2 flex flex-col justify-center space-y-4">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
             The Best Mobile Detailing In Montreal
