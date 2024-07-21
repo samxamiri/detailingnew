@@ -3,85 +3,16 @@ import Link from "next/link";
 
 const Packages: React.FC = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full  md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+      <div className="text-center mt-16 mb-12">
+        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl ">
+          The Simplest Auto Detailing Prices <br /> In Montreal
+        </h1>
+      </div>
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl mb-6">
-            The Simplest Auto Detailing Prices <br /> In Montreal
-          </h1>
-        </div>
-        {/* Div 1 */}
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="flex items-center justify-center">
-            <img
-              src="/images/other/rinse.webp"
-              alt="Detailing Image 1"
-              className="w-full h-[400px] rounded-xl object-cover"
-            />
-          </div>
-          <div className="flex flex-col justify-center">
-            <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
-              Finding a simple and straightforward price for auto detailing
-              should be easy! That’s why we don’t offer 1,000 different pricing
-              options with different auto detailing packages. We got tired of
-              the endless options of confusing detailing prices and packages
-              like: “The Gold Package” “The Express Package” and my personal
-              favorite: “The Showroom package!” Why not get the best detail
-              every time at a price point that works for you?
-            </p>
-          </div>
-        </div> */}
-        {/* Div 2 */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="flex flex-col justify-center">
-            <div className="mb-6">
-              <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
-                Below you will find <strong>3 options</strong>: An{" "}
-                <strong>interior </strong>
-                detail, an <strong>exterior</strong> detail, and a{" "}
-                <strong>complete</strong> detail with average prices associated
-                with each.
-              </p>
-            </div>
-            <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
-              After speaking with our customers, we found that all they really
-              wanted was a fantastic auto detailing experience every time, so we
-              are simplifying things! Whether you want an interior detail, an
-              exterior detail, or a complete detail, we want to raise your car
-              to the highest level of perfection that is possible!
-            </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src="/images/other/wash.webp"
-              alt="Detailing Image 2"
-              className="w-full h-[400px] rounded-xl object-cover"
-            />
-          </div>
-        </div>
-        {/* Big Bold Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl mb-6">
-            If you’re like me and you like talking with a real person to get
-            your auto detailing questions answered rather than trying to figure
-            things out yourself, call us anytime! Answering pricing questions is
-            what I do… literally!
-          </h2>
-        </div>
-        <div className="flex justify-center mt-12">
-          <Link
-            href="/contact"
-            className="inline-flex mt-6 h-12 w-64 items-center justify-center rounded-md bg-gray-900 text-lg sm:text-xl md:text-2xl font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-          >
-            Call Us Anytime!
-          </Link>
-        </div>
         {/* Detailing Prices Section */}
-        <div className="mt-16">
+        <div className="mt-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl mb-6">
-              Detailing Prices
-            </h2>
             <p className="max-w-[600px] mx-auto text-gray-500 md:text-xl dark:text-gray-400">
               Check out our detailing prices for different vehicle types.
             </p>
@@ -282,7 +213,8 @@ const Packages: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-16">
+        {/* What Is Removed In The Basic Package Section */}
+        <div className="mt-16 mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-5xl mb-6">
               What Is Removed In The Basic Package?
@@ -303,7 +235,6 @@ const Packages: React.FC = () => {
                     <span className="mr-2">❌</span>Upholstery & Carpet
                     shampoo/stain removal
                   </li>
-
                   <li className="text-red-600 flex items-center">
                     <span className="mr-2">❌</span>Interior Glass
                   </li>
@@ -329,6 +260,34 @@ const Packages: React.FC = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Introductory and Additional Information Section */}
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl mb-6">
+              If you’re like me and you like talking with a real person to get
+              your auto detailing questions answered rather than trying to
+              figure things out yourself, call us anytime! Answering pricing
+              questions is what I do… literally!
+            </h2>
+          </div>
+          <div className="flex justify-center mt-12">
+            <Link
+              href="/contact"
+              className="inline-flex mt-6 h-12 w-64 items-center justify-center rounded-md bg-gray-900 text-lg sm:text-xl md:text-2xl font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+            >
+              Call Us Anytime!
+            </Link>
+          </div>
+          <div className="flex items-center justify-center">
+            <img
+              src="/images/other/wash.webp"
+              alt="Detailing Image 2"
+              className="w-full h-[400px] rounded-xl object-cover"
+            />
           </div>
         </div>
       </div>
