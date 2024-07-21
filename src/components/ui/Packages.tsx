@@ -265,8 +265,8 @@ const Packages: React.FC = () => {
 
         {/* Introductory and Additional Information Section */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          <div className="text-center mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 ">
+          <div className="text-center mb-12 mt-16">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl mb-6">
               If you’re like me and you like talking with a real person to get
               your auto detailing questions answered rather than trying to
@@ -275,20 +275,20 @@ const Packages: React.FC = () => {
             </h2>
           </div>
           <div className="flex justify-center mt-12">
-            <Link
-              href="/contact"
-              className="inline-flex mt-6 h-12 w-64 items-center justify-center rounded-md bg-gray-900 text-lg sm:text-xl md:text-2xl font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-            >
-              Call Us Anytime!
-            </Link>
-          </div>
-          <div className="flex items-center justify-center">
             <img
               src="/images/other/wash.webp"
               alt="Detailing Image 2"
               className="w-full h-[400px] rounded-xl object-cover"
             />
           </div>
+        </div>
+        <div className="flex items-center justify-center">
+          <Link
+            href="/contact"
+            className="inline-flex mt-6 mb-12 h-12 w-64 items-center justify-center rounded-md bg-gray-900 text-lg sm:text-xl md:text-2xl font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+          >
+            Call Us Anytime!
+          </Link>
         </div>
       </div>
     </section>
