@@ -1,40 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
 
 const Hero = () => {
-  useEffect(() => {
-    const videoElement = document.getElementById(
-      "hero-video"
-    ) as HTMLVideoElement | null;
-    if (!videoElement) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            videoElement.src = videoElement.dataset.src!;
-            observer.disconnect();
-          }
-        });
-      },
-      { threshold: 0.25 }
-    );
-
-    observer.observe(videoElement);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-light">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
-        <div className="order-2 lg:order-1 flex flex-col justify-center space-y-4">
+        <img
+          className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
+          src="/images/other/polestar.jpg"
+          alt="Car Detailing"
+          width="800"
+          height="600"
+        />
+        <div className="order-2 lg:order-2 flex flex-col justify-center space-y-4">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
-            Mobile Auto Detailing In Montreal
+            The Best Mobile Detailing In Montreal
           </h1>
           <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
             <strong>Experience the ultimate car care</strong> with our
@@ -49,21 +30,6 @@ const Hero = () => {
             Book Now
           </Link>
         </div>
-        <video
-          id="hero-video"
-          className="order-1 lg:order-2 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
-          autoPlay
-          loop
-          muted
-          preload="metadata"
-          width="800"
-          height="600"
-          data-src="/videos/video.mp4"
-          poster="/images/other/videoposter.webp"
-        >
-          <source type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </div>
     </section>
   );
