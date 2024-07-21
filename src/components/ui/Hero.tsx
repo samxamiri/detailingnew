@@ -15,6 +15,16 @@ const Hero = () => {
             width={800}
             height={600}
             priority
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+          <link
+            rel="preload"
+            as="image"
+            href="/images/other/polestar.webp"
+            imageSrcSet="/images/other/polestar-320w.webp 320w,
+                         /images/other/polestar-480w.webp 480w,
+                         /images/other/polestar-800w.webp 800w"
+            imageSizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <div className="order-2 lg:order-2 flex flex-col justify-center space-y-4">
