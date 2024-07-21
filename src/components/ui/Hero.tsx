@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
           <Image
-            src="/images/other/polestar.webp"
+            src="/images/other/polestar-min.jpg"
             alt="Car Detailing"
             layout="responsive"
             width={800}
@@ -20,10 +20,10 @@ const Hero = () => {
           <link
             rel="preload"
             as="image"
-            href="/images/other/polestar.webp"
-            imageSrcSet="/images/other/polestar-320w.webp 320w,
-                         /images/other/polestar-480w.webp 480w,
-                         /images/other/polestar-800w.webp 800w"
+            href="/images/other/polestar-min.jpg"
+            imageSrcSet="/images/other/polestar-min-320w.jpg 320w,
+                         /images/other/polestar-min-480w.jpg 480w,
+                         /images/other/polestar-min-800w.jpg 800w"
             imageSizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
