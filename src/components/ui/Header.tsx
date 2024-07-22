@@ -132,13 +132,13 @@ const Header = () => {
               {dropdownOpen && (
                 <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md">
                   <Link
-                    href="/interior-detailing-services"
+                    href="/interior-car-cleaning-montreal"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
                     Interior Detailing
                   </Link>
                   <Link
-                    href="/exterior-detailing-services"
+                    href="/exterior-car-cleaning-montreal"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
                     Exterior Detailing
