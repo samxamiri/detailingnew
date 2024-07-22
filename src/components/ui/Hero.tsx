@@ -16,6 +16,8 @@ const Hero = () => {
             height={600}
             priority
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            placeholder="blur"
+            blurDataURL="/images/other/polestar-min-blur.jpg"
           />
           <link
             rel="preload"
