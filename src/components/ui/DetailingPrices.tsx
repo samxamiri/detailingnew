@@ -31,7 +31,7 @@ const AutoDetailingPrices: React.FC = () => {
         </div>
         <div className="flex-1 flex justify-center lg:justify-start">
           <img
-            alt="Auto Detailing Prices"
+            alt="Application of Meguiars spray wax"
             className="aspect-[4/3] overflow-hidden rounded-xl object-cover w-full"
             height="600"
             src="/images/other/wax.webp" // Replace with your image path

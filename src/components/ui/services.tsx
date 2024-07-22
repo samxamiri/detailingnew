@@ -6,7 +6,7 @@ const Services: React.FC = () => {
     <section className="w-full py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <img
-          alt="Auto Detailing Services"
+          alt="Wheel detailing"
           className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
           height="600"
           src="/images/other/wheel.webp" // Replace with your image path

@@ -13,7 +13,9 @@ export default function Layout({ children }: any) {
   return (
     <html lang="en">
       <Head>
-        <title>Sam&apos;s Mobile Detailing</title>
+        <title>
+          The Best Interior & Exterior Car Wash & Cleaning In Montreal
+        </title>
         <meta
           name="description"
           content="Sam's Mobile Detailing offers interior, exterior and complete detailing services in Montreal and surrounding areas. No need to deal with having to drop off your car at a shop, we come to you!"

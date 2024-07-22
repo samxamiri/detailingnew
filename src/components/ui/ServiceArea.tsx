@@ -10,7 +10,7 @@ const ServiceArea: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <img
             src="/images/other/mtlmap.webp"
-            alt="Service Area Map"
+            alt="A map of Montreal showcasing our service area"
             className="w-full h-full object-cover rounded-lg"
           />
           <div className="flex flex-col justify-center space-y-4 lg:ml-12">
