@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
           <img
-            src="/images/other/polestar-min.jpg"
+            src="/images/other/foam.webp"
             alt="Car Detailing"
             width="800"
             height="600"
