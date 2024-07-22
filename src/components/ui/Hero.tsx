@@ -1,32 +1,19 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-light">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
         <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
-          <Image
+          <img
             src="/images/other/polestar-min.jpg"
             alt="Car Detailing"
-            layout="responsive"
-            width={800}
-            height={600}
-            priority
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            placeholder="blur"
-            blurDataURL="/images/other/polestar-min-blur.jpg"
-          />
-          <link
-            rel="preload"
-            as="image"
-            href="/images/other/polestar-min.jpg"
-            imageSrcSet="/images/other/polestar-min-320w.jpg 320w,
-                         /images/other/polestar-min-480w.jpg 480w,
-                         /images/other/polestar-min-800w.jpg 800w"
-            imageSizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            width="800"
+            height="600"
+            style={{ width: "100%", height: "auto" }}
+            loading="lazy"
           />
         </div>
         <div className="order-2 lg:order-2 flex flex-col justify-center space-y-4">
