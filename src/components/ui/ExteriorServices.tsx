@@ -81,7 +81,7 @@ const ExteriorServices: React.FC = () => {
               </div>
             </div>
             <img
-              alt="Exterior Detailing"
+              alt="Hyundai Veloster after wash and spray wax"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
               src="/images/other/shiny.webp"

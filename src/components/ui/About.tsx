@@ -27,14 +27,14 @@ export default function AboutComponent() {
               <div className="space-y-2">
                 <div className="grid grid-cols-1 gap-4">
                   <img
-                    alt="About 1"
+                    alt="Audi SQ5 covered in foam during foam bath"
                     className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
                     height="800"
                     src="/images/other/foam.webp"
                     width="800"
                   />
                   <img
-                    alt="About 2"
+                    alt="Audi SQ5 shining in the sun after wash and spray wax"
                     className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
                     height="800"
                     src="/images/other/q5.webp"

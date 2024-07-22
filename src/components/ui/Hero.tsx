@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
           <Image
             src="/images/other/polestar-min.jpg"
-            alt="Car Detailing"
+            alt="Polestar 2 after wash and spray wax"
             layout="responsive"
             width={800}
             height={600}

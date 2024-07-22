@@ -277,7 +277,7 @@ const Packages: React.FC = () => {
           <div className="flex justify-center mt-12">
             <img
               src="/images/other/wash.webp"
-              alt="Detailing Image 2"
+              alt="Contact wash on door panel"
               className="w-full h-[400px] rounded-xl object-cover"
             />
           </div>

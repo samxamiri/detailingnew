@@ -37,7 +37,7 @@ const InteriorServices: React.FC = () => {
               </div>
             </div>
             <img
-              alt="No More 'Halfway' Detailing"
+              alt="Washing weather mats with drill brush"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
               src="/images/other/weathermat.webp"
@@ -52,7 +52,7 @@ const InteriorServices: React.FC = () => {
         >
           <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
             <img
-              alt="Interior Detailing"
+              alt="Drying interior with Tornador air gun"
               className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
               height="600"
               src="/images/other/airgun.webp"
