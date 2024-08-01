@@ -27,7 +27,7 @@ const Packages: React.FC = () => {
               <h3 className="text-xl font-bold mt-4">Sports/Mini</h3>
               <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Regular</h4>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -44,7 +44,7 @@ const Packages: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Basic</h4>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -71,7 +71,7 @@ const Packages: React.FC = () => {
               <h3 className="text-xl font-bold mt-4">Sedan</h3>
               <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Regular</h4>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -90,7 +90,7 @@ const Packages: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Basic</h4>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -117,7 +117,7 @@ const Packages: React.FC = () => {
               <h3 className="text-xl font-bold mt-4">SUV</h3>
               <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Regular</h4>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -138,7 +138,7 @@ const Packages: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Basic</h4>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -167,7 +167,7 @@ const Packages: React.FC = () => {
               <h3 className="text-xl font-bold mt-4">Pickup/Van</h3>
               <div className="grid grid-cols-2 gap-2 mt-4">
                 <div>
-                  <h4 className="font-semibold">Regular</h4>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -188,7 +188,7 @@ const Packages: React.FC = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Basic</h4>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
                     <p className="text-gray-500 dark:text-gray-400">
@@ -237,9 +237,6 @@ const Packages: React.FC = () => {
                   </li>
                   <li className="text-red-600 flex items-center">
                     <span className="mr-2">❌</span>Interior Glass
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Weather mat wash
                   </li>
                 </ul>
               </div>
