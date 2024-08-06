@@ -226,17 +226,8 @@ const Packages: React.FC = () => {
               <div className="text-left">
                 <ul className="pl-5 inline-block">
                   <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Door jambs
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Headliner
-                  </li>
-                  <li className="text-red-600 flex items-center">
                     <span className="mr-2">❌</span>Upholstery & Carpet
                     shampoo/stain removal
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Interior Glass
                   </li>
                 </ul>
               </div>
@@ -246,13 +237,7 @@ const Packages: React.FC = () => {
               <div className="text-left">
                 <ul className="pl-5 inline-block">
                   <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Clay Bar
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Door Jambs
-                  </li>
-                  <li className="text-red-600 flex items-center">
-                    <span className="mr-2">❌</span>Tire Dressing
+                    <span className="mr-2">❌</span>Clay Bar Treatment
                   </li>
                 </ul>
               </div>
