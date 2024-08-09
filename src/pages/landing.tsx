@@ -360,7 +360,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     borderRadius: "15px",
     boxShadow: "0 8px 16px rgba(0, 0, 50, 0.3)",
     maxWidth: "800px",
-    margin: "30px auto", // Ensuring the testimonial is centered
+
     animation: "fadeInUp 1.5s ease-in-out",
   },
   testimonialText: {
