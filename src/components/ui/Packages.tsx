@@ -17,11 +17,11 @@ const Packages: React.FC = () => {
               Check out our detailing prices for different vehicle types.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <img
                 alt="Sports/Mini Car"
-                className="mx-auto w-full h-[200px] overflow-hidden rounded-lg object-cover"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
                 src="/images/types/mini.webp"
               />
               <h3 className="text-xl font-bold mt-4">Sports/Mini</h3>
@@ -30,34 +30,30 @@ const Packages: React.FC = () => {
                   <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $135-$185
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$160</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$95-$145</p>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80-$120</p>
+                    <p className="text-gray-500 dark:text-gray-400">$80</p>
                   </div>
                 </div>
                 <div>
                   <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $105-$155
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$115</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$70-$120</p>
+                    <p className="text-gray-500 dark:text-gray-400">$70</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$55-$105</p>
+                    <p className="text-gray-500 dark:text-gray-400">$55</p>
                   </div>
                 </div>
               </div>
@@ -65,7 +61,7 @@ const Packages: React.FC = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <img
                 alt="Sedan"
-                className="mx-auto w-full h-[200px] overflow-hidden rounded-lg object-cover"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
                 src="/images/types/sedan.webp"
               />
               <h3 className="text-xl font-bold mt-4">Sedan</h3>
@@ -74,36 +70,30 @@ const Packages: React.FC = () => {
                   <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $205-$255
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$200</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $135-$185
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$95-$145</p>
+                    <p className="text-gray-500 dark:text-gray-400">$95</p>
                   </div>
                 </div>
                 <div>
                   <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $100-$150
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80-$120</p>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$70-$120</p>
+                    <p className="text-gray-500 dark:text-gray-400">$75</p>
                   </div>
                 </div>
               </div>
@@ -111,7 +101,7 @@ const Packages: React.FC = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
               <img
                 alt="SUV"
-                className="mx-auto w-full h-[200px] overflow-hidden rounded-lg object-cover"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
                 src="/images/types/suv.webp"
               />
               <h3 className="text-xl font-bold mt-4">SUV</h3>
@@ -120,96 +110,42 @@ const Packages: React.FC = () => {
                   <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $275-$325
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$275</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $200-$250
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$200</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $120-$170
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
                   </div>
                 </div>
                 <div>
                   <h4 className="text-2xl font-extrabold">Basic</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $115-$165
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$180</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $110-$160
-                    </p>
+                    <p className="text-gray-500 dark:text-gray-400">$120</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80-$130</p>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-              <img
-                alt="Pickup/Van"
-                className="mx-auto w-full h-[200px] overflow-hidden rounded-lg object-cover"
-                src="/images/types/van.webp"
-              />
-              <h3 className="text-xl font-bold mt-4">Pickup/Van</h3>
-              <div className="grid grid-cols-2 gap-2 mt-4">
-                <div>
-                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
-                  <div>
-                    <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $320-$370
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $230-$280
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $175-$225
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-2xl font-extrabold">Basic</h4>
-                  <div>
-                    <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $135-$185
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $135-$185
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      $110-$160
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+
+          {/* Additional Message */}
+          <div className="text-center mt-4">
+            <p className="text-gray-500 dark:text-gray-400">
+              *Up to $50 extra may be charged depending on the condition of the
+              vehicle.
+            </p>
           </div>
         </div>
 
