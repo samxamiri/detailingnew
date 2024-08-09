@@ -354,15 +354,15 @@ const styles: { [key: string]: React.CSSProperties } = {
     position: "relative",
   },
   testimonial: {
-    margin: "30px 0", // Added top and bottom margin to create spacing between testimonials
+    margin: "30px auto", // Combines top/bottom and left/right margin
     padding: "30px",
     backgroundColor: "#006bb3", // Slightly lighter blue for testimonial cards
     borderRadius: "15px",
     boxShadow: "0 8px 16px rgba(0, 0, 50, 0.3)",
     maxWidth: "800px",
-
     animation: "fadeInUp 1.5s ease-in-out",
   },
+
   testimonialText: {
     fontSize: "1.3rem",
     fontStyle: "italic",
