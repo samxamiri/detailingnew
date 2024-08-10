@@ -87,10 +87,10 @@ const LandingPage: React.FC = () => {
         <h2 style={styles.sectionHeading}>What Our Customers Are Saying</h2>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            &quot;Sam's Mobile Detailing worked wonders on my Polestar 2! The
-            attention to detail is incredible, and Sam clearly takes pride in
-            his work. Using McGuire products, he achieved an amazing shine that
-            made my car look showroom-new.&quot; - John D.
+            &quot;Sam&apos;s Mobile Detailing worked wonders on my Polestar 2!
+            The attention to detail is incredible, and Sam clearly takes pride
+            in his work. Using McGuire products, he achieved an amazing shine
+            that made my car look showroom-new.&quot; - John D.
           </p>
         </div>
         <div style={styles.testimonial}>
@@ -103,9 +103,9 @@ const LandingPage: React.FC = () => {
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
             &quot;I booked an interior detail package for my Audi SQ5, and I was
-            extremely satisfied with Sam's work. He showed up on time and got
-            the work done in 2 hours. I didn't even know my carpets could look
-            that clean. Would highly recommend! - Michael T.
+            extremely satisfied with Sam&apos;s work. He showed up on time and
+            got the work done in 2 hours. I didn&apos;t even know my carpets
+            could look that clean. Would highly recommend! - Michael T.
           </p>
         </div>
       </section>
