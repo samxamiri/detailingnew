@@ -8,7 +8,7 @@ const LandingPage: React.FC = () => {
       {/* Hero Section */}
       <header style={styles.heroSection}>
         <h1 style={styles.heading}>
-          Transform Your Vehicle with Sam's Mobile Detailing!
+          Transform Your Vehicle with Sam&apos;s Mobile Detailing!
         </h1>
         <p style={styles.subheading}>
           Top-rated detailing services in Montreal. Book now and give your car
@@ -23,15 +23,15 @@ const LandingPage: React.FC = () => {
           </a>
         </div>
       </header>
-      {/*test*/}
+
       {/* Services Overview */}
       <section id="services" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Premium Detailing Services</h2>
         <p style={styles.sectionText}>
-          At Sam's Mobile Detailing, we offer a wide range of services to keep
-          your car looking like new. Whether you need interior, exterior, or
-          full-service detailing, our expert team is here to deliver exceptional
-          results.
+          At Sam&apos;s Mobile Detailing, we offer a wide range of services to
+          keep your car looking like new. Whether you need interior, exterior,
+          or full-service detailing, our expert team is here to deliver
+          exceptional results.
         </p>
 
         <div style={styles.services}>
@@ -61,7 +61,7 @@ const LandingPage: React.FC = () => {
       {/* Why Choose Us */}
       <section style={styles.section}>
         <h2 style={styles.sectionHeading}>
-          Why Choose Sam's Mobile Detailing?
+          Why Choose Sam&apos;s Mobile Detailing?
         </h2>
         <div style={styles.tilesContainer}>
           {[
@@ -88,7 +88,7 @@ const LandingPage: React.FC = () => {
                 {title === "Convenient Service" &&
                   "We come to you! Enjoy the convenience of mobile detailing wherever you are."}
                 {title === "Satisfaction Guaranteed" &&
-                  "We’re not happy until you’re thrilled with the results."}
+                  "We&apos;re not happy until you&apos;re thrilled with the results."}
               </p>
             </div>
           ))}
@@ -100,20 +100,20 @@ const LandingPage: React.FC = () => {
         <h2 style={styles.sectionHeading}>What Our Customers Are Saying</h2>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            "Pristine Auto Detailing transformed my car! It looks brand new.
-            Highly recommend!" - John D.
+            &quot;Pristine Auto Detailing transformed my car! It looks brand
+            new. Highly recommend!&quot; - John D.
           </p>
         </div>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            "Amazing service at an unbeatable price. I'll definitely be back!" -
-            Sarah P.
+            &quot;Amazing service at an unbeatable price. I&apos;ll definitely
+            be back!&quot; - Sarah P.
           </p>
         </div>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            "The convenience of mobile detailing is fantastic. The results speak
-            for themselves!" - Michael T.
+            &quot;The convenience of mobile detailing is fantastic. The results
+            speak for themselves!&quot; - Michael T.
           </p>
         </div>
       </section>
@@ -191,7 +191,7 @@ const LandingPage: React.FC = () => {
 
       {/* Footer */}
       <footer style={styles.footer}>
-        <p>&copy; 2024 Sam's Mobile Detailing. All rights reserved.</p>
+        <p>&copy; 2024 Sam&apos;s Mobile Detailing. All rights reserved.</p>
       </footer>
     </div>
   );
