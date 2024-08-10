@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image"; // Assuming you're using Next.js, otherwise use 'img' tag
 
 const LandingPage: React.FC = () => {
   const [hoveredTile, setHoveredTile] = useState<number | null>(null);
@@ -56,42 +57,28 @@ const LandingPage: React.FC = () => {
             </p>
           </div>
         </div>
+        {/* Note about water and power */}
+        <p style={styles.note}>
+          * Access to a hose with water and power is required for all services.
+        </p>
       </section>
 
-      {/* Why Choose Us */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>
-          Why Choose Sam&apos;s Mobile Detailing?
-        </h2>
-        <div style={styles.tilesContainer}>
-          {[
-            "Expert Technicians",
-            "Affordable Pricing",
-            "Convenient Service",
-            "Satisfaction Guaranteed",
-          ].map((title, index) => (
-            <div
-              key={index}
-              style={{
-                ...styles.tile,
-                ...(hoveredTile === index ? styles.tileHover : {}),
-              }}
-              onMouseEnter={() => setHoveredTile(index)}
-              onMouseLeave={() => setHoveredTile(null)}
-            >
-              <h3 style={styles.tileHeading}>{title}</h3>
-              <p style={styles.tileText}>
-                {title === "Expert Technicians" &&
-                  "Our team is trained with the latest techniques to deliver exceptional results every time."}
-                {title === "Affordable Pricing" &&
-                  "We offer some of the most competitive rates in Montreal without compromising on quality."}
-                {title === "Convenient Service" &&
-                  "We come to you! Enjoy the convenience of mobile detailing wherever you are."}
-                {title === "Satisfaction Guaranteed" &&
-                  "We&apos;re not happy until you&apos;re thrilled with the results."}
-              </p>
-            </div>
-          ))}
+      {/* Service Area */}
+      <section id="service-area" style={styles.section}>
+        <h2 style={styles.sectionHeading}>Our Service Area</h2>
+        <p style={styles.sectionText}>
+          We proudly serve the following areas in and around Montreal:
+        </p>
+        <div style={styles.serviceAreaContent}>
+          <div style={styles.mapContainer}>
+            <Image
+              src="/images/other/map.jpg"
+              alt="Service Area Map"
+              style={styles.mapImage}
+              width={900}
+              height={700}
+            />
+          </div>
         </div>
       </section>
 
@@ -100,20 +87,25 @@ const LandingPage: React.FC = () => {
         <h2 style={styles.sectionHeading}>What Our Customers Are Saying</h2>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            &quot;Pristine Auto Detailing transformed my car! It looks brand
-            new. Highly recommend!&quot; - John D.
+            &quot;Sam's Mobile Detailing worked wonders on my Polestar 2! The
+            attention to detail is incredible, and Sam clearly takes pride in
+            his work. Using McGuire products, he achieved an amazing shine that
+            made my car look showroom-new.&quot; - John D.
           </p>
         </div>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            &quot;Amazing service at an unbeatable price. I&apos;ll definitely
-            be back!&quot; - Sarah P.
+            &quot;Just had the interior of my Volkswagen e-Golf detailed. His
+            work is very thorough and the results speak for themselves! Highly
+            recommend. Thanks again Sam!&quot; - Sarah P.
           </p>
         </div>
         <div style={styles.testimonial}>
           <p style={styles.testimonialText}>
-            &quot;The convenience of mobile detailing is fantastic. The results
-            speak for themselves!&quot; - Michael T.
+            &quot;I booked an interior detail package for my Audi SQ5, and I was
+            extremely satisfied with Sam's work. He showed up on time and got
+            the work done in 2 hours. I didn't even know my carpets could look
+            that clean. Would highly recommend! - Michael T.
           </p>
         </div>
       </section>
@@ -204,13 +196,13 @@ const styles: { [key: string]: React.CSSProperties } = {
     lineHeight: 1.8,
     margin: 0,
     padding: 0,
-    backgroundColor: "#f0f8ff", // Light blue background
+    backgroundColor: "#f0f8ff",
     color: "#333",
     overflowX: "hidden",
   },
   heroSection: {
     background:
-      "linear-gradient(to right, rgba(0,0,50,0.7), rgba(0,0,100,0.1)), url('/path-to-your-hero-image.jpg') no-repeat center center/cover",
+      "linear-gradient(to right, rgba(0,0,50,0.7), rgba(0,0,100,0.1)), url('/images/other/wheeldetail.jpg') no-repeat center center/cover",
     color: "white",
     padding: "100px 20px",
     textAlign: "center",
@@ -238,7 +230,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: "18px 36px",
     margin: "15px",
     color: "white",
-    backgroundColor: "#007acc", // Blue color for CTA buttons
+    backgroundColor: "#007acc",
     borderRadius: "50px",
     textDecoration: "none",
     fontSize: "1.4rem",
@@ -255,7 +247,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: "18px 36px",
     margin: "15px",
     color: "white",
-    backgroundColor: "#005999", // Darker blue for secondary buttons
+    backgroundColor: "#005999",
     borderRadius: "50px",
     textDecoration: "none",
     fontSize: "1.4rem",
@@ -276,7 +268,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: "3rem",
     fontWeight: 800,
     marginBottom: "40px",
-    color: "#007acc", // Matching the blue theme
+    color: "#007acc",
     textTransform: "uppercase",
     letterSpacing: "1.5px",
     textShadow: "1px 1px 2px rgba(0, 0, 50, 0.1)",
@@ -284,10 +276,11 @@ const styles: { [key: string]: React.CSSProperties } = {
   sectionText: {
     fontSize: "1.3rem",
     marginBottom: "40px",
-    maxWidth: "800px",
+    maxWidth: "90%", // Adjusted to 90% to fit better on mobile screens
     margin: "auto",
     color: "#666",
     lineHeight: "1.7",
+    wordWrap: "break-word", // Ensures long words break to the next line
   },
   services: {
     display: "flex",
@@ -312,7 +305,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: "1.8rem",
     fontWeight: 700,
     marginBottom: "15px",
-    color: "#007acc", // Blue color for service headings
+    color: "#007acc",
   },
   tilesContainer: {
     display: "flex",
@@ -334,7 +327,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   tileHeading: {
     fontSize: "1.8rem",
     fontWeight: 700,
-    color: "#007acc", // Blue color for tile headings
+    color: "#007acc",
     marginBottom: "10px",
   },
   tileText: {
@@ -347,22 +340,21 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: "0 8px 20px rgba(0, 0, 50, 0.2)",
   },
   testimonialsSection: {
-    backgroundColor: "#005999", // Darker blue background for testimonials section
+    backgroundColor: "#005999",
     color: "white",
     padding: "80px 20px",
     textAlign: "center",
     position: "relative",
   },
   testimonial: {
-    margin: "30px auto", // Combines top/bottom and left/right margin
+    margin: "30px auto",
     padding: "30px",
-    backgroundColor: "#006bb3", // Slightly lighter blue for testimonial cards
+    backgroundColor: "#006bb3",
     borderRadius: "15px",
     boxShadow: "0 8px 16px rgba(0, 0, 50, 0.3)",
     maxWidth: "800px",
     animation: "fadeInUp 1.5s ease-in-out",
   },
-
   testimonialText: {
     fontSize: "1.3rem",
     fontStyle: "italic",
@@ -379,16 +371,17 @@ const styles: { [key: string]: React.CSSProperties } = {
     flex: "1 1 300px",
     margin: "20px",
     padding: "40px",
-    backgroundColor: "#007acc", // Blue color for pricing cards
+    backgroundColor: "#007acc",
     color: "white",
     boxShadow: "0 8px 16px rgba(0, 0, 50, 0.3)",
     borderRadius: "15px",
     textAlign: "center",
     transition: "transform 0.3s ease, background-color 0.3s ease",
+    maxWidth: "90%", // Ensures pricing items fit within the screen on mobile
   },
   pricingItemHover: {
     transform: "translateY(-10px)",
-    backgroundColor: "#006bb3", // Slightly darker blue on hover
+    backgroundColor: "#006bb3",
   },
   steps: {
     display: "flex",
@@ -410,7 +403,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: "0 16px 32px rgba(0, 0, 50, 0.15)",
   },
   finalCta: {
-    backgroundColor: "#f0f8ff", // Light blue background for final CTA
+    backgroundColor: "#f0f8ff",
     padding: "80px 20px",
     textAlign: "center",
     position: "relative",
@@ -423,19 +416,35 @@ const styles: { [key: string]: React.CSSProperties } = {
     lineHeight: "1.7",
   },
   link: {
-    color: "#007acc", // Blue color for links
+    color: "#007acc",
     textDecoration: "none",
     transition: "color 0.3s ease",
   },
   linkHover: {
-    color: "#005999", // Darker blue on hover
+    color: "#005999",
   },
   footer: {
-    backgroundColor: "#005999", // Darker blue background for footer
+    backgroundColor: "#005999",
     color: "white",
     padding: "30px",
     textAlign: "center",
     position: "relative",
+  },
+  serviceAreaContent: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  mapContainer: {
+    marginBottom: "20px",
+  },
+  serviceAreaList: {
+    listStyleType: "none",
+    paddingLeft: 0,
+    textAlign: "left",
+    fontSize: "1.2rem",
+    color: "#333",
   },
 };
 
