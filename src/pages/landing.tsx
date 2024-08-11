@@ -72,7 +72,7 @@ const LandingPage: React.FC = () => {
         <div style={styles.serviceAreaContent}>
           <div style={styles.mapContainer}>
             <Image
-              src="/images/other/map.jpg"
+              src="/images/other/map.JPG"
               alt="Service Area Map"
               style={styles.mapImage}
               width={900}
@@ -89,7 +89,7 @@ const LandingPage: React.FC = () => {
           <p style={styles.testimonialText}>
             &quot;Sam&apos;s Mobile Detailing worked wonders on my Polestar 2!
             The attention to detail is incredible, and Sam clearly takes pride
-            in his work. Using McGuire products, he achieved an amazing shine
+            in his work. Using Meguiars products, he achieved an amazing shine
             that made my car look showroom-new.&quot; - John D.
           </p>
         </div>
@@ -112,9 +112,7 @@ const LandingPage: React.FC = () => {
 
       {/* Pricing Information */}
       <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>
-          Transparent Pricing for Every Budget
-        </h2>
+        <h2 style={styles.sectionHeading}>Upfront Pricing for Every Budget</h2>
         <p style={styles.sectionText}>
           We believe in clear, upfront pricing. Choose a package that fits your
           needs.
@@ -178,6 +176,9 @@ const LandingPage: React.FC = () => {
         </p>
         <p style={styles.contactInfo}>
           <strong>Email:</strong> (samsmobiledetailing@gmail.ca)
+        </p>
+        <p style={styles.contactInfo}>
+          <strong>Instagram:</strong> (sams.mobiledetails)
         </p>
       </section>
 
