@@ -151,9 +151,7 @@ const LandingPage: React.FC = () => {
       </section>
       {/* Pricing Information */}
       <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>
-          Transparent Pricing for Every Budget
-        </h2>
+        <h2 style={styles.sectionHeading}>Upfront Pricing for Every Budget</h2>
         <p style={styles.sectionText}>
           We believe in clear, upfront pricing. Choose a package that fits your
           needs.
