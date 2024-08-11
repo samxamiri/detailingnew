@@ -60,10 +60,8 @@ const LandingPage: React.FC = () => {
 
       <section style={styles.discountContactSection}>
         <div style={styles.discountContainer}>
-          <p style={styles.discountText}>Get $10 Off for a Google review!</p>
-        </div>
-        <div style={styles.discountContainer}>
-          <p style={styles.discountText}>Get $20 Off for a referral!</p>
+          <p style={styles.discountText}>Get $10 Off for Reviews!</p>
+          <p style={styles.discountText}>$20 Off for Referrals!</p>
         </div>
         <div style={styles.contactContainer}>
           <p style={styles.phoneText}>Call Now: 514-772-4554</p>
