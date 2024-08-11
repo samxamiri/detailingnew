@@ -1,40 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css"; // Import the styles for the carousel
 
 const LandingPage: React.FC = () => {
   const [hoveredTile, setHoveredTile] = useState<number | null>(null);
 
-  useEffect(() => {
-    // Inject Google Tag script
-    const script1 = document.createElement("script");
-    script1.src = "https://www.googletagmanager.com/gtag/js?id=AW-11466434468";
-    script1.async = true;
-    document.head.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-11466434468');
-    `;
-    document.head.appendChild(script2);
-
-    const script3 = document.createElement("script");
-    script3.innerHTML = `
-      gtag('config', 'AW-11466434468/Aj4pCNO_vckZEKTPz9sq', {
-        'phone_conversion_number': '514 772-4554'
-      });
-    `;
-    document.head.appendChild(script3);
-
-    return () => {
-      // Cleanup: remove the scripts when component unmounts
-      document.head.removeChild(script1);
-      document.head.removeChild(script2);
-      document.head.removeChild(script3);
-    };
-  }, []);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
+  };
 
   return (
     <div style={styles.container}>
@@ -44,8 +32,9 @@ const LandingPage: React.FC = () => {
           Transform Your Vehicle with Sam&apos;s Mobile Detailing!
         </h1>
         <p style={styles.subheading}>
-          Top-rated detailing services in Montreal. Book now and give your car
-          the care it deserves!
+          Top-rated detailing services in{" "}
+          <span style={styles.highlightedText}>Montreal</span>. Book now and
+          give your car the care it deserves!
         </p>
         <div>
           <a
@@ -56,17 +45,18 @@ const LandingPage: React.FC = () => {
           </a>
         </div>
       </header>
-      {/* Discount & Contact Section */}
 
-      <section style={styles.discountContactSection}>
-        <div style={styles.discountContainer}>
-          <p style={styles.discountText}>Get $10 Off for Reviews!</p>
-          <p style={styles.discountText}>$20 Off for Referrals!</p>
+      {/* Discount Section */}
+      <section style={styles.discountContainer}>
+        <div style={styles.discountTextContainer}>
+          <p style={styles.discountText}>$10 Off for a Google review!</p>
+          <p style={styles.discountText}>$20 Off for a referral!</p>
         </div>
-        <div style={styles.contactContainer}>
-          <p style={styles.phoneText}>Call Now: 514-772-4554</p>
-        </div>
+        <a href="tel:514-772-4554" style={styles.discountCtaBtn}>
+          Call Now: 514-772-4554
+        </a>
       </section>
+
       {/* Services Overview */}
       <section id="services" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Premium Detailing Services</h2>
@@ -104,6 +94,7 @@ const LandingPage: React.FC = () => {
           * Access to a hose with water and power is required for all services.
         </p>
       </section>
+
       {/* Service Area */}
       <section id="service-area" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Service Area</h2>
@@ -122,6 +113,86 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" style={styles.section}>
+        <h2 style={styles.sectionHeading}>Gallery</h2>
+        <Carousel responsive={responsive}>
+          <div>
+            <Image
+              src="/images/other/IMG_7053.PNG"
+              alt="Detailing work 1"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/IMG_7055.PNG"
+              alt="Detailing work 2"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/IMG_7085.PNG"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/IMG_7101.PNG"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/back.png"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/bugfront.png"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/carpet.png"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/other/mirror.png"
+              alt="Detailing work 3"
+              style={styles.carouselImage}
+              width={400}
+              height={300}
+            />
+          </div>
+        </Carousel>
+      </section>
+
       {/* Testimonials */}
       <section style={styles.testimonialsSection}>
         <h2 style={styles.sectionHeading}>What Our Customers Are Saying</h2>
@@ -149,9 +220,12 @@ const LandingPage: React.FC = () => {
           </p>
         </div>
       </section>
+
       {/* Pricing Information */}
       <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>Upfront Pricing for Every Budget</h2>
+        <h2 style={styles.sectionHeading}>
+          Transparent Pricing for Every Budget
+        </h2>
         <p style={styles.sectionText}>
           We believe in clear, upfront pricing. Choose a package that fits your
           needs.
@@ -171,6 +245,7 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
+
       {/* How It Works */}
       <section style={styles.section}>
         <h2 style={styles.sectionHeading}>How Our Detailing Process Works</h2>
@@ -197,13 +272,18 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
+
       {/* Final Call to Action */}
       <section style={styles.finalCta}>
         <h2 style={styles.sectionHeading}>Ready to Make Your Car Shine?</h2>
-        <a href="#" style={{ ...styles.ctaBtn, ...styles.ctaBtnHover }}>
+        <a
+          href="tel:514-772-4554"
+          style={{ ...styles.ctaBtn, ...styles.ctaBtnHover }}
+        >
           Call us now at 514 772-4554!
         </a>
       </section>
+
       {/* Contact Information */}
       <section style={styles.section}>
         <h2 style={styles.sectionHeading}>Get in Touch</h2>
@@ -217,6 +297,7 @@ const LandingPage: React.FC = () => {
           <strong>Instagram:</strong> (sams.mobiledetails)
         </p>
       </section>
+
       {/* Footer */}
       <footer style={styles.footer}>
         <p>&copy; 2024 Sam&apos;s Mobile Detailing. All rights reserved.</p>
@@ -261,6 +342,11 @@ const styles: { [key: string]: React.CSSProperties } = {
     textShadow: "2px 2px 5px rgba(0, 0, 50, 0.5)",
     animation: "fadeIn 2.5s ease-in-out",
   },
+  highlightedText: {
+    fontSize: "1.8rem",
+    fontWeight: 900,
+    color: "#FFD700", // Yellow color for highlight
+  },
   ctaBtn: {
     display: "inline-block",
     padding: "18px 36px",
@@ -299,6 +385,36 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: "80px 20px",
     textAlign: "center",
     position: "relative",
+  },
+  discountContainer: {
+    backgroundColor: "#007acc",
+    color: "white",
+    padding: "20px",
+    textAlign: "center",
+    position: "relative",
+    boxShadow: "0 8px 16px rgba(0, 0, 50, 0.3)",
+    border: "2px dashed yellow", // Yellow dashed border
+    marginBottom: "20px",
+  },
+  discountTextContainer: {
+    marginBottom: "15px",
+  },
+  discountText: {
+    fontSize: "1.4rem",
+    fontWeight: "bold",
+    marginBottom: "10px",
+  },
+  discountCtaBtn: {
+    display: "inline-block",
+    padding: "18px 36px",
+    color: "white",
+    backgroundColor: "#005999",
+    borderRadius: "50px",
+    textDecoration: "none",
+    fontSize: "1.4rem",
+    fontWeight: "bold",
+    boxShadow: "0 8px 15px rgba(0, 89, 153, 0.4)",
+    transition: "transform 0.3s ease, box-shadow 0.3s ease",
   },
   sectionHeading: {
     fontSize: "3rem",
@@ -482,44 +598,11 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: "1.2rem",
     color: "#333",
   },
-  discountContactSection: {
-    display: "flex",
-    justifyContent: "center", // Center items horizontally
-    alignItems: "center",
-    backgroundColor: "#005999", // Blue background similar to the inspiration image
-    color: "white",
-    padding: "20px",
-    textAlign: "center",
-    position: "relative", // Allows the use of position for child elements
-  },
-  discountContainer: {
-    flex: 1,
-    textAlign: "center", // Center text
-    padding: "10px 20px", // Add padding for spacing
-    border: "8px dashed yellow", // Add a white border
-    borderRadius: "10px", // Rounded corners
-    margin: "0 10px", // Margin between the containers
-    maxWidth: "400px", // Restrict the width to make it more compact
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add a slight shadow
-  },
-  discountText: {
-    fontSize: "1.5rem",
-    margin: "10px 0",
-    fontWeight: "bold",
-  },
-  contactContainer: {
-    flex: 1,
-    textAlign: "center", // Center text
-    padding: "10px 20px", // Add padding for spacing
-    border: "8px dashed yellow", // Add a white border
-    borderRadius: "10px", // Rounded corners
-    margin: "0 10px", // Margin between the containers
-    maxWidth: "400px", // Restrict the width to make it more compact
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add a slight shadow
-  },
-  phoneText: {
-    fontSize: "2rem",
-    fontWeight: "bold",
+  carouselImage: {
+    width: "100%",
+    height: "auto",
+    objectFit: "cover",
+    borderRadius: "10px",
   },
 };
 
