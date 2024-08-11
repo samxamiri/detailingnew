@@ -1,8 +1,40 @@
-import React, { useState } from "react";
-import Image from "next/image"; // Assuming you're using Next.js, otherwise use 'img' tag
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const LandingPage: React.FC = () => {
   const [hoveredTile, setHoveredTile] = useState<number | null>(null);
+
+  useEffect(() => {
+    // Inject Google Tag script
+    const script1 = document.createElement("script");
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=AW-11466434468";
+    script1.async = true;
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11466434468');
+    `;
+    document.head.appendChild(script2);
+
+    const script3 = document.createElement("script");
+    script3.innerHTML = `
+      gtag('config', 'AW-11466434468/Aj4pCNO_vckZEKTPz9sq', {
+        'phone_conversion_number': '514 772-4554'
+      });
+    `;
+    document.head.appendChild(script3);
+
+    return () => {
+      // Cleanup: remove the scripts when component unmounts
+      document.head.removeChild(script1);
+      document.head.removeChild(script2);
+      document.head.removeChild(script3);
+    };
+  }, []);
 
   return (
     <div style={styles.container}>
@@ -24,7 +56,19 @@ const LandingPage: React.FC = () => {
           </a>
         </div>
       </header>
+      {/* Discount & Contact Section */}
 
+      <section style={styles.discountContactSection}>
+        <div style={styles.discountContainer}>
+          <p style={styles.discountText}>Get $10 Off for a Google review!</p>
+        </div>
+        <div style={styles.discountContainer}>
+          <p style={styles.discountText}>Get $20 Off for a referral!</p>
+        </div>
+        <div style={styles.contactContainer}>
+          <p style={styles.phoneText}>Call Now: 514-772-4554</p>
+        </div>
+      </section>
       {/* Services Overview */}
       <section id="services" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Premium Detailing Services</h2>
@@ -62,7 +106,6 @@ const LandingPage: React.FC = () => {
           * Access to a hose with water and power is required for all services.
         </p>
       </section>
-
       {/* Service Area */}
       <section id="service-area" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Service Area</h2>
@@ -81,7 +124,6 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Testimonials */}
       <section style={styles.testimonialsSection}>
         <h2 style={styles.sectionHeading}>What Our Customers Are Saying</h2>
@@ -89,7 +131,7 @@ const LandingPage: React.FC = () => {
           <p style={styles.testimonialText}>
             &quot;Sam&apos;s Mobile Detailing worked wonders on my Polestar 2!
             The attention to detail is incredible, and Sam clearly takes pride
-            in his work. Using Meguiars products, he achieved an amazing shine
+            in his work. Using McGuire products, he achieved an amazing shine
             that made my car look showroom-new.&quot; - John D.
           </p>
         </div>
@@ -109,10 +151,11 @@ const LandingPage: React.FC = () => {
           </p>
         </div>
       </section>
-
       {/* Pricing Information */}
       <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>Upfront Pricing for Every Budget</h2>
+        <h2 style={styles.sectionHeading}>
+          Transparent Pricing for Every Budget
+        </h2>
         <p style={styles.sectionText}>
           We believe in clear, upfront pricing. Choose a package that fits your
           needs.
@@ -132,7 +175,6 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* How It Works */}
       <section style={styles.section}>
         <h2 style={styles.sectionHeading}>How Our Detailing Process Works</h2>
@@ -159,7 +201,6 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* Final Call to Action */}
       <section style={styles.finalCta}>
         <h2 style={styles.sectionHeading}>Ready to Make Your Car Shine?</h2>
@@ -167,7 +208,6 @@ const LandingPage: React.FC = () => {
           Call us now at 514 772-4554!
         </a>
       </section>
-
       {/* Contact Information */}
       <section style={styles.section}>
         <h2 style={styles.sectionHeading}>Get in Touch</h2>
@@ -181,7 +221,6 @@ const LandingPage: React.FC = () => {
           <strong>Instagram:</strong> (sams.mobiledetails)
         </p>
       </section>
-
       {/* Footer */}
       <footer style={styles.footer}>
         <p>&copy; 2024 Sam&apos;s Mobile Detailing. All rights reserved.</p>
@@ -446,6 +485,45 @@ const styles: { [key: string]: React.CSSProperties } = {
     textAlign: "left",
     fontSize: "1.2rem",
     color: "#333",
+  },
+  discountContactSection: {
+    display: "flex",
+    justifyContent: "center", // Center items horizontally
+    alignItems: "center",
+    backgroundColor: "#005999", // Blue background similar to the inspiration image
+    color: "white",
+    padding: "20px",
+    textAlign: "center",
+    position: "relative", // Allows the use of position for child elements
+  },
+  discountContainer: {
+    flex: 1,
+    textAlign: "center", // Center text
+    padding: "10px 20px", // Add padding for spacing
+    border: "8px dashed yellow", // Add a white border
+    borderRadius: "10px", // Rounded corners
+    margin: "0 10px", // Margin between the containers
+    maxWidth: "400px", // Restrict the width to make it more compact
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add a slight shadow
+  },
+  discountText: {
+    fontSize: "1.5rem",
+    margin: "10px 0",
+    fontWeight: "bold",
+  },
+  contactContainer: {
+    flex: 1,
+    textAlign: "center", // Center text
+    padding: "10px 20px", // Add padding for spacing
+    border: "8px dashed yellow", // Add a white border
+    borderRadius: "10px", // Rounded corners
+    margin: "0 10px", // Margin between the containers
+    maxWidth: "400px", // Restrict the width to make it more compact
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)", // Add a slight shadow
+  },
+  phoneText: {
+    fontSize: "2rem",
+    fontWeight: "bold",
   },
 };
 
