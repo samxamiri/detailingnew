@@ -114,11 +114,15 @@ const LandingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
       <section id="gallery" style={styles.section}>
         <h2 style={styles.sectionHeading}>Gallery</h2>
-        <Carousel responsive={responsive}>
-          <div>
+        <Carousel
+          responsive={responsive}
+          containerClass="carousel-container"
+          itemClass="carousel-item"
+          sliderClass="carousel-slider"
+        >
+          <div style={styles.carouselItem}>
             <Image
               src="/images/other/IMG_7053.PNG"
               alt="Detailing work 1"
@@ -127,7 +131,7 @@ const LandingPage: React.FC = () => {
               height={300}
             />
           </div>
-          <div>
+          <div style={styles.carouselItem}>
             <Image
               src="/images/other/IMG_7055.PNG"
               alt="Detailing work 2"
@@ -136,7 +140,7 @@ const LandingPage: React.FC = () => {
               height={300}
             />
           </div>
-          <div>
+          <div style={styles.carouselItem}>
             <Image
               src="/images/other/IMG_7085.PNG"
               alt="Detailing work 3"
@@ -145,51 +149,16 @@ const LandingPage: React.FC = () => {
               height={300}
             />
           </div>
-          <div>
+          <div style={styles.carouselItem}>
             <Image
               src="/images/other/IMG_7101.PNG"
-              alt="Detailing work 3"
+              alt="Detailing work 4"
               style={styles.carouselImage}
               width={400}
               height={300}
             />
           </div>
-          <div>
-            <Image
-              src="/images/other/back.png"
-              alt="Detailing work 3"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/other/bugfront.png"
-              alt="Detailing work 3"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/other/carpet.png"
-              alt="Detailing work 3"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/other/mirror.png"
-              alt="Detailing work 3"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
+          {/* Add more images as needed */}
         </Carousel>
       </section>
 
