@@ -30,15 +30,15 @@ const Packages: React.FC = () => {
                   <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$160</p>
+                    <p className="text-gray-500 dark:text-gray-400">$220</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                    <p className="text-gray-500 dark:text-gray-400">$140</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$80</p>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
                   </div>
                 </div>
                 <div>
@@ -70,15 +70,15 @@ const Packages: React.FC = () => {
                   <h4 className="text-2xl font-extrabold">Deluxe</h4>
                   <div>
                     <h4 className="font-semibold">Complete Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$200</p>
+                    <p className="text-gray-500 dark:text-gray-400">$250</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Interior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                    <p className="text-gray-500 dark:text-gray-400">$180</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$95</p>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
                   </div>
                 </div>
                 <div>
@@ -118,7 +118,7 @@ const Packages: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Exterior Detail</h4>
-                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                    <p className="text-gray-500 dark:text-gray-400">$125</p>
                   </div>
                 </div>
                 <div>
