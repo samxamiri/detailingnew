@@ -80,7 +80,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="w-full bg-white shadow relative">
+      <header className="w-full bg-white shadow relative z-50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center py-4 lg:py-6 max-w-7xl">
           <Link href="/" aria-label="Homepage" className="flex items-center">
             <h1 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl xl:text-5xl">
@@ -113,7 +113,7 @@ const Header = () => {
           <nav
             className={`${
               mobileMenuOpen ? "block" : "hidden"
-            } lg:flex flex-col lg:flex-row lg:items-center lg:gap-4 sm:gap-6 w-full lg:w-auto absolute lg:static top-full left-0 bg-white shadow-lg lg:shadow-none`}
+            } lg:flex flex-col lg:flex-row lg:items-center lg:gap-4 sm:gap-6 w-full lg:w-auto absolute lg:static top-full left-0 bg-white shadow-lg lg:shadow-none z-50`}
             aria-label="Main navigation"
           >
             <Link
@@ -130,7 +130,7 @@ const Header = () => {
                 Detailing Services
               </button>
               {dropdownOpen && (
-                <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md">
+                <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md z-50">
                   <Link
                     href="/interior-car-cleaning-montreal"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
