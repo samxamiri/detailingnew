@@ -3,21 +3,21 @@ import React from "react";
 const ExteriorServices: React.FC = () => {
   const services = [
     {
-      title: "Car Wash",
+      title: "Hand Wash",
       description:
-        "A traditional car wash blasts your vehicle’s paint with harsh products and chemicals only to damage the paint long term! Only in DETAILING can we take a nasty car and restore its beautiful finish. Let’s face it... in Montreal our cars are subject to crazy weather... that’s why auto detailing Montreal is HERE!",
+        "Our hand wash service goes beyond the typical car wash, using premium products and techniques to gently cleanse your vehicle's exterior without causing any damage. ",
       image: "/images/other/carwash.webp",
     },
     {
       title: "Paint Decontamination",
       description:
-        "If we want to truly detail your car’s paint... car washing won’t be enough. After the car wash stage, it’s necessary to use specific detailing tools and products to clean the paint of everything that won’t come off during the wash process... If you don’t, it’s like a cavity that doesn’t get filled. There will be serious problems down the road.",
+        "Paint decontamination is a crucial step in maintaining your vehicle's finish. We use specialized tools and products to remove contaminants that standard washes can't handle, such as industrial fallout, tar, and tree sap.",
       image: "/images/other/decontamination (1).webp",
     },
     {
       title: "Paint Protection",
       description:
-        "Finally, the paint is protected with a long-term durability coating to ensure that the paint is protected for months and even YEARS depending on the product. Your car is a HUGE investment... don’t drive it unprotected.",
+        "Protect your investment with our paint protection service. We apply a high-quality spray protection that shields your vehicle's paint from harsh environmental elements, helping it stay vibrant and pristine for months. ",
       image: "/images/other/paintprotection.webp",
     },
   ];
@@ -62,31 +62,47 @@ const ExteriorServices: React.FC = () => {
         style={{ marginTop: "50px", padding: "50px 0" }} // Custom padding here
       >
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <div className="mb-8">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
-                    Exterior Detailing Services
-                  </h2>
-                </div>
-                <ul className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400 list-disc list-inside">
-                  <li>Foam Bath</li>
-                  <li>Contact Wash</li>
-                  <li>Clay Bar Treatment</li>
-                  <li>Wheel, Wheel Well, & Tire Detail</li>
-                  <li>Bug Detail</li>
-                  <li>Complete Paint Protection on All Exterior Surfaces</li>
-                </ul>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+            {/* Image on the left */}
+            <div className="order-last lg:order-first">
+              <img
+                alt="Hyundai Veloster after wash and spray wax"
+                className="w-full h-auto rounded-xl shadow-lg object-cover"
+                src="/images/other/IMG_7584.jpg"
+              />
             </div>
-            <img
-              alt="Hyundai Veloster after wash and spray wax"
-              className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
-              height="600"
-              src="/images/other/shiny.webp"
-              width="800"
-            />
+            {/* Text content on the right */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl xl:text-6xl text-gray-900 dark:text-gray-100 mb-6">
+                Exterior Detailing Services
+              </h2>
+              <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Foam Bath
+                </li>
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Contact Wash
+                </li>
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Clay Bar Treatment
+                </li>
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Wheel, Wheel Well, & Tire Detail
+                </li>
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Bug Detail
+                </li>
+                <li className="flex items-center">
+                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
+                  Complete Paint Protection on All Exterior Surfaces
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

@@ -1,24 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-light">
       <div className="container px-4 md:px-6 grid lg:grid-cols-2 gap-6 lg:gap-12">
-        <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover">
-          <Image
-            src="/images/other/polestar-min.jpg"
-            alt="Polestar 2 after wash and spray wax"
-            layout="responsive"
-            width={800}
-            height={600}
-            priority
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            placeholder="blur"
-            blurDataURL="/images/other/polestar-min-blur.jpg"
-          />
+        {/* Video Section */}
+        <div className="order-1 lg:order-1 mx-auto aspect-[4/3] overflow-hidden rounded-xl">
+          <video
+            className="w-full h-full object-cover rounded-xl"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster="/images/other/polestar-min.jpg" // Fallback image while the video loads
+          >
+            <source src="/videos/Genesiscoupeinterior.mp4" type="video/mp4" />
+            <source src="/videos/Genesiscoupeinterior.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div className="order-2 lg:order-2 flex flex-col justify-center space-y-4">
           <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
