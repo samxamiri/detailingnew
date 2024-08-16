@@ -319,7 +319,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   },
   heroSection: {
     background:
-      "linear-gradient(to right, rgba(0,0,50,0.7), rgba(0,0,100,0.1)), url('/images/other/wheeldetail.jpg') no-repeat center center/cover",
+      "linear-gradient(to right, rgba(0,0,50,0.7), rgba(0,0,100,0.1)), url('/images/other/IMG_7191.PNG') no-repeat center 25%/cover",
     color: "white",
     padding: "100px 20px",
     textAlign: "center",
