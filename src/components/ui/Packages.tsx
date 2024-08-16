@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Packages: React.FC = () => {
   return (
-    <section className="w-full md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full  md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
       <div className="text-center mt-16 mb-12">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl ">
           The Simplest Auto Detailing Prices <br /> In Montreal
@@ -18,8 +18,126 @@ const Packages: React.FC = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
-            {/* Pricing Cards */}
-            {/* ... your pricing cards here ... */}
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+              <img
+                alt="Sports/Mini Car"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+                src="/images/types/mini.webp"
+              />
+              <h3 className="text-xl font-bold mt-4">Sports/Mini</h3>
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                <div>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$220</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$140</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$115</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$70</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$55</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+              <img
+                alt="Sedan"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+                src="/images/types/sedan.webp"
+              />
+              <h3 className="text-xl font-bold mt-4">Sedan</h3>
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                <div>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$250</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$180</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$110</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$135</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$75</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+              <img
+                alt="SUV"
+                className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+                src="/images/types/suv.webp"
+              />
+              <h3 className="text-xl font-bold mt-4">SUV</h3>
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                <div>
+                  <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$275</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$200</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$125</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-2xl font-extrabold">Basic</h4>
+                  <div>
+                    <h4 className="font-semibold">Complete Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$180</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Interior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$120</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Exterior Detail</h4>
+                    <p className="text-gray-500 dark:text-gray-400">$90</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Additional Message */}
@@ -39,12 +157,32 @@ const Packages: React.FC = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            {/* Package Details */}
-            {/* ... your package details here ... */}
+            <div>
+              <h3 className="text-2xl font-bold mb-4">For Interior</h3>
+              <div className="text-left">
+                <ul className="pl-5 inline-block">
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Upholstery & Carpet
+                    shampoo/stain removal
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-4">For Exterior</h3>
+              <div className="text-left">
+                <ul className="pl-5 inline-block">
+                  <li className="text-red-600 flex items-center">
+                    <span className="mr-2">❌</span>Paint Decontamination
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Introductory and Additional Information Section */}
+
         <div className="container mx-auto px-4 md:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             {/* Text Section */}
@@ -65,20 +203,13 @@ const Packages: React.FC = () => {
                 Call Us Anytime!
               </Link>
             </div>
-            {/* Video Section */}
+            {/* Image Section */}
             <div className="flex justify-center lg:order-2 order-1">
-              <div className="w-full h-[315px] lg:w-[560px] overflow-hidden rounded-xl shadow-lg">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/Qo887XIzlDQ?si=f1MPxlexxpJb6CIE"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
+              <img
+                src="/images/other/IMG_7581.jpg"
+                alt="Contact wash on door panel"
+                className="w-full h-[400px] rounded-xl object-cover shadow-lg"
+              />
             </div>
           </div>
         </div>
