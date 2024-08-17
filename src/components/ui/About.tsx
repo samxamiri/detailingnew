@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function AboutComponent() {
@@ -13,75 +12,68 @@ export default function AboutComponent() {
   }
 
   return (
-    <div
-      key="1"
-      className="min-h-[100dvh] flex flex-col bg-gray-100 dark:bg-gray-800"
-    >
+    <div className="min-h-[100dvh] flex flex-col bg-gray-100 dark:bg-gray-900">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
+          <div className="container mx-auto px-4 md:px-6">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl text-center text-gray-900 dark:text-gray-100">
               Mobile Auto Detailing In Montreal
             </h1>
-            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start mt-24">
-              <div className="space-y-2">
-                <div className="grid grid-cols-1 gap-4">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start mt-12 lg:mt-24">
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 gap-6">
                   <img
                     alt="Audi SQ5 covered in foam during foam bath"
-                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
+                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover shadow-lg"
                     height="800"
                     src="/images/other/foam.webp"
                     width="800"
                   />
                   <img
                     alt="Audi SQ5 shining in the sun after wash and spray wax"
-                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover"
+                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover shadow-lg"
                     height="800"
                     src="/images/other/q5.webp"
                     width="800"
                   />
                 </div>
               </div>
-              <div className="flex flex-col justify-start space-y-4">
-                <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
+              <div className="flex flex-col justify-start space-y-6">
+                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
                   Finding an auto detailer in Montreal who knows what your car
                   needs, and can give it to you at a price that makes sense,
                   should be easy to find right? Well for me…it wasn&apos;t.
                 </p>
-                <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
+                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
                   I searched high and low throughout Montreal to find a
                   dependable mobile auto detailer who I could trust and all I
                   found were crazy prices, detailers who show up late (if at
-                  all), and half hearted jobs that left me unsatisfied.
+                  all), and half-hearted jobs that left me unsatisfied.
                   That&apos;s why Sam&apos;s Mobile Detailing was born.
                 </p>
-                <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
+                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
                   While I have always had a passion for auto detailing, I knew
                   that we could deliver the very thing that I wanted in the form
                   of a great detailing experience to local customers in Montreal
                   in a way that I couldn&apos;t find. In my experience, our
                   mobile detailing customers want four things:
-                  <ul className="mt-8 mb-8">
-                    {" "}
-                    <li>1. A price that won&apos;t hurt their wallet.</li>
-                    <li>
-                      2. A clear expectation of what is, and is not possible
-                      with their vehicle.
-                    </li>
-                    <li>
-                      3. On time service without inconvenient rescheduling.
-                    </li>
-                    <li>
-                      {" "}
-                      4. Someone they can call again when they want a detailer
-                      they can depend on.
-                    </li>
-                  </ul>
                 </p>
-                <p className="max-w-[600px] text-gray-800 md:text-2xl dark:text-gray-400">
+                <ul className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed list-disc pl-4 mt-4">
+                  <li>A price that won&apos;t hurt their wallet.</li>
+                  <li>
+                    A clear expectation of what is, and is not possible with
+                    their vehicle.
+                  </li>
+                  <li>On-time service without inconvenient rescheduling.</li>
+                  <li>
+                    Someone they can call again when they want a detailer they
+                    can depend on.
+                  </li>
+                </ul>
+                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
                   In our auto detailing world here in Montreal, QC…we take a
                   simple approach; incredible service that is convenient, prices
-                  that customers can afford, higher end detailing than anyone
+                  that customers can afford, higher-end detailing than anyone
                   else, and a straightforward service where you know what you
                   are getting.
                 </p>

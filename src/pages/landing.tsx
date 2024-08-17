@@ -95,6 +95,139 @@ const LandingPage: React.FC = () => {
         </p>
       </section>
 
+      {/* Pricing Information */}
+      <section style={styles.section}>
+        <h2 style={styles.sectionHeading}>
+          Transparent Pricing for Every Budget
+        </h2>
+        <p style={styles.sectionText}>
+          We believe in clear, upfront pricing. Choose a package that fits your
+          needs.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <img
+              alt="Sports/Mini Car"
+              className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+              src="/images/types/mini.webp"
+            />
+            <h3 className="text-xl font-bold mt-4">Sports/Mini</h3>
+            <div className="grid grid-cols-2 gap-2 mt-4">
+              <div>
+                <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$220</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$140</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$90</p>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-2xl font-extrabold">Basic</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$115</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$70</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$55</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <img
+              alt="Sedan"
+              className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+              src="/images/types/sedan.webp"
+            />
+            <h3 className="text-xl font-bold mt-4">Sedan</h3>
+            <div className="grid grid-cols-2 gap-2 mt-4">
+              <div>
+                <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$250</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$180</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$110</p>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-2xl font-extrabold">Basic</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$135</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$90</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$75</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+            <img
+              alt="SUV"
+              className="mx-auto w-full h-[300px] overflow-hidden rounded-lg object-cover"
+              src="/images/types/suv.webp"
+            />
+            <h3 className="text-xl font-bold mt-4">SUV</h3>
+            <div className="grid grid-cols-2 gap-2 mt-4">
+              <div>
+                <h4 className="text-2xl font-extrabold">Deluxe</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$275</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$200</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$125</p>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-2xl font-extrabold">Basic</h4>
+                <div>
+                  <h4 className="font-semibold">Complete Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$180</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Interior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$120</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Exterior Detail</h4>
+                  <p className="text-gray-500 dark:text-gray-400">$90</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service Area */}
       <section id="service-area" style={styles.section}>
         <h2 style={styles.sectionHeading}>Our Service Area</h2>
@@ -112,54 +245,6 @@ const LandingPage: React.FC = () => {
             />
           </div>
         </div>
-      </section>
-
-      <section id="gallery" style={styles.section}>
-        <h2 style={styles.sectionHeading}>Gallery</h2>
-        <Carousel
-          responsive={responsive}
-          containerClass="carousel-container"
-          itemClass="carousel-item"
-          sliderClass="carousel-slider"
-        >
-          <div style={styles.carouselItem}>
-            <Image
-              src="/images/other/IMG_7053.PNG"
-              alt="Detailing work 1"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div style={styles.carouselItem}>
-            <Image
-              src="/images/other/IMG_7055.PNG"
-              alt="Detailing work 2"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div style={styles.carouselItem}>
-            <Image
-              src="/images/other/IMG_7085.PNG"
-              alt="Detailing work 3"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          <div style={styles.carouselItem}>
-            <Image
-              src="/images/other/IMG_7101.PNG"
-              alt="Detailing work 4"
-              style={styles.carouselImage}
-              width={400}
-              height={300}
-            />
-          </div>
-          {/* Add more images as needed */}
-        </Carousel>
       </section>
 
       {/* Testimonials */}
@@ -187,31 +272,6 @@ const LandingPage: React.FC = () => {
             got the work done in 2 hours. I didn&apos;t even know my carpets
             could look that clean. Would highly recommend! - Michael T.
           </p>
-        </div>
-      </section>
-
-      {/* Pricing Information */}
-      <section style={styles.section}>
-        <h2 style={styles.sectionHeading}>
-          Transparent Pricing for Every Budget
-        </h2>
-        <p style={styles.sectionText}>
-          We believe in clear, upfront pricing. Choose a package that fits your
-          needs.
-        </p>
-        <div style={styles.pricingTable}>
-          <div style={{ ...styles.pricingItem, ...styles.pricingItemHover }}>
-            <h3>Interior Detailing</h3>
-            <p>Starting at $70</p>
-          </div>
-          <div style={{ ...styles.pricingItem, ...styles.pricingItemHover }}>
-            <h3>Exterior Detailing</h3>
-            <p>Starting at $55</p>
-          </div>
-          <div style={{ ...styles.pricingItem, ...styles.pricingItemHover }}>
-            <h3>Full-Service Detailing</h3>
-            <p>Starting at $115</p>
-          </div>
         </div>
       </section>
 
