@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"; // Import the styles for the carousel
+import MuxPlayer from "@mux/mux-player-react"; // Import Mux Player
+import Image from "next/image";
+import OurWorkCarousel from "@/components/ui/OurWorkCarousel";
 
 const LandingPage: React.FC = () => {
   const [hoveredTile, setHoveredTile] = useState<number | null>(null);
@@ -55,6 +57,15 @@ const LandingPage: React.FC = () => {
         <a href="tel:514-772-4554" style={styles.discountCtaBtn}>
           Call Now: 514-772-4554
         </a>
+      </section>
+
+      {/* Our Work Section */}
+      <section style={styles.section}>
+        <h2 style={styles.sectionHeading}>Our Work</h2>
+        <p style={styles.sectionText}>
+          Take a look at some of our recent detailing work.
+        </p>
+        <OurWorkCarousel />
       </section>
 
       {/* Services Overview */}
@@ -683,8 +694,9 @@ const styles: { [key: string]: React.CSSProperties } = {
     overflowX: "hidden",
   },
   heroSection: {
-    background:
-      "linear-gradient(to right, rgba(0,0,50,0.7), rgba(0,0,100,0.1)), url('/images/other/IMG_7191.PNG') no-repeat center 25%/cover",
+    backgroundImage: "url('/images/other/hero.jpg')", // Path to your image
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     color: "white",
     padding: "100px 20px",
     textAlign: "center",
@@ -798,6 +810,19 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: "#666",
     lineHeight: "1.7",
     wordWrap: "break-word", // Ensures long words break to the next line
+  },
+  embla: {
+    overflow: "hidden",
+    maxWidth: "1200px",
+    margin: "0 auto",
+  },
+  emblaContainer: {
+    display: "flex",
+  },
+  emblaSlide: {
+    position: "relative",
+    minWidth: "100%",
+    padding: "10px",
   },
   services: {
     display: "flex",
