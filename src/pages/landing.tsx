@@ -104,6 +104,342 @@ const LandingPage: React.FC = () => {
           We believe in clear, upfront pricing. Choose a package that fits your
           needs.
         </p>
+
+        <div className="overflow-x-auto mb-8 m-4">
+          <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+            <thead>
+              <tr>
+                <th className="px-2 py-2 text-left text-gray-700 dark:text-gray-300 font-bold">
+                  Service
+                </th>
+                <th className="px-2 py-2 text-center text-gray-700 dark:text-gray-300 font-bold">
+                  Basic
+                </th>
+                <th className="px-2 py-2 text-center text-gray-700 dark:text-gray-300 font-bold">
+                  Deluxe
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Interior Services */}
+              <tr className="bg-gray-100 dark:bg-gray-700">
+                <td
+                  className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
+                  colSpan={3}
+                >
+                  Interior
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Vacuuming
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Upholstery/Carpet Shampoo
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-red-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Full Chemical Cleaning of All Surfaces
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Interior Glass Cleaning
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-red-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+
+              {/* Exterior Services */}
+              <tr className="bg-gray-100 dark:bg-gray-700">
+                <td
+                  className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
+                  colSpan={3}
+                >
+                  Exterior
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Hand Wash
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Paint Decontamination
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-red-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Spray Wax
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+              <tr className="border-t border-gray-200 dark:border-gray-700">
+                <td className="px-2 py-2 text-left text-gray-600 dark:text-gray-400">
+                  Wheel & Tire Cleaning
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+                <td className="px-2 py-2 text-center">
+                  <svg
+                    className="w-5 h-5 text-green-500 mx-auto"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
             <img
