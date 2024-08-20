@@ -1,24 +1,28 @@
 import React from "react";
+import Link from "next/link";
 
 const ExteriorServices: React.FC = () => {
   const services = [
     {
       title: "Hand Wash",
       description:
-        "Our hand wash service goes beyond the typical car wash, using premium products and techniques to gently cleanse your vehicle's exterior without causing any damage. ",
+        "Our hand wash service goes beyond the typical car wash, using premium products and techniques to gently cleanse your vehicle's exterior without causing any damage.",
       image: "/images/other/carwash.webp",
+      link: "/hand-wash",
     },
     {
       title: "Paint Decontamination",
       description:
         "Paint decontamination is a crucial step in maintaining your vehicle's finish. We use specialized tools and products to remove contaminants that standard washes can't handle, such as industrial fallout, tar, and tree sap.",
       image: "/images/other/decontamination (1).webp",
+      link: "/paint-decontamination",
     },
     {
       title: "Paint Protection",
       description:
-        "Protect your investment with our paint protection service. We apply a high-quality spray protection that shields your vehicle's paint from harsh environmental elements, helping it stay vibrant and pristine for months. ",
+        "Protect your investment with our paint protection service. We apply a high-quality spray protection that shields your vehicle's paint from harsh environmental elements, helping it stay vibrant and pristine for months.",
       image: "/images/other/paintprotection.webp",
+      link: "/paint-protection",
     },
   ];
 
@@ -39,20 +43,19 @@ const ExteriorServices: React.FC = () => {
         </p>
         <div className="mx-auto grid max-w-5xl items-center gap-8 py-12 lg:grid-cols-2 xl:grid-cols-3 lg:gap-12">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-md p-8 dark:bg-gray-950 flex flex-col items-center justify-center text-center"
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                {service.description}
-              </p>
-            </div>
+            <Link href={service.link} key={index} className="block">
+              <div className="bg-white rounded-lg shadow-md p-8 dark:bg-gray-950 flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  {service.description}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,24 +1,28 @@
 import React from "react";
+import Link from "next/link";
 
 const InteriorServices: React.FC = () => {
   const services = [
     {
       title: "Full Vacuum",
       description:
-        "Our full vacuum service covers every inch of your vehicle's interior, removing dirt, dust, and debris from all surfaces, including under the seats and in hard-to-reach areas. ",
+        "Our full vacuum service covers every inch of your vehicle's interior, removing dirt, dust, and debris from all surfaces, including under the seats and in hard-to-reach areas.",
       image: "/images/other/vacuum.jpg",
+      link: "/full-vacuum",
     },
     {
       title: "Carpet Shampoo & Extraction",
       description:
-        "Our carpet shampooing service removes dirt, stains, and allergens from your car's carpets, leaving them fresh and clean. ",
+        "Our carpet shampooing service removes dirt, stains, and allergens from your car's carpets, leaving them fresh and clean.",
       image: "/images/other/extraction.png",
+      link: "/carpet-shampoo",
     },
     {
       title: "Complete Interior Chemical Clean",
       description:
         "We provide a comprehensive chemical cleaning of all interior surfaces, targeting tough stains and grime on plastics, vinyl, and rubber.",
-      image: "/images/other/interiordetail.jpeg", // Replace this with an appropriate image if available
+      image: "/images/other/interiordetail.jpeg",
+      link: "/interior-chemical-clean",
     },
   ];
 
@@ -42,22 +46,23 @@ const InteriorServices: React.FC = () => {
         </p>
         <div className="mx-auto grid max-w-5xl items-center gap-8 py-12 lg:grid-cols-2 xl:grid-cols-3 lg:gap-12">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className={`bg-white rounded-lg shadow-md p-8 dark:bg-gray-950 flex flex-col items-center justify-center text-center ${
-                index === 1 ? "transform -translate-y-4" : ""
-              }`} // Adjust the middle tile (index 1)
-            >
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-64 object-cover rounded-lg mb-6"
-              />
-              <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                {service.description}
-              </p>
-            </div>
+            <Link href={service.link} key={index} className="block">
+              <div
+                className={`bg-white rounded-lg shadow-md p-8 dark:bg-gray-950 flex flex-col items-center justify-center text-center transition-transform transform hover:scale-105 ${
+                  index === 1 ? "transform -translate-y-4" : ""
+                }`} // Adjust the middle tile (index 1)
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  {service.description}
+                </p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
