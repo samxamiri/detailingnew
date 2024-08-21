@@ -126,10 +126,10 @@ const InteriorChemicalClean: React.FC = () => {
           <p>
             Our Complete Interior Chemical Clean is more than just a cleaning
             service—it&apos;s a comprehensive treatment designed to restore your
-            vehicle's interior to its original condition. Whether you&apos;re
-            dealing with stubborn stains, unpleasant odors, or simply want to
-            refresh your car&apos;s interior, our service is the perfect
-            solution.
+            vehicle&apos;s interior to its original condition. Whether
+            you&apos;re dealing with stubborn stains, unpleasant odors, or
+            simply want to refresh your car&apos;s interior, our service is the
+            perfect solution.
           </p>
           <p>
             By choosing our service, you&apos;re ensuring that your vehicle is
