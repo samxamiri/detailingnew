@@ -104,18 +104,18 @@ const FabricShampooExtraction: React.FC = () => {
             grime that can cause your vehicle to look and feel worn out.
           </p>
           <p>
-            By choosing our service, you're ensuring that your vehicle&apos;s
-            interior fabrics are treated with the utmost care and
+            By choosing our service, you&apos;re ensuring that your
+            vehicle&apos;s interior fabrics are treated with the utmost care and
             professionalism. Our technicians use industry-leading products and
             techniques to deliver a clean that you can see, smell, and feel.
-            Whether you're preparing your car for sale, after a long trip, or
-            simply maintaining its appearance, our Fabric Shampoo & Extraction
-            service is the perfect solution.
+            Whether you&apos;re preparing your car for sale, after a long trip,
+            or simply maintaining its appearance, our Fabric Shampoo &
+            Extraction service is the perfect solution.
           </p>
           <p>
-            Don't settle for a vehicle interior that feels anything less than
-            pristine. Schedule your Fabric Shampoo & Extraction service with us
-            today and enjoy the benefits of a fresh, clean interior.
+            Don&apos;t settle for a vehicle interior that feels anything less
+            than pristine. Schedule your Fabric Shampoo & Extraction service
+            with us today and enjoy the benefits of a fresh, clean interior.
           </p>
         </section>
         <style jsx>{`

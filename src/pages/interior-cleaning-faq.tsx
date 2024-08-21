@@ -17,8 +17,8 @@ const InteriorCleaningFAQ: React.FC = () => {
                 </h2>
                 <p className="interior-cleaning-faq__answer text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Our Interior Cleaning service is a comprehensive cleaning of
-                  your vehicle's interior, focusing on all surfaces, fabrics,
-                  and materials. It includes vacuuming, carpet and seat
+                  your vehicle&apos;s interior, focusing on all surfaces,
+                  fabrics, and materials. It includes vacuuming, carpet and seat
                   shampooing, leather cleaning and conditioning, and detailed
                   cleaning of all interior surfaces like the dashboard, door
                   panels, and center console. We also clean all windows and
@@ -71,7 +71,7 @@ const InteriorCleaningFAQ: React.FC = () => {
                   surfaces using specialized cleaners that are safe for
                   plastics, vinyl, and other materials. We ensure that every
                   area is free from dust, fingerprints, and grime, leaving your
-                  vehicle's interior looking like new.
+                  vehicle&apos;s interior looking like new.
                 </p>
               </div>
 
@@ -99,11 +99,11 @@ const InteriorCleaningFAQ: React.FC = () => {
                   Tough stains on carpets and upholstery, such as coffee,
                   grease, or ink, require special attention. We start by
                   treating the stain with a pre-cleaner that breaks down the
-                  stain's components. After allowing the pre-cleaner to work, we
-                  use our shampooing and extraction process to remove the stain.
-                  For particularly stubborn stains, we may need to repeat the
-                  process or use specialized stain removers to achieve the best
-                  results.
+                  stain&apos;s components. After allowing the pre-cleaner to
+                  work, we use our shampooing and extraction process to remove
+                  the stain. For particularly stubborn stains, we may need to
+                  repeat the process or use specialized stain removers to
+                  achieve the best results.
                 </p>
               </div>
 
@@ -136,7 +136,7 @@ const InteriorCleaningFAQ: React.FC = () => {
                   products penetrate deep into the fibers to remove the
                   contaminants that cause unpleasant smells. By addressing the
                   root cause of the odors, we help restore a fresh and clean
-                  scent to your vehicle's interior.
+                  scent to your vehicle&apos;s interior.
                 </p>
               </div>
 

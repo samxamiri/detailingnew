@@ -8,10 +8,10 @@ const FullVacuum: React.FC = () => {
         <h1 className="service-title">Full Vacuum Service</h1>
         <p className="service-description">
           Our full vacuum service is designed to provide a thorough and
-          meticulous clean for every inch of your vehicle's interior. This
+          meticulous clean for every inch of your vehicle&apos;s interior. This
           process goes beyond a simple vacuum; it&apos;s a multi-step procedure
-          that ensures your car is spotless and free of any debris. Here's how
-          we do it:
+          that ensures your car is spotless and free of any debris. Here&apos;s
+          how we do it:
         </p>
         <img
           src="/images/other/vacuum.jpg"
@@ -66,19 +66,20 @@ const FullVacuum: React.FC = () => {
 
           <h2 className="section-title">Why Choose Our Full Vacuum Service?</h2>
           <p>
-            At Sam's Mobile Detailing, we understand that a clean car interior
-            is more than just a matter of aesthetics—it's about comfort and
-            health. Dust and allergens can accumulate over time, contributing to
-            an unpleasant environment and even exacerbating allergies. Our full
-            vacuum service is designed to tackle these issues head-on, providing
-            you with a cleaner, fresher, and more hygienic space.
+            At Sam&apos;s Mobile Detailing, we understand that a clean car
+            interior is more than just a matter of aesthetics—it&apos;s about
+            comfort and health. Dust and allergens can accumulate over time,
+            contributing to an unpleasant environment and even exacerbating
+            allergies. Our full vacuum service is designed to tackle these
+            issues head-on, providing you with a cleaner, fresher, and more
+            hygienic space.
           </p>
           <p>
-            By choosing our service, you're not just getting a standard vacuum;
-            you're investing in a detailed, professional clean that addresses
-            every part of your vehicle&apos;s interior. Our technicians are
-            trained to use the latest techniques and equipment, ensuring that
-            you receive the best possible service every time.
+            By choosing our service, you&apos;re not just getting a standard
+            vacuum; you&apos;re investing in a detailed, professional clean that
+            addresses every part of your vehicle&apos;s interior. Our
+            technicians are trained to use the latest techniques and equipment,
+            ensuring that you receive the best possible service every time.
           </p>
           <p>
             So, whether you&apos;re preparing for a special occasion, coming

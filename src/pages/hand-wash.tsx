@@ -10,7 +10,8 @@ const HandWash: React.FC = () => {
           Our Hand Wash service is designed to provide your vehicle with the
           meticulous care it deserves. We go beyond the standard car wash by
           employing premium products, expert techniques, and a detailed process
-          that ensures your car's exterior is thoroughly cleaned and protected.
+          that ensures your car&apos;s exterior is thoroughly cleaned and
+          protected.
         </p>
         <img
           src="/images/other/carwash.webp"
@@ -22,12 +23,12 @@ const HandWash: React.FC = () => {
           <h2 className="hand-wash__section-title">Step 1: Initial Rinse</h2>
           <p>
             We begin our Hand Wash service with an initial rinse of your
-            vehicle's exterior. This step is crucial for loosening and removing
-            any loose dirt, dust, and debris that may be sitting on the surface.
-            The rinse also helps to soften any stubborn contaminants, making
-            them easier to remove during the washing process. By thoroughly
-            rinsing the vehicle first, we reduce the risk of scratching the
-            paint during the subsequent cleaning stages.
+            vehicle&apos;s exterior. This step is crucial for loosening and
+            removing any loose dirt, dust, and debris that may be sitting on the
+            surface. The rinse also helps to soften any stubborn contaminants,
+            making them easier to remove during the washing process. By
+            thoroughly rinsing the vehicle first, we reduce the risk of
+            scratching the paint during the subsequent cleaning stages.
           </p>
 
           <h2 className="hand-wash__section-title">Step 2: Foam Shower</h2>
@@ -50,12 +51,12 @@ const HandWash: React.FC = () => {
           <h2 className="hand-wash__section-title">Step 3: Contact Wash</h2>
           <p>
             The contact wash is where we focus on the detailed cleaning of your
-            vehicle's exterior. Unlike traditional methods that may use a single
-            mitt or sponge, we use a dedicated system to ensure the highest
-            level of cleanliness. We employ a single bucket filled with soapy
-            water and multiple clean wash mitts. This method is designed to
-            prevent cross-contamination and to ensure that the water never gets
-            dirty.
+            vehicle&apos;s exterior. Unlike traditional methods that may use a
+            single mitt or sponge, we use a dedicated system to ensure the
+            highest level of cleanliness. We employ a single bucket filled with
+            soapy water and multiple clean wash mitts. This method is designed
+            to prevent cross-contamination and to ensure that the water never
+            gets dirty.
           </p>
           <p>
             Each mitt is used for a specific section of the vehicle and is never
@@ -79,14 +80,14 @@ const HandWash: React.FC = () => {
             improper drying can lead to water spots and streaks. We use
             high-quality, soft microfiber towels that are specifically designed
             for automotive use. These towels are highly absorbent and gentle on
-            your car's paint, ensuring that the surface is dried without leaving
-            any scratches or swirls.
+            your car&apos;s paint, ensuring that the surface is dried without
+            leaving any scratches or swirls.
           </p>
           <p>
             We also use air blowers to remove water from hard-to-reach areas,
             such as around mirrors, grills, and emblems. This step ensures that
             no water is left behind to drip and cause spots after the car has
-            been dried. By the end of the drying process, your vehicle's
+            been dried. By the end of the drying process, your vehicle&apos;s
             exterior will be completely dry, spotless, and ready for the final
             touch.
           </p>
@@ -114,7 +115,7 @@ const HandWash: React.FC = () => {
             The result is a vehicle that not only looks stunning but is also
             better protected against the elements. Our Hand Wash service,
             complete with a spray wax finish, is the perfect way to maintain the
-            beauty and integrity of your car's exterior.
+            beauty and integrity of your car&apos;s exterior.
           </p>
 
           <h2 className="hand-wash__section-title">
@@ -129,11 +130,11 @@ const HandWash: React.FC = () => {
             minimize the risk of damage and deliver a superior clean.
           </p>
           <p>
-            Whether you're looking to maintain your vehicle's appearance,
-            prepare for a special event, or simply want to give your car the
-            best possible care, our Hand Wash service is the ideal choice.
-            Experience the difference of a professional, meticulous wash that
-            leaves your car looking and feeling like new.
+            Whether you&apos;re looking to maintain your vehicle&apos;s
+            appearance, prepare for a special event, or simply want to give your
+            car the best possible care, our Hand Wash service is the ideal
+            choice. Experience the difference of a professional, meticulous wash
+            that leaves your car looking and feeling like new.
           </p>
           <p>
             Book your Hand Wash service today and let us show you what a truly

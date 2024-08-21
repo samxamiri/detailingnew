@@ -7,10 +7,10 @@ const PaintProtection: React.FC = () => {
       <div className="paint-protection__container">
         <h1 className="paint-protection__title">Paint Protection Service</h1>
         <p className="paint-protection__description">
-          Protecting your vehicle's paint is essential for maintaining its
+          Protecting your vehicle&apos;s paint is essential for maintaining its
           appearance and preserving its value over time. Our Paint Protection
-          service offers a variety of methods to shield your car's finish from
-          environmental elements, ensuring it remains vibrant and pristine.
+          service offers a variety of methods to shield your car&apos;s finish
+          from environmental elements, ensuring it remains vibrant and pristine.
           While we specialize in spray wax, we also understand the importance of
           other paint protection methods, including sealants, ceramic coatings,
           and paint protection film (PPF).
@@ -27,11 +27,11 @@ const PaintProtection: React.FC = () => {
           </h2>
           <p>
             Our primary paint protection offering is spray wax, a quick and
-            effective method to protect your vehicle's paint. Spray wax is
+            effective method to protect your vehicle&apos;s paint. Spray wax is
             designed to provide a temporary shield against environmental
             contaminants, including dirt, dust, and UV rays. It enhances the
-            gloss and depth of your vehicle's paint, giving it a fresh, polished
-            look.
+            gloss and depth of your vehicle&apos;s paint, giving it a fresh,
+            polished look.
           </p>
           <p>
             The application process is simple yet effective. After washing and
@@ -50,9 +50,9 @@ const PaintProtection: React.FC = () => {
           <p>
             Paint sealants offer a more durable form of protection compared to
             spray wax. These synthetic products are designed to bond with the
-            vehicle's paint, creating a protective layer that lasts for several
-            months. Sealants provide excellent protection against UV rays, acid
-            rain, and other environmental pollutants.
+            vehicle&apos;s paint, creating a protective layer that lasts for
+            several months. Sealants provide excellent protection against UV
+            rays, acid rain, and other environmental pollutants.
           </p>
           <p>
             The application of a paint sealant involves applying the product to
@@ -60,7 +60,7 @@ const PaintProtection: React.FC = () => {
             sealant forms a hard, glossy layer that not only enhances the
             appearance of the paint but also makes it easier to clean. Sealants
             are particularly popular for their durability and ability to
-            maintain a vehicle's shine for an extended period.
+            maintain a vehicle&apos;s shine for an extended period.
           </p>
           <p>
             While we currently focus on spray wax, understanding the benefits of
@@ -75,7 +75,7 @@ const PaintProtection: React.FC = () => {
           <p>
             Ceramic coatings represent the latest advancement in paint
             protection technology. These liquid polymers chemically bond with
-            the vehicle's paint, creating a long-lasting, ultra-durable
+            the vehicle&apos;s paint, creating a long-lasting, ultra-durable
             protective layer. Ceramic coatings offer superior protection against
             environmental contaminants, UV rays, bird droppings, and even minor
             scratches.
@@ -101,7 +101,7 @@ const PaintProtection: React.FC = () => {
           </h2>
           <p>
             Paint Protection Film (PPF), also known as clear bra, offers the
-            ultimate level of protection for your vehicle's paint. This
+            ultimate level of protection for your vehicle&apos;s paint. This
             transparent, thermoplastic urethane film is applied to the surface
             of the vehicle, providing a strong barrier against rock chips,
             scratches, and other physical damage.
@@ -127,16 +127,16 @@ const PaintProtection: React.FC = () => {
             Why Choose Our Paint Protection Service?
           </h2>
           <p>
-            At Pristine Auto Detailing, we take pride in offering a paint
+            At Sam&apos;s Mobile Detailing, we take pride in offering a paint
             protection service that meets the needs of every vehicle owner. Our
             spray wax application provides a quick and effective way to maintain
             the appearance of your vehicle, keeping it protected and looking its
             best. However, we also recognize the value of other paint protection
             methods and strive to provide our clients with the knowledge they
-            need to make informed decisions about their vehicle's care.
+            need to make informed decisions about their vehicle&apos;s care.
           </p>
           <p>
-            Whether you're looking for a convenient, regular maintenance
+            Whether you&apos;re looking for a convenient, regular maintenance
             solution like spray wax or are considering more advanced options
             like sealants, ceramic coatings, or PPF, understanding the benefits
             and limitations of each method is crucial. Our team is here to guide

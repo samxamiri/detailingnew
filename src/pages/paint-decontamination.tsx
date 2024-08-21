@@ -10,13 +10,13 @@ const PaintDecontamination: React.FC = () => {
         </h1>
         <p className="paint-decontamination__description">
           Our Paint Decontamination service is essential for maintaining the
-          health and appearance of your vehicle's finish. Over time,
+          health and appearance of your vehicle&apos;s finish. Over time,
           contaminants such as industrial fallout, tar, tree sap, and iron
-          particles can embed themselves in your car's paint, diminishing its
-          shine and potentially causing damage. We offer a thorough
+          particles can embed themselves in your car&apos;s paint, diminishing
+          its shine and potentially causing damage. We offer a thorough
           decontamination process that uses specialized tools and products,
           including clay bars, clay mitts, and iron removers, to restore your
-          vehicle's paint to its pristine condition.
+          vehicle&apos;s paint to its pristine condition.
         </p>
         <img
           src="/images/other/decontamination (1).webp"
@@ -30,11 +30,11 @@ const PaintDecontamination: React.FC = () => {
           </h2>
           <p>
             Before we begin the decontamination process, we prepare your
-            vehicle's surface by thoroughly washing it to remove loose dirt and
-            debris. This step is crucial for ensuring that the decontamination
-            products can effectively target the embedded contaminants without
-            being hindered by surface grime. Once the vehicle is clean and dry,
-            we move on to the decontamination phase.
+            vehicle&apos;s surface by thoroughly washing it to remove loose dirt
+            and debris. This step is crucial for ensuring that the
+            decontamination products can effectively target the embedded
+            contaminants without being hindered by surface grime. Once the
+            vehicle is clean and dry, we move on to the decontamination phase.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -43,15 +43,15 @@ const PaintDecontamination: React.FC = () => {
           <p>
             The first step in the decontamination process involves the
             application of an iron remover. Iron particles, often from brake
-            dust or industrial fallout, can embed themselves in your vehicle's
-            paint and cause rust spots if left untreated. Our iron remover is a
-            specialized chemical that targets these iron particles, causing them
-            to dissolve and safely wash away.
+            dust or industrial fallout, can embed themselves in your
+            vehicle&apos;s paint and cause rust spots if left untreated. Our
+            iron remover is a specialized chemical that targets these iron
+            particles, causing them to dissolve and safely wash away.
           </p>
           <p>
-            As the iron remover is applied, you'll notice a color change as it
-            reacts with the iron particles, turning purple or red. This visual
-            indicator shows that the product is working to break down the
+            As the iron remover is applied, you&apos;ll notice a color change as
+            it reacts with the iron particles, turning purple or red. This
+            visual indicator shows that the product is working to break down the
             contaminants. After the iron remover has had time to work, we rinse
             it off thoroughly, leaving the surface ready for the next stage of
             decontamination.
@@ -84,8 +84,8 @@ const PaintDecontamination: React.FC = () => {
             For less aggressive decontamination, or as a follow-up to the clay
             bar treatment, we use a clay mitt. The clay mitt is a more
             user-friendly and efficient tool that provides similar results to
-            the clay bar but with less abrasion. It's ideal for vehicles that
-            have already undergone a clay bar treatment or for regular
+            the clay bar but with less abrasion. It&apos;s ideal for vehicles
+            that have already undergone a clay bar treatment or for regular
             maintenance decontamination.
           </p>
           <p>
@@ -102,12 +102,12 @@ const PaintDecontamination: React.FC = () => {
           </h2>
           <p>
             After the decontamination process is complete, we perform a final
-            inspection of your vehicle's paint to ensure that all contaminants
-            have been removed. The paint should feel smooth to the touch, with
-            no rough spots or imperfections. This clean surface is now perfectly
-            prepped for the application of protective products, such as wax,
-            sealant, or ceramic coating, which will help to maintain the
-            integrity and appearance of your vehicle's finish.
+            inspection of your vehicle&apos;s paint to ensure that all
+            contaminants have been removed. The paint should feel smooth to the
+            touch, with no rough spots or imperfections. This clean surface is
+            now perfectly prepped for the application of protective products,
+            such as wax, sealant, or ceramic coating, which will help to
+            maintain the integrity and appearance of your vehicle&apos;s finish.
           </p>
           <p>
             We recommend following up the decontamination process with a
@@ -122,25 +122,26 @@ const PaintDecontamination: React.FC = () => {
           </h2>
           <p>
             Paint decontamination is a critical step in maintaining the beauty
-            and longevity of your vehicle's finish. Over time, contaminants can
-            cause damage that diminishes the appearance of your car and reduces
-            its value. Our Paint Decontamination service is designed to address
-            these issues head-on, using the best tools and techniques to ensure
-            a thorough and effective clean.
+            and longevity of your vehicle&apos;s finish. Over time, contaminants
+            can cause damage that diminishes the appearance of your car and
+            reduces its value. Our Paint Decontamination service is designed to
+            address these issues head-on, using the best tools and techniques to
+            ensure a thorough and effective clean.
           </p>
           <p>
-            By choosing our service, you're investing in the long-term health
-            and appearance of your vehicle. Our experienced technicians are
-            trained to handle all types of contaminants, using clay bars, clay
-            mitts, and iron removers to deliver exceptional results. Whether
-            you're preparing your car for a protective treatment or simply want
-            to restore its original shine, our Paint Decontamination service is
-            the ideal solution.
+            By choosing our service, you&apos;re investing in the long-term
+            health and appearance of your vehicle. Our experienced technicians
+            are trained to handle all types of contaminants, using clay bars,
+            clay mitts, and iron removers to deliver exceptional results.
+            Whether you&apos;re preparing your car for a protective treatment or
+            simply want to restore its original shine, our Paint Decontamination
+            service is the ideal solution.
           </p>
           <p>
-            Don't let contaminants compromise the look and feel of your vehicle.
-            Book your Paint Decontamination service today and experience the
-            difference of a professionally decontaminated paint surface.
+            Don&apos;t let contaminants compromise the look and feel of your
+            vehicle. Book your Paint Decontamination service today and
+            experience the difference of a professionally decontaminated paint
+            surface.
           </p>
         </section>
 

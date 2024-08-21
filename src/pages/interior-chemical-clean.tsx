@@ -11,7 +11,7 @@ const InteriorChemicalClean: React.FC = () => {
         <p className="interior-chemical-clean__description">
           Our Complete Interior Chemical Clean is the ultimate solution for
           removing tough stains, grime, and dirt from all surfaces inside your
-          vehicle. We meticulously clean every part of your car's interior,
+          vehicle. We meticulously clean every part of your car&apos;s interior,
           ensuring it looks and feels brand new. From the vinyl and plastic
           surfaces to the leather, cracks, crevices, windows, and even the
           headliner—no detail is overlooked.
@@ -32,7 +32,7 @@ const InteriorChemicalClean: React.FC = () => {
             microfiber towels, we gently clean the dashboard, door panels, and
             center console, removing dust, fingerprints, and light dirt. Our
             microfiber towels are designed to be soft yet effective, ensuring
-            that your car's surfaces are cleaned without leaving behind any
+            that your car&apos;s surfaces are cleaned without leaving behind any
             scratches or streaks.
           </p>
           <p>
@@ -49,18 +49,18 @@ const InteriorChemicalClean: React.FC = () => {
             Once the initial wipe down is complete, we move on to the targeted
             chemical cleaning phase. Using specialized cleaning agents that are
             safe for all interior materials, our technicians thoroughly clean
-            the vinyl, plastic, and leather surfaces. Whether it's the
+            the vinyl, plastic, and leather surfaces. Whether it&apos;s the
             dashboard, armrests, or door panels, we make sure every inch of your
-            vehicle's interior is treated.
+            vehicle&apos;s interior is treated.
           </p>
           <p>
             For tougher stains and grime, we use "Scrub Ninjas"—high-performance
             scrubbing pads that are tough on dirt but gentle on surfaces. These
             pads, combined with our cleaning solutions, work to lift and remove
-            even the most stubborn contaminants, leaving your car's interior
-            spotless. This step is especially important for high-touch areas
-            that accumulate oils and grime over time, such as the steering wheel
-            and gear shifter.
+            even the most stubborn contaminants, leaving your car&apos;s
+            interior spotless. This step is especially important for high-touch
+            areas that accumulate oils and grime over time, such as the steering
+            wheel and gear shifter.
           </p>
 
           <h2 className="interior-chemical-clean__section-title">
@@ -77,8 +77,9 @@ const InteriorChemicalClean: React.FC = () => {
           <p>
             This detailed approach ensures that no dirt is left behind, even in
             areas that are often overlooked. Our technicians take the time to
-            clean every nook and cranny, making sure your vehicle's interior is
-            not only clean but also free from any lingering dirt or dust.
+            clean every nook and cranny, making sure your vehicle&apos;s
+            interior is not only clean but also free from any lingering dirt or
+            dust.
           </p>
 
           <h2 className="interior-chemical-clean__section-title">
@@ -97,9 +98,9 @@ const InteriorChemicalClean: React.FC = () => {
             can be a magnet for dust, stains, and odors. We carefully clean the
             headliner using gentle techniques that remove stains without
             damaging the fabric or causing it to sag. This step is crucial for
-            maintaining the overall freshness of your vehicle's interior, as a
-            clean headliner can significantly enhance the feeling of cleanliness
-            and air quality inside the car.
+            maintaining the overall freshness of your vehicle&apos;s interior,
+            as a clean headliner can significantly enhance the feeling of
+            cleanliness and air quality inside the car.
           </p>
 
           <h2 className="interior-chemical-clean__section-title">
@@ -107,7 +108,7 @@ const InteriorChemicalClean: React.FC = () => {
           </h2>
           <p>
             After all the surfaces have been cleaned and treated, we perform a
-            final inspection to ensure that every area of your vehicle's
+            final inspection to ensure that every area of your vehicle&apos;s
             interior meets our high standards. Any remaining spots or blemishes
             are addressed, and we give the entire interior a final wipe down
             with a fresh microfiber towel to ensure a perfect finish.
@@ -124,13 +125,14 @@ const InteriorChemicalClean: React.FC = () => {
           </h2>
           <p>
             Our Complete Interior Chemical Clean is more than just a cleaning
-            service—it's a comprehensive treatment designed to restore your
-            vehicle's interior to its original condition. Whether you're dealing
-            with stubborn stains, unpleasant odors, or simply want to refresh
-            your car's interior, our service is the perfect solution.
+            service—it&apos;s a comprehensive treatment designed to restore your
+            vehicle's interior to its original condition. Whether you&apos;re
+            dealing with stubborn stains, unpleasant odors, or simply want to
+            refresh your car&apos;s interior, our service is the perfect
+            solution.
           </p>
           <p>
-            By choosing our service, you're ensuring that your vehicle is
+            By choosing our service, you&apos;re ensuring that your vehicle is
             treated with the utmost care and attention to detail. Our
             technicians are trained in the latest cleaning techniques and use
             only the highest quality products to deliver exceptional results.
