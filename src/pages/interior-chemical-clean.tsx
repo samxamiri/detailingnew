@@ -54,13 +54,13 @@ const InteriorChemicalClean: React.FC = () => {
             vehicle&apos;s interior is treated.
           </p>
           <p>
-            For tougher stains and grime, we use "Scrub Ninjas"—high-performance
-            scrubbing pads that are tough on dirt but gentle on surfaces. These
-            pads, combined with our cleaning solutions, work to lift and remove
-            even the most stubborn contaminants, leaving your car&apos;s
-            interior spotless. This step is especially important for high-touch
-            areas that accumulate oils and grime over time, such as the steering
-            wheel and gear shifter.
+            For tougher stains and grime, we use &quot;Scrub
+            Ninjas&quot;—high-performance scrubbing pads that are tough on dirt
+            but gentle on surfaces. These pads, combined with our cleaning
+            solutions, work to lift and remove even the most stubborn
+            contaminants, leaving your car&apos;s interior spotless. This step
+            is especially important for high-touch areas that accumulate oils
+            and grime over time, such as the steering wheel and gear shifter.
           </p>
 
           <h2 className="interior-chemical-clean__section-title">

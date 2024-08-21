@@ -98,21 +98,27 @@ const InteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/interior-chemical-clean" className="hover-link">
-                    Complete Interior Chemical Clean
-                  </a>
+                  <Link href="/interior-chemical-clean" className="hover-link">
+                    <span className="hover-link cursor-pointer">
+                      Complete Interior Chemical Clean
+                    </span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/carpet-shampoo" className="hover-link">
-                    Carpet Shampoo
-                  </a>
+                  <Link href="/carpet-shampoo" className="hover-link">
+                    <span className="hover-link cursor-pointer">
+                      Carpet Shampoo
+                    </span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/full-vacuum" className="hover-link">
-                    Interior Vacuuming on Every Necessary Surface
-                  </a>
+                  <Link href="/full-vacuum" className="hover-link">
+                    <span className="hover-link cursor-pointer">
+                      Interior Vacuuming on Every Necessary Surface
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>

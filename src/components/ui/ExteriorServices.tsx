@@ -91,21 +91,25 @@ const ExteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/hand-wash" className="hover-link">
-                    Hand Wash
-                  </a>
+                  <Link href="/hand-wash" passHref>
+                    <span className="hover-link cursor-pointer">Hand Wash</span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/paint-decontamination" className="hover-link">
-                    Paint Decontamination
-                  </a>
+                  <Link href="/paint-decontamination" passHref>
+                    <span className="hover-link cursor-pointer">
+                      Paint Decontamination
+                    </span>
+                  </Link>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <a href="/paint-protection" className="hover-link">
-                    Complete Paint Protection on All Exterior Surfaces
-                  </a>
+                  <Link href="/paint-protection" passHref>
+                    <span className="hover-link cursor-pointer">
+                      Complete Paint Protection on All Exterior Surfaces
+                    </span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -113,14 +117,14 @@ const ExteriorServices: React.FC = () => {
         </div>
       </section>
       <style jsx>{`
-        a.hover-link {
+        .hover-link {
           color: #1e90ff; /* Link color */
           position: relative;
           text-decoration: none; /* Remove default underline */
           transition: color 0.3s ease;
         }
 
-        a.hover-link::after {
+        .hover-link::after {
           content: "";
           position: absolute;
           width: 100%;
@@ -133,12 +137,12 @@ const ExteriorServices: React.FC = () => {
           transition: transform 0.25s ease-out;
         }
 
-        a.hover-link:hover::after {
+        .hover-link:hover::after {
           transform: scaleX(1);
           transform-origin: bottom left;
         }
 
-        a.hover-link:hover {
+        .hover-link:hover {
           color: #1c86ee; /* Darker blue on hover */
         }
       `}</style>
