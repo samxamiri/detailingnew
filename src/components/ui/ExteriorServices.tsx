@@ -60,6 +60,15 @@ const ExteriorServices: React.FC = () => {
         </div>
       </div>
 
+      {/* Link to the Interior Cleaning FAQ */}
+      <div className="mt-8 flex justify-center">
+        <Link href="/wash-and-wax-faq">
+          <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition-all">
+            View Exterior Cleaning FAQs
+          </button>
+        </Link>
+      </div>
+
       <section
         className="w-full"
         style={{ marginTop: "50px", padding: "50px 0" }} // Custom padding here

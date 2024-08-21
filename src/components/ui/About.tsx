@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
-export default function AboutComponent() {
+export default function FAQComponent() {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -13,70 +14,40 @@ export default function AboutComponent() {
 
   return (
     <div className="min-h-[100dvh] flex flex-col bg-gray-100 dark:bg-gray-900">
-      <main className="flex-1">
+      <main className="flex-1 flex items-center justify-center">
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container mx-auto px-4 md:px-6">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl text-center text-gray-900 dark:text-gray-100">
-              Mobile Auto Detailing In Montreal
+          <div className="container mx-auto px-4 md:px-6 text-center">
+            <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl xl:text-8xl text-gray-900 dark:text-gray-100 mb-12">
+              Frequently Asked Questions
             </h1>
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start mt-12 lg:mt-24">
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 gap-6">
-                  <img
-                    alt="Audi SQ5 covered in foam during foam bath"
-                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover shadow-lg"
-                    height="800"
-                    src="/images/other/foam.webp"
-                    width="800"
-                  />
-                  <img
-                    alt="Audi SQ5 shining in the sun after wash and spray wax"
-                    className="mx-auto aspect-[4/3] overflow-hidden rounded-xl object-cover shadow-lg"
-                    height="800"
-                    src="/images/other/q5.webp"
-                    width="800"
-                  />
-                </div>
+            <div className="grid gap-12 lg:gap-16 items-center justify-center mt-12 lg:mt-24">
+              <div className="max-w-[600px] mx-auto">
+                <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300 leading-relaxed">
+                  Interior Cleaning FAQ
+                </h2>
+                <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed mt-4">
+                  Have questions about our interior cleaning services? Find
+                  answers to some of the most common questions we receive.
+                </p>
+                <Link href="/interior-cleaning-faq">
+                  <button className="mt-8 px-10 py-4 bg-blue-600 text-white rounded-lg text-xl hover:bg-blue-700 transition-all">
+                    View Interior Cleaning FAQ
+                  </button>
+                </Link>
               </div>
-              <div className="flex flex-col justify-start space-y-6">
-                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
-                  Finding an auto detailer in Montreal who knows what your car
-                  needs, and can give it to you at a price that makes sense,
-                  should be easy to find right? Well for me…it wasn&apos;t.
+              <div className="max-w-[600px] mx-auto">
+                <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300 leading-relaxed">
+                  Wash and Wax FAQ
+                </h2>
+                <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed mt-4">
+                  Have questions about our wash and wax services? Check out the
+                  answers to the questions we get asked the most.
                 </p>
-                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
-                  I searched high and low throughout Montreal to find a
-                  dependable mobile auto detailer who I could trust and all I
-                  found were crazy prices, detailers who show up late (if at
-                  all), and half-hearted jobs that left me unsatisfied.
-                  That&apos;s why Sam&apos;s Mobile Detailing was born.
-                </p>
-                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
-                  While I have always had a passion for auto detailing, I knew
-                  that we could deliver the very thing that I wanted in the form
-                  of a great detailing experience to local customers in Montreal
-                  in a way that I couldn&apos;t find. In my experience, our
-                  mobile detailing customers want four things:
-                </p>
-                <ul className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed list-disc pl-4 mt-4">
-                  <li>A price that won&apos;t hurt their wallet.</li>
-                  <li>
-                    A clear expectation of what is, and is not possible with
-                    their vehicle.
-                  </li>
-                  <li>On-time service without inconvenient rescheduling.</li>
-                  <li>
-                    Someone they can call again when they want a detailer they
-                    can depend on.
-                  </li>
-                </ul>
-                <p className="max-w-[600px] text-lg md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed">
-                  In our auto detailing world here in Montreal, QC…we take a
-                  simple approach; incredible service that is convenient, prices
-                  that customers can afford, higher-end detailing than anyone
-                  else, and a straightforward service where you know what you
-                  are getting.
-                </p>
+                <Link href="/wash-and-wax-faq">
+                  <button className="mt-8 px-10 py-4 bg-blue-600 text-white rounded-lg text-xl hover:bg-blue-700 transition-all">
+                    View Wash and Wax FAQ
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
