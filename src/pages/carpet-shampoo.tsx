@@ -24,7 +24,7 @@ const FabricShampooExtraction: React.FC = () => {
             Step 1: Pre-Inspection and Preparation
           </h2>
           <p>
-            We start our Fabric Shampoo & Extraction service with a thorough
+            We start our Fabric Shampoo and Extraction service with a thorough
             inspection of your vehicle's interior fabrics. Our technicians
             examine the condition of the carpets and seats, identifying any
             particularly soiled areas, stains, or spots that may require special
@@ -117,7 +117,6 @@ const FabricShampooExtraction: React.FC = () => {
             today and enjoy the benefits of a fresh, clean interior.
           </p>
         </section>
-
         <style jsx>{`
           .fabric-shampoo-container {
             max-width: 800px;
