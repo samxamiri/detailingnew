@@ -29,10 +29,13 @@ const FabricShampooExtraction: React.FC = () => {
             examine the condition of the carpets and seats, identifying any
             particularly soiled areas, stains, or spots that may require special
             attention. Once the inspection is complete, we prepare the interior
-            for the shampooing process by vacuuming the surfaces to remove loose
-            dirt and debris. This preparation ensures that the shampooing
-            process is as effective as possible, allowing the cleaning agents to
-            penetrate deep into the fabric fibers.
+            for the shampooing process by{" "}
+            <a href="full-vacuum">
+              vacuuming the surfaces to remove loose dirt and debris.
+            </a>{" "}
+            This preparation ensures that the shampooing process is as effective
+            as possible, allowing the cleaning agents to penetrate deep into the
+            fabric fibers.
           </p>
 
           <h2 className="section-title">Step 2: Deep Shampooing of Carpets</h2>
@@ -119,6 +122,14 @@ const FabricShampooExtraction: React.FC = () => {
           </p>
         </section>
         <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
           .fabric-shampoo-container {
             max-width: 800px;
             margin: 0 auto;

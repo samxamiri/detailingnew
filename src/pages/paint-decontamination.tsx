@@ -30,11 +30,14 @@ const PaintDecontamination: React.FC = () => {
           </h2>
           <p>
             Before we begin the decontamination process, we prepare your
-            vehicle&apos;s surface by thoroughly washing it to remove loose dirt
-            and debris. This step is crucial for ensuring that the
-            decontamination products can effectively target the embedded
-            contaminants without being hindered by surface grime. Once the
-            vehicle is clean and dry, we move on to the decontamination phase.
+            vehicle&apos;s surface by thoroughly{" "}
+            <a href="wash-and-wax">
+              washing it to remove loose dirt and debris.
+            </a>{" "}
+            This step is crucial for ensuring that the decontamination products
+            can effectively target the embedded contaminants without being
+            hindered by surface grime. Once the vehicle is clean and dry, we
+            move on to the decontamination phase.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -62,19 +65,21 @@ const PaintDecontamination: React.FC = () => {
           </h2>
           <p>
             For more aggressive decontamination, we use a clay bar to remove
-            deeply embedded contaminants that cannot be removed through washing
-            or iron remover alone. The clay bar is a specialized tool that is
-            carefully rubbed over the surface of your vehicle, picking up and
-            pulling out contaminants from the paint.
+            deeply embedded contaminants that cannot be removed through{" "}
+            <a href="wash-and-wax">washing</a> or iron remover alone. The clay
+            bar is a specialized tool that is carefully rubbed over the surface
+            of your vehicle, picking up and pulling out contaminants from the
+            paint.
           </p>
           <p>
             The clay bar treatment is particularly effective for removing tar,
             sap, and other stubborn particles. As we work the clay bar across
             the surface, it captures these contaminants, leaving the paint
             feeling smooth and free of any roughness. This step is essential for
-            preparing the paint for polishing or waxing, as it ensures that the
-            surface is completely clean and ready to bond with any protective
-            products.
+            preparing the paint for{" "}
+            <a href="paint-protection">polishing or waxing</a>, as it ensures
+            that the surface is completely clean and ready to bond with any
+            protective products.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -105,16 +110,20 @@ const PaintDecontamination: React.FC = () => {
             inspection of your vehicle&apos;s paint to ensure that all
             contaminants have been removed. The paint should feel smooth to the
             touch, with no rough spots or imperfections. This clean surface is
-            now perfectly prepped for the application of protective products,
-            such as wax, sealant, or ceramic coating, which will help to
-            maintain the integrity and appearance of your vehicle&apos;s finish.
+            now perfectly prepped for{" "}
+            <a href="paint-protection">
+              the application of protective products, such as wax, sealant, or
+              ceramic coating
+            </a>
+            , which will help to maintain the integrity and appearance of your
+            vehicle&apos;s finish.
           </p>
           <p>
-            We recommend following up the decontamination process with a
-            protective treatment to seal in the results and protect the paint
-            from future contamination. Our team can guide you through the best
-            options for your vehicle, ensuring that your car remains in top
-            condition for as long as possible.
+            We recommend following up the decontamination process with a{" "}
+            <a href="paint-protection">protective treatment</a> to seal in the
+            results and protect the paint from future contamination. Our team
+            can guide you through the best options for your vehicle, ensuring
+            that your car remains in top condition for as long as possible.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -133,9 +142,10 @@ const PaintDecontamination: React.FC = () => {
             health and appearance of your vehicle. Our experienced technicians
             are trained to handle all types of contaminants, using clay bars,
             clay mitts, and iron removers to deliver exceptional results.
-            Whether you&apos;re preparing your car for a protective treatment or
-            simply want to restore its original shine, our Paint Decontamination
-            service is the ideal solution.
+            Whether you&apos;re preparing your car for a{" "}
+            <a href="paint-protection">protective treatment</a> or simply want
+            to restore its original shine, our Paint Decontamination service is
+            the ideal solution.
           </p>
           <p>
             Don&apos;t let contaminants compromise the look and feel of your
@@ -146,6 +156,14 @@ const PaintDecontamination: React.FC = () => {
         </section>
 
         <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
           :root {
             --primary-color: #333;
             --secondary-color: #666;
@@ -159,12 +177,12 @@ const PaintDecontamination: React.FC = () => {
           }
 
           .paint-decontamination__container {
-            max-width: var(--container-max-width);
+            max-width: 800px;
             margin: 0 auto;
-            padding: var(--container-padding);
-            background-color: var(--background-color);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
           .paint-decontamination__title {
             font-size: 2.5rem;

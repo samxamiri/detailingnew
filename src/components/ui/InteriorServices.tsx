@@ -98,49 +98,57 @@ const InteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Complete Interior Chemical Clean
+                  <a href="/interior-chemical-clean" className="hover-link">
+                    Complete Interior Chemical Clean
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  All Cracks and Crevices
+                  <a href="/carpet-shampoo" className="hover-link">
+                    Carpet Shampoo
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  All Hard Interior Plastics
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  All Vinyl or Rubber Surfaces
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Everywhere the Eye Can and Can’t See
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Carpet Shampoo
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Door Jamb Detail
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  All Interior Glass
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Interior Vacuuming on Every Necessary Surface
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Complete Interior Protection
+                  <a href="/full-vacuum" className="hover-link">
+                    Interior Vacuuming on Every Necessary Surface
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+      <style jsx>{`
+        .hover-link {
+          color: #1e90ff; /* Link color */
+          position: relative;
+          text-decoration: none; /* Remove default underline */
+          transition: color 0.3s ease;
+        }
+
+        .hover-link::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #1e90ff;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .hover-link:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        .hover-link:hover {
+          color: #1c86ee; /* Darker blue on hover */
+        }
+      `}</style>
     </section>
   );
 };

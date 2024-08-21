@@ -60,7 +60,7 @@ const ExteriorServices: React.FC = () => {
         </div>
       </div>
 
-      {/* Link to the Interior Cleaning FAQ */}
+      {/* Link to the Exterior Cleaning FAQ */}
       <div className="mt-8 flex justify-center">
         <Link href="/wash-and-wax-faq">
           <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition-all">
@@ -91,33 +91,57 @@ const ExteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Foam Bath
+                  <a href="/hand-wash" className="hover-link">
+                    Hand Wash
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Contact Wash
+                  <a href="/paint-decontamination" className="hover-link">
+                    Paint Decontamination
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Clay Bar Treatment
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Wheel, Wheel Well, & Tire Detail
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Bug Detail
-                </li>
-                <li className="flex items-center">
-                  <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  Complete Paint Protection on All Exterior Surfaces
+                  <a href="/paint-protection" className="hover-link">
+                    Complete Paint Protection on All Exterior Surfaces
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
+      <style jsx>{`
+        a.hover-link {
+          color: #1e90ff; /* Link color */
+          position: relative;
+          text-decoration: none; /* Remove default underline */
+          transition: color 0.3s ease;
+        }
+
+        a.hover-link::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #1e90ff;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        a.hover-link:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        a.hover-link:hover {
+          color: #1c86ee; /* Darker blue on hover */
+        }
+      `}</style>
     </section>
   );
 };

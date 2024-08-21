@@ -156,12 +156,12 @@ const HandWash: React.FC = () => {
           }
 
           .hand-wash__container {
-            max-width: var(--container-max-width);
+            max-width: 800px;
             margin: 0 auto;
-            padding: var(--container-padding);
-            background-color: var(--background-color);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
           .hand-wash__title {
             font-size: 2.5rem;

@@ -34,14 +34,15 @@ const PaintProtection: React.FC = () => {
             polished look.
           </p>
           <p>
-            The application process is simple yet effective. After washing and
-            drying your vehicle, we evenly apply the spray wax across all
-            exterior surfaces, including the paint, glass, and trim. The wax
-            forms a protective layer that helps to repel water and contaminants,
-            making it easier to clean your car in the future. While spray wax is
-            not as long-lasting as other forms of protection, it is an excellent
-            choice for regular maintenance and keeping your vehicle looking its
-            best between more intensive treatments.
+            The application process is simple yet effective. After{" "}
+            <a href="wash-and-wax">washing and drying</a> your vehicle, we
+            evenly apply the spray wax across all exterior surfaces, including
+            the paint, glass, and trim. The wax forms a protective layer that
+            helps to repel water and contaminants, making it easier to clean
+            your car in the future. While spray wax is not as long-lasting as
+            other forms of protection, it is an excellent choice for regular
+            maintenance and keeping your vehicle looking its best between more
+            intensive treatments.
           </p>
 
           <h2 className="paint-protection__section-title">
@@ -152,6 +153,14 @@ const PaintProtection: React.FC = () => {
         </section>
 
         <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
           :root {
             --primary-color: #333;
             --secondary-color: #666;
@@ -165,12 +174,12 @@ const PaintProtection: React.FC = () => {
           }
 
           .paint-protection__container {
-            max-width: var(--container-max-width);
+            max-width: 800px;
             margin: 0 auto;
-            padding: var(--container-padding);
-            background-color: var(--background-color);
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
           .paint-protection__title {
             font-size: 2.5rem;
