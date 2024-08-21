@@ -9,9 +9,9 @@ const FullVacuum: React.FC = () => {
         <p className="service-description">
           Our full vacuum service is designed to provide a thorough and
           meticulous clean for every inch of your vehicle's interior. This
-          process goes beyond a simple vacuum; it’s a multi-step procedure that
-          ensures your car is spotless and free of any debris. Here's how we do
-          it:
+          process goes beyond a simple vacuum; it&apos;s a multi-step procedure
+          that ensures your car is spotless and free of any debris. Here's how
+          we do it:
         </p>
         <img
           src="/images/other/vacuum.jpg"
@@ -25,9 +25,9 @@ const FullVacuum: React.FC = () => {
             We begin our full vacuum service with an air compressor blowout.
             This step is crucial for reaching those hard-to-access areas of your
             vehicle, such as under the seats, in between seat crevices, and
-            within the tight corners of your car’s interior. The high-pressure
-            air effectively dislodges dust, dirt, and debris that have settled
-            into these spots over time.
+            within the tight corners of your car&apos;s interior. The
+            high-pressure air effectively dislodges dust, dirt, and debris that
+            have settled into these spots over time.
           </p>
           <p>
             The air compressor works by blasting air at a high velocity, which
@@ -52,7 +52,8 @@ const FullVacuum: React.FC = () => {
             spaces between them are thoroughly cleaned. Next, we move to the
             carpets, using specialized attachments to lift dirt from deep within
             the fibers. Even the most stubborn particles are no match for our
-            vacuum’s power, leaving your carpets looking and feeling refreshed.
+            vacuum&apos;s power, leaving your carpets looking and feeling
+            refreshed.
           </p>
           <p>
             Finally, we pay close attention to the floor mats, the dashboard,
@@ -75,16 +76,16 @@ const FullVacuum: React.FC = () => {
           <p>
             By choosing our service, you're not just getting a standard vacuum;
             you're investing in a detailed, professional clean that addresses
-            every part of your vehicle’s interior. Our technicians are trained
-            to use the latest techniques and equipment, ensuring that you
-            receive the best possible service every time.
+            every part of your vehicle&apos;s interior. Our technicians are
+            trained to use the latest techniques and equipment, ensuring that
+            you receive the best possible service every time.
           </p>
           <p>
-            So, whether you’re preparing for a special occasion, coming back
-            from a long trip, or simply want to maintain your vehicle in top
-            condition, our full vacuum service is the perfect choice. Experience
-            the difference that a meticulous, professional cleaning can
-            make—book your appointment today.
+            So, whether you&apos;re preparing for a special occasion, coming
+            back from a long trip, or simply want to maintain your vehicle in
+            top condition, our full vacuum service is the perfect choice.
+            Experience the difference that a meticulous, professional cleaning
+            can make—book your appointment today.
           </p>
         </section>
       </div>

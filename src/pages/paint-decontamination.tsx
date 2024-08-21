@@ -4,9 +4,11 @@ import React from "react";
 const PaintDecontamination: React.FC = () => {
   return (
     <Layout>
-      <div className="paint-decontamination-container">
-        <h1 className="service-title">Paint Decontamination Service</h1>
-        <p className="service-description">
+      <div className="paint-decontamination__container">
+        <h1 className="paint-decontamination__title">
+          Paint Decontamination Service
+        </h1>
+        <p className="paint-decontamination__description">
           Our Paint Decontamination service is essential for maintaining the
           health and appearance of your vehicle's finish. Over time,
           contaminants such as industrial fallout, tar, tree sap, and iron
@@ -19,11 +21,13 @@ const PaintDecontamination: React.FC = () => {
         <img
           src="/images/other/decontamination (1).webp"
           alt="Paint Decontamination Service"
-          className="service-image"
+          className="paint-decontamination__image"
         />
 
-        <section className="service-content">
-          <h2 className="section-title">Step 1: Initial Surface Preparation</h2>
+        <section className="paint-decontamination__content">
+          <h2 className="paint-decontamination__section-title">
+            Step 1: Initial Surface Preparation
+          </h2>
           <p>
             Before we begin the decontamination process, we prepare your
             vehicle's surface by thoroughly washing it to remove loose dirt and
@@ -33,7 +37,9 @@ const PaintDecontamination: React.FC = () => {
             we move on to the decontamination phase.
           </p>
 
-          <h2 className="section-title">Step 2: Iron Remover Application</h2>
+          <h2 className="paint-decontamination__section-title">
+            Step 2: Iron Remover Application
+          </h2>
           <p>
             The first step in the decontamination process involves the
             application of an iron remover. Iron particles, often from brake
@@ -51,7 +57,9 @@ const PaintDecontamination: React.FC = () => {
             decontamination.
           </p>
 
-          <h2 className="section-title">Step 3: Clay Bar Treatment</h2>
+          <h2 className="paint-decontamination__section-title">
+            Step 3: Clay Bar Treatment
+          </h2>
           <p>
             For more aggressive decontamination, we use a clay bar to remove
             deeply embedded contaminants that cannot be removed through washing
@@ -69,7 +77,9 @@ const PaintDecontamination: React.FC = () => {
             products.
           </p>
 
-          <h2 className="section-title">Step 4: Clay Mitt Treatment</h2>
+          <h2 className="paint-decontamination__section-title">
+            Step 4: Clay Mitt Treatment
+          </h2>
           <p>
             For less aggressive decontamination, or as a follow-up to the clay
             bar treatment, we use a clay mitt. The clay mitt is a more
@@ -87,7 +97,7 @@ const PaintDecontamination: React.FC = () => {
             of contaminants and ready for further detailing or protection.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-decontamination__section-title">
             Step 5: Final Inspection and Preparation for Protection
           </h2>
           <p>
@@ -107,7 +117,7 @@ const PaintDecontamination: React.FC = () => {
             condition for as long as possible.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-decontamination__section-title">
             Why Choose Our Paint Decontamination Service?
           </h2>
           <p>
@@ -135,46 +145,71 @@ const PaintDecontamination: React.FC = () => {
         </section>
 
         <style jsx>{`
-          .paint-decontamination-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --background-color: #f9f9f9;
+            --text-color: #444;
+            --title-color: #222;
+            --container-max-width: 800px;
+            --container-padding: 20px;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
-          .service-title {
+
+          .paint-decontamination__container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+          }
+          .paint-decontamination__title {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #333;
+            color: var(--primary-color);
             text-align: center;
           }
-          .service-description {
+          .paint-decontamination__description {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #666;
+            color: var(--secondary-color);
             line-height: 1.6;
             text-align: center;
           }
-          .service-image {
+          .paint-decontamination__image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px;
+            border-radius: var(--border-radius);
           }
-          .service-content {
+          .paint-decontamination__content {
             font-size: 1rem;
-            color: #444;
+            color: var(--text-color);
             line-height: 1.6;
           }
-          .section-title {
+          .paint-decontamination__section-title {
             font-size: 1.5rem;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #222;
+            color: var(--title-color);
           }
           p {
             margin-bottom: 15px;
+          }
+
+          @media (max-width: 768px) {
+            .paint-decontamination__title {
+              font-size: 2rem;
+            }
+            .paint-decontamination__description,
+            .paint-decontamination__content {
+              font-size: 1rem;
+            }
+            .paint-decontamination__section-title {
+              font-size: 1.25rem;
+            }
           }
         `}</style>
       </div>

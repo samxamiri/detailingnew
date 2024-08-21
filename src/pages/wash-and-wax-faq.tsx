@@ -36,8 +36,8 @@ const WashAndWaxFAQ: React.FC = () => {
                   driving habits, the environment your vehicle is exposed to,
                   and your personal preference for maintaining its appearance.
                   Generally, we recommend getting this service every 4-6 weeks
-                  to keep your car's paint looking vibrant and to maintain a
-                  protective barrier against dirt, UV rays, and other
+                  to keep your car&apos;s paint looking vibrant and to maintain
+                  a protective barrier against dirt, UV rays, and other
                   contaminants.
                 </p>
               </div>
@@ -48,13 +48,14 @@ const WashAndWaxFAQ: React.FC = () => {
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Paint decontamination is a process used to remove bonded
-                  contaminants from your vehicle's paint, such as industrial
-                  fallout, tar, tree sap, and iron particles. These contaminants
-                  can adhere to the paint and cause damage over time, including
-                  dulling the finish and promoting rust. Decontaminating the
-                  paint ensures that the surface is clean and smooth, allowing
-                  for better adhesion of protective products like wax or sealant
-                  and enhancing the overall appearance of your vehicle.
+                  contaminants from your vehicle&apos;s paint, such as
+                  industrial fallout, tar, tree sap, and iron particles. These
+                  contaminants can adhere to the paint and cause damage over
+                  time, including dulling the finish and promoting rust.
+                  Decontaminating the paint ensures that the surface is clean
+                  and smooth, allowing for better adhesion of protective
+                  products like wax or sealant and enhancing the overall
+                  appearance of your vehicle.
                 </p>
               </div>
 
@@ -67,9 +68,9 @@ const WashAndWaxFAQ: React.FC = () => {
                   on the surface for an extended period. We use specialized bug
                   removers and gentle scrubbing tools to safely and effectively
                   break down and remove bug splatters without damaging the
-                  paint. It's essential to remove bug guts promptly, as their
-                  acidic content can etch into the paint if left untreated for
-                  too long.
+                  paint. It&apos;s essential to remove bug guts promptly, as
+                  their acidic content can etch into the paint if left untreated
+                  for too long.
                 </p>
               </div>
 
@@ -80,12 +81,12 @@ const WashAndWaxFAQ: React.FC = () => {
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Iron fallout consists of tiny iron particles that can come
                   from brake dust, rail dust, or industrial pollution. These
-                  particles can embed themselves into your vehicle's paint,
+                  particles can embed themselves into your vehicle&apos;s paint,
                   leading to rust spots if not removed. We use an iron remover,
                   a specialized chemical that reacts with the iron particles,
                   dissolving them and allowing them to be safely washed away.
                   This process is crucial for maintaining the integrity and
-                  appearance of your vehicle's paint.
+                  appearance of your vehicle&apos;s paint.
                 </p>
               </div>
 
@@ -114,7 +115,7 @@ const WashAndWaxFAQ: React.FC = () => {
                   Spray wax typically provides protection for about 4-6 weeks,
                   depending on the environmental conditions your vehicle is
                   exposed to and how often it is washed. Regular washing with
-                  gentle, pH-balanced soaps will help maintain the wax's
+                  gentle, pH-balanced soaps will help maintain the wax&apos;s
                   effectiveness. For longer-lasting protection, consider
                   upgrading to a paint sealant or ceramic coating, which can
                   offer protection for several months to years.
@@ -143,9 +144,9 @@ const WashAndWaxFAQ: React.FC = () => {
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Absolutely! After a Wash and Wax service, you can maintain
-                  your vehicle's cleanliness at home by using a pH-balanced car
-                  wash soap and a soft wash mitt. Avoid using harsh detergents
-                  or abrasive sponges, as these can strip the wax and
+                  your vehicle&apos;s cleanliness at home by using a pH-balanced
+                  car wash soap and a soft wash mitt. Avoid using harsh
+                  detergents or abrasive sponges, as these can strip the wax and
                   potentially scratch the paint. Regular at-home maintenance
                   will help extend the life of the wax and keep your vehicle
                   looking its best between professional services.
@@ -161,8 +162,8 @@ const WashAndWaxFAQ: React.FC = () => {
                   Water spots can sometimes occur if water dries on the surface
                   before it is fully wiped down. If you notice water spots, we
                   recommend using a quick detailer or water spot remover to
-                  gently remove them without disturbing the wax layer. It's also
-                  essential to dry your vehicle thoroughly with a soft
+                  gently remove them without disturbing the wax layer. It&apos;s
+                  also essential to dry your vehicle thoroughly with a soft
                   microfiber towel after washing to prevent water spots from
                   forming.
                 </p>

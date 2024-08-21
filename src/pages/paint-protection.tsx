@@ -4,9 +4,9 @@ import React from "react";
 const PaintProtection: React.FC = () => {
   return (
     <Layout>
-      <div className="paint-protection-container">
-        <h1 className="service-title">Paint Protection Service</h1>
-        <p className="service-description">
+      <div className="paint-protection__container">
+        <h1 className="paint-protection__title">Paint Protection Service</h1>
+        <p className="paint-protection__description">
           Protecting your vehicle's paint is essential for maintaining its
           appearance and preserving its value over time. Our Paint Protection
           service offers a variety of methods to shield your car's finish from
@@ -18,11 +18,11 @@ const PaintProtection: React.FC = () => {
         <img
           src="/images/other/paintprotection.webp"
           alt="Paint Protection Service"
-          className="service-image"
+          className="paint-protection__image"
         />
 
-        <section className="service-content">
-          <h2 className="section-title">
+        <section className="paint-protection__content">
+          <h2 className="paint-protection__section-title">
             Spray Wax: A Quick and Effective Solution
           </h2>
           <p>
@@ -44,7 +44,7 @@ const PaintProtection: React.FC = () => {
             best between more intensive treatments.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-protection__section-title">
             Paint Sealants: Longer-Lasting Protection
           </h2>
           <p>
@@ -69,7 +69,7 @@ const PaintProtection: React.FC = () => {
             vehicles.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-protection__section-title">
             Ceramic Coatings: Advanced Protection Technology
           </h2>
           <p>
@@ -96,7 +96,7 @@ const PaintProtection: React.FC = () => {
             their role in the paint protection landscape.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-protection__section-title">
             Paint Protection Film (PPF): The Ultimate Shield
           </h2>
           <p>
@@ -123,7 +123,7 @@ const PaintProtection: React.FC = () => {
             strategies.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="paint-protection__section-title">
             Why Choose Our Paint Protection Service?
           </h2>
           <p>
@@ -152,46 +152,71 @@ const PaintProtection: React.FC = () => {
         </section>
 
         <style jsx>{`
-          .paint-protection-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --background-color: #f9f9f9;
+            --text-color: #444;
+            --title-color: #222;
+            --container-max-width: 800px;
+            --container-padding: 20px;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
-          .service-title {
+
+          .paint-protection__container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+          }
+          .paint-protection__title {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #333;
+            color: var(--primary-color);
             text-align: center;
           }
-          .service-description {
+          .paint-protection__description {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #666;
+            color: var(--secondary-color);
             line-height: 1.6;
             text-align: center;
           }
-          .service-image {
+          .paint-protection__image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px;
+            border-radius: var(--border-radius);
           }
-          .service-content {
+          .paint-protection__content {
             font-size: 1rem;
-            color: #444;
+            color: var(--text-color);
             line-height: 1.6;
           }
-          .section-title {
+          .paint-protection__section-title {
             font-size: 1.5rem;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #222;
+            color: var(--title-color);
           }
           p {
             margin-bottom: 15px;
+          }
+
+          @media (max-width: 768px) {
+            .paint-protection__title {
+              font-size: 2rem;
+            }
+            .paint-protection__description,
+            .paint-protection__content {
+              font-size: 1rem;
+            }
+            .paint-protection__section-title {
+              font-size: 1.25rem;
+            }
           }
         `}</style>
       </div>

@@ -4,9 +4,11 @@ import React from "react";
 const InteriorChemicalClean: React.FC = () => {
   return (
     <Layout>
-      <div className="chemical-clean-container">
-        <h1 className="service-title">Complete Interior Chemical Clean</h1>
-        <p className="service-description">
+      <div className="interior-chemical-clean__container">
+        <h1 className="interior-chemical-clean__title">
+          Complete Interior Chemical Clean
+        </h1>
+        <p className="interior-chemical-clean__description">
           Our Complete Interior Chemical Clean is the ultimate solution for
           removing tough stains, grime, and dirt from all surfaces inside your
           vehicle. We meticulously clean every part of your car's interior,
@@ -17,11 +19,13 @@ const InteriorChemicalClean: React.FC = () => {
         <img
           src="/images/other/interiordetail.jpeg"
           alt="Interior Chemical Clean"
-          className="service-image"
+          className="interior-chemical-clean__image"
         />
 
-        <section className="service-content">
-          <h2 className="section-title">Step 1: Initial Wipe Down</h2>
+        <section className="interior-chemical-clean__content">
+          <h2 className="interior-chemical-clean__section-title">
+            Step 1: Initial Wipe Down
+          </h2>
           <p>
             We begin our Interior Chemical Clean service with a comprehensive
             wipe down of all surfaces inside your vehicle. Using premium
@@ -38,7 +42,9 @@ const InteriorChemicalClean: React.FC = () => {
             cleaning agents can penetrate the grime and stains more effectively.
           </p>
 
-          <h2 className="section-title">Step 2: Targeted Chemical Cleaning</h2>
+          <h2 className="interior-chemical-clean__section-title">
+            Step 2: Targeted Chemical Cleaning
+          </h2>
           <p>
             Once the initial wipe down is complete, we move on to the targeted
             chemical cleaning phase. Using specialized cleaning agents that are
@@ -57,7 +63,7 @@ const InteriorChemicalClean: React.FC = () => {
             and gear shifter.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="interior-chemical-clean__section-title">
             Step 3: Cracks, Crevices, and Hard-to-Reach Areas
           </h2>
           <p>
@@ -75,7 +81,7 @@ const InteriorChemicalClean: React.FC = () => {
             not only clean but also free from any lingering dirt or dust.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="interior-chemical-clean__section-title">
             Step 4: Window and Headliner Cleaning
           </h2>
           <p>
@@ -96,7 +102,7 @@ const InteriorChemicalClean: React.FC = () => {
             and air quality inside the car.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="interior-chemical-clean__section-title">
             Step 5: Final Inspection and Finishing Touches
           </h2>
           <p>
@@ -113,7 +119,7 @@ const InteriorChemicalClean: React.FC = () => {
             feeling soft, supple, and looking like new.
           </p>
 
-          <h2 className="section-title">
+          <h2 className="interior-chemical-clean__section-title">
             Why Choose Our Interior Chemical Clean?
           </h2>
           <p>
@@ -139,46 +145,71 @@ const InteriorChemicalClean: React.FC = () => {
         </section>
 
         <style jsx>{`
-          .chemical-clean-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --background-color: #f9f9f9;
+            --text-color: #444;
+            --title-color: #222;
+            --container-max-width: 800px;
+            --container-padding: 20px;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
-          .service-title {
+
+          .interior-chemical-clean__container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+          }
+          .interior-chemical-clean__title {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #333;
+            color: var(--primary-color);
             text-align: center;
           }
-          .service-description {
+          .interior-chemical-clean__description {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #666;
+            color: var(--secondary-color);
             line-height: 1.6;
             text-align: center;
           }
-          .service-image {
+          .interior-chemical-clean__image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px;
+            border-radius: var(--border-radius);
           }
-          .service-content {
+          .interior-chemical-clean__content {
             font-size: 1rem;
-            color: #444;
+            color: var(--text-color);
             line-height: 1.6;
           }
-          .section-title {
+          .interior-chemical-clean__section-title {
             font-size: 1.5rem;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #222;
+            color: var(--title-color);
           }
           p {
             margin-bottom: 15px;
+          }
+
+          @media (max-width: 768px) {
+            .interior-chemical-clean__title {
+              font-size: 2rem;
+            }
+            .interior-chemical-clean__description,
+            .interior-chemical-clean__content {
+              font-size: 1rem;
+            }
+            .interior-chemical-clean__section-title {
+              font-size: 1.25rem;
+            }
           }
         `}</style>
       </div>

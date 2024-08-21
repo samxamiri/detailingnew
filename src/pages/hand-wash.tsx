@@ -4,9 +4,9 @@ import React from "react";
 const HandWash: React.FC = () => {
   return (
     <Layout>
-      <div className="hand-wash-container">
-        <h1 className="service-title">Hand Wash Service</h1>
-        <p className="service-description">
+      <div className="hand-wash__container">
+        <h1 className="hand-wash__title">Hand Wash Service</h1>
+        <p className="hand-wash__description">
           Our Hand Wash service is designed to provide your vehicle with the
           meticulous care it deserves. We go beyond the standard car wash by
           employing premium products, expert techniques, and a detailed process
@@ -15,11 +15,11 @@ const HandWash: React.FC = () => {
         <img
           src="/images/other/carwash.webp"
           alt="Hand Wash Service"
-          className="service-image"
+          className="hand-wash__image"
         />
 
-        <section className="service-content">
-          <h2 className="section-title">Step 1: Initial Rinse</h2>
+        <section className="hand-wash__content">
+          <h2 className="hand-wash__section-title">Step 1: Initial Rinse</h2>
           <p>
             We begin our Hand Wash service with an initial rinse of your
             vehicle's exterior. This step is crucial for loosening and removing
@@ -30,7 +30,7 @@ const HandWash: React.FC = () => {
             paint during the subsequent cleaning stages.
           </p>
 
-          <h2 className="section-title">Step 2: Foam Shower</h2>
+          <h2 className="hand-wash__section-title">Step 2: Foam Shower</h2>
           <p>
             After the initial rinse, your vehicle is treated to a luxurious foam
             shower. We apply a thick layer of foaming soap that clings to the
@@ -47,7 +47,7 @@ const HandWash: React.FC = () => {
             in between panels.
           </p>
 
-          <h2 className="section-title">Step 3: Contact Wash</h2>
+          <h2 className="hand-wash__section-title">Step 3: Contact Wash</h2>
           <p>
             The contact wash is where we focus on the detailed cleaning of your
             vehicle's exterior. Unlike traditional methods that may use a single
@@ -72,7 +72,7 @@ const HandWash: React.FC = () => {
             panels, wheel arches, and behind the wheels.
           </p>
 
-          <h2 className="section-title">Step 4: Drying Process</h2>
+          <h2 className="hand-wash__section-title">Step 4: Drying Process</h2>
           <p>
             Once the contact wash is complete, we proceed to the drying process.
             Drying your vehicle properly is just as important as washing it, as
@@ -91,7 +91,9 @@ const HandWash: React.FC = () => {
             touch.
           </p>
 
-          <h2 className="section-title">Step 5: Spray Wax Application</h2>
+          <h2 className="hand-wash__section-title">
+            Step 5: Spray Wax Application
+          </h2>
           <p>
             To give your vehicle that extra shine and protection, we finish the
             Hand Wash service with a high-quality spray wax application. The
@@ -115,7 +117,9 @@ const HandWash: React.FC = () => {
             beauty and integrity of your car's exterior.
           </p>
 
-          <h2 className="section-title">Why Choose Our Hand Wash Service?</h2>
+          <h2 className="hand-wash__section-title">
+            Why Choose Our Hand Wash Service?
+          </h2>
           <p>
             At Pristine Auto Detailing, we take pride in offering a Hand Wash
             service that goes above and beyond the standard car wash. Our
@@ -138,46 +142,71 @@ const HandWash: React.FC = () => {
         </section>
 
         <style jsx>{`
-          .hand-wash-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          :root {
+            --primary-color: #333;
+            --secondary-color: #666;
+            --background-color: #f9f9f9;
+            --text-color: #444;
+            --title-color: #222;
+            --container-max-width: 800px;
+            --container-padding: 20px;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
-          .service-title {
+
+          .hand-wash__container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: var(--container-padding);
+            background-color: var(--background-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+          }
+          .hand-wash__title {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            color: #333;
+            color: var(--primary-color);
             text-align: center;
           }
-          .service-description {
+          .hand-wash__description {
             font-size: 1.2rem;
             margin-bottom: 20px;
-            color: #666;
+            color: var(--secondary-color);
             line-height: 1.6;
             text-align: center;
           }
-          .service-image {
+          .hand-wash__image {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 8px;
+            border-radius: var(--border-radius);
           }
-          .service-content {
+          .hand-wash__content {
             font-size: 1rem;
-            color: #444;
+            color: var(--text-color);
             line-height: 1.6;
           }
-          .section-title {
+          .hand-wash__section-title {
             font-size: 1.5rem;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #222;
+            color: var(--title-color);
           }
           p {
             margin-bottom: 15px;
+          }
+
+          @media (max-width: 768px) {
+            .hand-wash__title {
+              font-size: 2rem;
+            }
+            .hand-wash__description,
+            .hand-wash__content {
+              font-size: 1rem;
+            }
+            .hand-wash__section-title {
+              font-size: 1.25rem;
+            }
           }
         `}</style>
       </div>

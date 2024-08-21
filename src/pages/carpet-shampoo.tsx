@@ -10,7 +10,7 @@ const FabricShampooExtraction: React.FC = () => {
           Our Fabric Shampoo & Extraction service is designed to thoroughly
           clean and refresh the fabrics in your vehicle, including carpets and
           fabric seats. This service is ideal for removing dirt, stains, and
-          allergens that accumulate over time, ensuring your car's interior
+          allergens that accumulate over time, ensuring your car&apos;s interior
           looks and feels like new.
         </p>
         <img
@@ -25,7 +25,7 @@ const FabricShampooExtraction: React.FC = () => {
           </h2>
           <p>
             We start our Fabric Shampoo and Extraction service with a thorough
-            inspection of your vehicle's interior fabrics. Our technicians
+            inspection of your vehicle&apos;s interior fabrics. Our technicians
             examine the condition of the carpets and seats, identifying any
             particularly soiled areas, stains, or spots that may require special
             attention. Once the inspection is complete, we prepare the interior
@@ -38,12 +38,13 @@ const FabricShampooExtraction: React.FC = () => {
           <h2 className="section-title">Step 2: Deep Shampooing of Carpets</h2>
           <p>
             The next step involves applying a high-quality, fabric-safe shampoo
-            to your vehicle's carpets. Our specialized cleaning agents are
+            to your vehicle&apos;s carpets. Our specialized cleaning agents are
             formulated to break down and lift stubborn dirt, grease, and stains
             from the fibers of the carpets. The shampoo is worked into the
             carpets using a brush or an agitator, ensuring that every inch of
             the fabric is treated. This step is crucial for loosening the
-            embedded dirt and grime that regular vacuuming simply can't reach.
+            embedded dirt and grime that regular vacuuming simply can&apos;t
+            reach.
           </p>
           <p>
             After the shampoo has been thoroughly applied and agitated, we use
@@ -98,12 +99,12 @@ const FabricShampooExtraction: React.FC = () => {
             Fabric surfaces in your vehicle are subject to daily wear and tear,
             accumulating dirt, spills, and allergens over time. Regular cleaning
             is essential to maintain the appearance and hygiene of your
-            vehicle's interior. Our Fabric Shampoo & Extraction service goes
-            beyond surface cleaning, targeting the deep-seated dirt and grime
-            that can cause your vehicle to look and feel worn out.
+            vehicle&apos;s interior. Our Fabric Shampoo & Extraction service
+            goes beyond surface cleaning, targeting the deep-seated dirt and
+            grime that can cause your vehicle to look and feel worn out.
           </p>
           <p>
-            By choosing our service, you're ensuring that your vehicle's
+            By choosing our service, you're ensuring that your vehicle&apos;s
             interior fabrics are treated with the utmost care and
             professionalism. Our technicians use industry-leading products and
             techniques to deliver a clean that you can see, smell, and feel.
