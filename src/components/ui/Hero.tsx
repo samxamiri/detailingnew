@@ -1,15 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="relative w-full h-[80vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: "url('/images/other/hero.jpg')" }}
-      ></div>
+      {/* Background Image using Next.js Image Component */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/other/hero.jpg"
+          alt="Hero background"
+          layout="fill" // Makes the image cover the entire container
+          objectFit="cover" // Ensures the image covers the container
+          quality={75} // Adjust quality for better performance
+          priority // Preloads the image for better LCP
+        />
+      </div>
 
       {/* Overlay to darken the background for better text readability */}
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
