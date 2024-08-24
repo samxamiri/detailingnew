@@ -1,11 +1,28 @@
 import Layout from "@/components/ui/Layout";
+import Link from "next/link";
 import React from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const HandWash: React.FC = () => {
   return (
     <Layout>
       <div className="hand-wash__container">
-        <h1 className="hand-wash__title">Hand Wash Service</h1>
+        <div className="header-with-arrows">
+          <Link href="/paint-protection" className="arrow-link">
+            <span>Previous</span>
+            <FaArrowLeft style={{ marginRight: "8px" }} />
+          </Link>
+          <h1 className="paint-decontamination">Hand Wash Service</h1>
+          <Link
+            href="/paint-decontamination
+          "
+            className="arrow-link"
+          >
+            <span>Next</span>
+            <FaArrowRight style={{ marginLeft: "8px" }} />
+          </Link>
+        </div>
+
         <p className="hand-wash__description">
           Our Hand Wash service is designed to provide your vehicle with the
           meticulous care it deserves. We go beyond the standard car wash by
@@ -196,16 +213,34 @@ const HandWash: React.FC = () => {
           p {
             margin-bottom: 15px;
           }
+          .arrow-link {
+            color: #1e90ff;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+            font-size: 1.2rem; /* Slightly reduce the font size for mobile */
+            font-weight: bold;
+            flex-shrink: 0; /* Prevent the arrows from shrinking */
+          }
+          .arrow-link:hover {
+            color: #1c86ee;
+          }
+          .arrow-link span {
+            margin: 0 8px;
+          }
+          .header-with-arrows .arrow-link svg {
+            font-size: 2.5rem; /* Adjust size for mobile */
+          }
 
           @media (max-width: 768px) {
-            .hand-wash__title {
+            .interior-chemical-clean__title {
               font-size: 2rem;
             }
-            .hand-wash__description,
-            .hand-wash__content {
+            .interior-chemical-clean__description,
+            .interior-chemical-clean__content {
               font-size: 1rem;
             }
-            .hand-wash__section-title {
+            .interior-chemical-clean__section-title {
               font-size: 1.25rem;
             }
           }

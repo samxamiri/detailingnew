@@ -1,11 +1,24 @@
 import Layout from "../components/ui/Layout";
 import React from "react";
+import Link from "next/link";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const FullVacuum: React.FC = () => {
   return (
     <Layout>
       <div className="full-vacuum-container">
-        <h1 className="service-title">Full Vacuum Service</h1>
+        <div className="header-with-arrows">
+          <Link href="/interior-chemical-clean" className="arrow-link">
+            <span>Previous</span>
+            <FaArrowLeft style={{ marginRight: "8px" }} />
+          </Link>
+          <h1 className="service-title">Full Vacuum Service</h1>
+          <Link href="/carpet-shampoo" className="arrow-link">
+            <span>Next</span>
+            <FaArrowRight style={{ marginLeft: "8px" }} />
+          </Link>
+        </div>
+
         <p className="service-description">
           Our full vacuum service is designed to provide a thorough and
           meticulous clean for every inch of your vehicle&apos;s interior. This
@@ -100,11 +113,18 @@ const FullVacuum: React.FC = () => {
           border-radius: 8px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .header-with-arrows {
+          display: flex;
+          justify-content: space-between; /* Change to space-between for even spacing */
+          align-items: center;
+          margin-bottom: 20px;
+        }
         .service-title {
           font-size: 2.5rem;
-          margin-bottom: 20px;
           color: #333;
           text-align: center;
+          margin: 0 20px;
+          flex-grow: 1; /* Allow title to grow and take up available space */
         }
         .service-description {
           font-size: 1.2rem;
@@ -132,6 +152,24 @@ const FullVacuum: React.FC = () => {
         }
         p {
           margin-bottom: 15px;
+        }
+        .arrow-link {
+          color: #1e90ff;
+          display: flex;
+          align-items: center;
+          transition: color 0.3s ease;
+          font-size: 1.2rem; /* Slightly reduce the font size for mobile */
+          font-weight: bold;
+          flex-shrink: 0; /* Prevent the arrows from shrinking */
+        }
+        .arrow-link:hover {
+          color: #1c86ee;
+        }
+        .arrow-link span {
+          margin: 0 8px;
+        }
+        .header-with-arrows .arrow-link svg {
+          font-size: 2.5rem; /* Adjust size for mobile */
         }
       `}</style>
     </Layout>

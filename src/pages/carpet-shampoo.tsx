@@ -1,11 +1,24 @@
 import Layout from "@/components/ui/Layout";
 import React from "react";
+import Link from "next/link";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const FabricShampooExtraction: React.FC = () => {
   return (
     <Layout>
       <div className="fabric-shampoo-container">
-        <h1 className="service-title">Fabric Shampoo & Extraction Service</h1>
+        <div className="header-with-arrows">
+          <Link href="/full-vacuum" className="arrow-link">
+            <span>Previous</span>
+            <FaArrowLeft style={{ marginRight: "8px" }} />
+          </Link>
+          <h1 className="service-title">Fabric Shampoo & Extraction Service</h1>
+          <Link href="/interior-chemical-clean" className="arrow-link">
+            <span>Next</span>
+            <FaArrowRight style={{ marginLeft: "8px" }} />
+          </Link>
+        </div>
+
         <p className="service-description">
           Our Fabric Shampoo & Extraction service is designed to thoroughly
           clean and refresh the fabrics in your vehicle, including carpets and
@@ -138,11 +151,17 @@ const FabricShampooExtraction: React.FC = () => {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
           }
+          .header-with-arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+          }
           .service-title {
             font-size: 2.5rem;
-            margin-bottom: 20px;
             color: #333;
             text-align: center;
+            flex-grow: 1; /* Allow title to grow and take up available space */
           }
           .service-description {
             font-size: 1.2rem;
@@ -170,6 +189,24 @@ const FabricShampooExtraction: React.FC = () => {
           }
           p {
             margin-bottom: 15px;
+          }
+          .arrow-link {
+            color: #1e90ff;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+            font-size: 1.2rem; /* Slightly reduce the font size for mobile */
+            font-weight: bold;
+            flex-shrink: 0; /* Prevent the arrows from shrinking */
+          }
+          .arrow-link:hover {
+            color: #1c86ee;
+          }
+          .arrow-link span {
+            margin: 0 8px;
+          }
+          .header-with-arrows .arrow-link svg {
+            font-size: 2.5rem; /* Adjust size for mobile */
           }
         `}</style>
       </div>
