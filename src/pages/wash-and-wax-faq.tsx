@@ -13,7 +13,8 @@ const WashAndWaxFAQ: React.FC = () => {
             <div className="max-w-[800px] mx-auto">
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  What is included in your Wash and Wax service?
+                  What is included in your{" "}
+                  <a href="hand-wash.tsx">Wash and Wax service</a>?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Our Wash and Wax service includes a thorough hand wash of your
@@ -44,7 +45,9 @@ const WashAndWaxFAQ: React.FC = () => {
 
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  What is paint decontamination, and why is it important?
+                  What is{" "}
+                  <a href="paint-decontamination">paint decontamination</a>, and
+                  why is it important?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Paint decontamination is a process used to remove bonded
@@ -109,7 +112,8 @@ const WashAndWaxFAQ: React.FC = () => {
 
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  How long does the spray wax protection last?
+                  How long does the{" "}
+                  <a href="paint-protection">spray wax protection</a> last?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Spray wax typically provides protection for about 4-6 weeks,
@@ -171,6 +175,16 @@ const WashAndWaxFAQ: React.FC = () => {
             </div>
           </section>
         </main>
+        <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
+        `}</style>
       </div>
     </Layout>
   );

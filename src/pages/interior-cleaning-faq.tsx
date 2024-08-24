@@ -28,7 +28,8 @@ const InteriorCleaningFAQ: React.FC = () => {
 
               <div className="interior-cleaning-faq__item mb-8">
                 <h2 className="interior-cleaning-faq__question text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  How do you shampoo carpets and seats?
+                  How do you{" "}
+                  <a href="carpet-shampoo">shampoo carpets and seats</a>?
                 </h2>
                 <p className="interior-cleaning-faq__answer text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Carpet and seat shampooing is a key part of our Interior
@@ -157,6 +158,16 @@ const InteriorCleaningFAQ: React.FC = () => {
             </div>
           </section>
         </main>
+        <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
+        `}</style>
       </div>
     </Layout>
   );

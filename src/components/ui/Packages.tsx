@@ -172,7 +172,7 @@ const Packages: React.FC = () => {
                   className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
                   colSpan={3}
                 >
-                  Interior
+                  <a href="interior-car-cleaning-montreal">Interior</a>
                 </td>
               </tr>
               <tr className="border-t border-gray-200 dark:border-gray-700">
@@ -330,7 +330,7 @@ const Packages: React.FC = () => {
                   className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
                   colSpan={3}
                 >
-                  Exterior
+                  <a href="exterior-car-cleaning-montreal">Exterior</a>
                 </td>
               </tr>
               <tr className="border-t border-gray-200 dark:border-gray-700">
@@ -517,6 +517,16 @@ const Packages: React.FC = () => {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          a {
+            color: #1e90ff; /* A standard link color */
+            text-decoration: underline; /* Underline to indicate it’s a link */
+          }
+          a:hover {
+            color: #1c86ee; /* Slightly darker shade on hover */
+            text-decoration: none; /* Remove underline on hover for effect */
+          }
+        `}</style>
       </div>
     </section>
   );
