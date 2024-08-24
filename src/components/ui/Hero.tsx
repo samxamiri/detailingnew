@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Background Image using Next.js Image Component */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/other/hero.jpg"
+          src="/images/other/hero.webp"
           alt="Hero background"
           layout="fill" // Makes the image cover the entire container
           objectFit="cover" // Ensures the image covers the container
