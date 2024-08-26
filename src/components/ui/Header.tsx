@@ -117,7 +117,7 @@ const Header = () => {
             aria-label="Main navigation"
           >
             <Link
-              href="/detailing-packages"
+              href="/pricing"
               className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
               Pricing
@@ -147,7 +147,7 @@ const Header = () => {
               )}
             </div>
             <Link
-              href="/about"
+              href="/FAQs"
               className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
               FAQs

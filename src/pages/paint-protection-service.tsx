@@ -20,12 +20,12 @@ const PaintProtection: React.FC = () => {
       </Head>
       <div className="paint-protection__container">
         <div className="header-with-arrows">
-          <Link href="/paint-decontamination" className="arrow-link">
+          <Link href="/paint-decontamination-service" className="arrow-link">
             <FaArrowLeft style={{ marginRight: "8px" }} />
             <span>Previous</span>
           </Link>
           <h1 className="paint-protection__title">Paint Protection Service</h1>
-          <Link href="/hand-wash" className="arrow-link">
+          <Link href="/hand-wash-service" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />
           </Link>

@@ -7,7 +7,7 @@ const AboutPage: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title>FAQs | Sam&apos;s Mobile Detailing in Montreal</title>
+        <title> FAQs | Sam&apos;s Mobile Detailing in Montreal</title>
         <meta
           name="description"
           content="Find answers to frequently asked questions about Sam's Mobile Detailing in Montreal. Learn more about our services, pricing, and booking process."
