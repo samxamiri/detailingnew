@@ -6,6 +6,7 @@ import Contact from "../components/ui/Contact";
 import Layout from "../components/ui/Layout";
 import DetailingPrices from "../components/ui/DetailingPrices";
 import Services from "../components/ui/services";
+import Head from "next/head";
 
 const imagePairs = [
   {
@@ -38,6 +39,16 @@ const imagePairs = [
 const LandingPage = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Detailing Services Montreal | Sam&apos;s Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content="Experience the convenience of mobile detailing in Montreal. Our experts bring top-quality car cleaning services directly to your location, ensuring your vehicle looks its best without the hassle."
+        />
+      </Head>
       <section id="hero">
         <Hero />
       </section>
