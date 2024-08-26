@@ -10,7 +10,8 @@ const InteriorChemicalClean: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Interior Chemical Cleaning in Montreal | Sam's Mobile Detailing
+          Mobile Interior Chemical Cleaning in Montreal | Sam&apos;s Mobile
+          Detailing
         </title>
         <meta
           name="description"

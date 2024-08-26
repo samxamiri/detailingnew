@@ -10,7 +10,7 @@ const FullVacuum: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Full Vacuum and Blowout Service in Montreal | Sam's Mobile
+          Mobile Full Vacuum and Blowout Service in Montreal | Sam&apos;s Mobile
           Detailing
         </title>
         <meta

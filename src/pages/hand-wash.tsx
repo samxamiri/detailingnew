@@ -10,7 +10,7 @@ const HandWash: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Hand Wash Services in Montreal | Sam's Mobile Detailing
+          Mobile Hand Wash Services in Montreal | Sam&apos;s Mobile Detailing
         </title>
         <meta
           name="description"

@@ -6,7 +6,7 @@ const WashAndWaxFAQ: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title> Mobile Hand Wash FAQs | Sam's Mobile Detailing</title>
+        <title> Mobile Hand Wash FAQs | Sam&apos;s Mobile Detailing</title>
         <meta
           name="description"
           content="Have any questions regarding our mobile hand wash services? We have compiled a list of the most frequently asked questions for you to look at!"

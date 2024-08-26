@@ -10,7 +10,8 @@ const FabricShampooExtraction: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Interior Shampoo & Extraction Service | Sam's Mobile Detailing
+          Mobile Interior Shampoo & Extraction Service | Sam&apos;s Mobile
+          Detailing
         </title>
         <meta
           name="description"

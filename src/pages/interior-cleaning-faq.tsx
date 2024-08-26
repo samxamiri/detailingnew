@@ -8,7 +8,7 @@ const InteriorCleaningFAQ: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Interior Detailing Services FAQs | Sam's Mobile Detailing
+          Mobile Interior Detailing Services FAQs | Sam&apos;s Mobile Detailing
         </title>
         <meta
           name="description"

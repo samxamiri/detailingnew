@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => {
   return (
     <Layout>
       <Head>
-        <title> Contact Us | Sam's Mobile Detailing</title>
+        <title> Contact Us | Sam&apos;s Mobile Detailing</title>
         <meta
           name="description"
           content="Want to get your mobile detailing questions answered as fast as possible? Give us a call at 514-772-4554!"

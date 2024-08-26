@@ -10,7 +10,8 @@ const PaintProtection: React.FC = () => {
       <Head>
         <title>
           {" "}
-          Mobile Paint Protection Services in Montreal | Sam's Mobile Detailing
+          Mobile Paint Protection Services in Montreal | Sam&apos;s Mobile
+          Detailing
         </title>
         <meta
           name="description"
