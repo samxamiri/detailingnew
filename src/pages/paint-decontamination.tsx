@@ -237,6 +237,13 @@ const PaintDecontamination: React.FC = () => {
           p {
             margin-bottom: 15px;
           }
+          h1 {
+            font-size: 2.5rem; /* Adjust as needed */
+            font-weight: bold;
+            color: var(--title-color);
+            margin-bottom: 20px;
+            text-align: center; /* Adjust alignment as needed */
+          }
           .arrow-link {
             color: #1e90ff;
             display: flex;

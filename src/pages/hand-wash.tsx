@@ -9,15 +9,11 @@ const HandWash: React.FC = () => {
       <div className="hand-wash__container">
         <div className="header-with-arrows">
           <Link href="/paint-protection" className="arrow-link">
-            <span>Previous</span>
             <FaArrowLeft style={{ marginRight: "8px" }} />
+            <span>Previous</span>
           </Link>
           <h1 className="paint-decontamination">Hand Wash Service</h1>
-          <Link
-            href="/paint-decontamination
-          "
-            className="arrow-link"
-          >
+          <Link href="/paint-decontamination" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />
           </Link>
@@ -31,7 +27,7 @@ const HandWash: React.FC = () => {
           protected.
         </p>
         <img
-          src="/images/other/carwash.webp"
+          src="/images/other/foam.webp"
           alt="Hand Wash Service"
           className="hand-wash__image"
         />
@@ -228,8 +224,18 @@ const HandWash: React.FC = () => {
           .arrow-link span {
             margin: 0 8px;
           }
-          .header-with-arrows .arrow-link svg {
-            font-size: 2.5rem; /* Adjust size for mobile */
+          .header-with-arrows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; /* Adjust spacing as needed */
+          }
+          h1 {
+            font-size: 2.5rem; /* Adjust as needed */
+            font-weight: bold;
+            color: var(--title-color);
+            margin-bottom: 20px;
+            text-align: center; /* Adjust alignment as needed */
           }
 
           @media (max-width: 768px) {
