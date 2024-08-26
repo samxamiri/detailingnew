@@ -8,21 +8,21 @@ const InteriorServices: React.FC = () => {
       description:
         "Our full vacuum service covers every inch of your vehicle's interior, removing dirt, dust, and debris from all surfaces, including under the seats and in hard-to-reach areas.",
       image: "/images/other/vacuum.jpg",
-      link: "/full-vacuum",
+      link: "/full-vacuum-service",
     },
     {
       title: "Carpet Shampoo & Extraction",
       description:
         "Our carpet shampooing service removes dirt, stains, and allergens from your car's carpets, leaving them fresh and clean.",
       image: "/images/other/extraction.png",
-      link: "/carpet-shampoo",
+      link: "/interior-shampoo-service",
     },
     {
       title: "Complete Interior Chemical Clean",
       description:
         "We provide a comprehensive chemical cleaning of all interior surfaces, targeting tough stains and grime on plastics, vinyl, and rubber.",
       image: "/images/other/interiordetail.jpeg",
-      link: "/interior-chemical-clean",
+      link: "/interior-chemical-clean-service",
     },
   ];
 
@@ -69,9 +69,9 @@ const InteriorServices: React.FC = () => {
 
       {/* Link to the Interior Cleaning FAQ */}
       <div className="mt-8 flex justify-center">
-        <Link href="/interior-cleaning-faq">
+        <Link href="/interior-detailing-faq">
           <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition-all">
-            View Interior Cleaning FAQs
+            View Interior Detailing FAQs
           </button>
         </Link>
       </div>
@@ -98,7 +98,10 @@ const InteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/interior-chemical-clean" className="hover-link">
+                  <Link
+                    href="/interior-chemical-clean-service"
+                    className="hover-link"
+                  >
                     <span className="hover-link cursor-pointer">
                       Complete Interior Chemical Clean
                     </span>
@@ -106,7 +109,7 @@ const InteriorServices: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/carpet-shampoo" className="hover-link">
+                  <Link href="/interior-shampoo-service" className="hover-link">
                     <span className="hover-link cursor-pointer">
                       Carpet Shampoo
                     </span>
@@ -114,7 +117,7 @@ const InteriorServices: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/full-vacuum" className="hover-link">
+                  <Link href="/full-vacuum-service" className="hover-link">
                     <span className="hover-link cursor-pointer">
                       Interior Vacuuming on Every Necessary Surface
                     </span>

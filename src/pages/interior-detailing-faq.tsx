@@ -19,12 +19,12 @@ const InteriorCleaningFAQ: React.FC = () => {
         <main className="flex-1 py-12 md:py-24 lg:py-32">
           <section className="container mx-auto px-4 md:px-6">
             <h1 className="interior-cleaning-faq__title text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl text-center text-gray-900 dark:text-gray-100 mb-12">
-              Interior Cleaning FAQ
+              Interior Detailing FAQ
             </h1>
             <div className="interior-cleaning-faq__content max-w-[800px] mx-auto">
               <div className="interior-cleaning-faq__item mb-8">
                 <h2 className="interior-cleaning-faq__question text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  What is included in your Interior Cleaning service?
+                  What is included in your Interior Detailing Service?
                 </h2>
                 <p className="interior-cleaning-faq__answer text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Our Interior Cleaning service is a comprehensive cleaning of
@@ -40,7 +40,10 @@ const InteriorCleaningFAQ: React.FC = () => {
               <div className="interior-cleaning-faq__item mb-8">
                 <h2 className="interior-cleaning-faq__question text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
                   How do you{" "}
-                  <a href="carpet-shampoo">shampoo carpets and seats</a>?
+                  <a href="interior-shampoo-service">
+                    shampoo carpets and seats
+                  </a>
+                  ?
                 </h2>
                 <p className="interior-cleaning-faq__answer text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Carpet and seat shampooing is a key part of our Interior

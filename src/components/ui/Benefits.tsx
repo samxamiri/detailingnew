@@ -46,7 +46,7 @@ function Benefits() {
           </div>
         </div>
         <div className="flex justify-center mt-12">
-          <Link href="/detailing-prices">
+          <Link href="/detailing-packages">
             <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full">
               View Pricing
             </button>

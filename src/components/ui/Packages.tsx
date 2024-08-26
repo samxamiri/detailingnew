@@ -172,7 +172,7 @@ const Packages: React.FC = () => {
                   className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
                   colSpan={3}
                 >
-                  <a href="interior-car-cleaning-montreal">Interior</a>
+                  <a href="interior-detailing-services">Interior</a>
                 </td>
               </tr>
               <tr className="border-t border-gray-200 dark:border-gray-700">
@@ -330,7 +330,7 @@ const Packages: React.FC = () => {
                   className="px-2 py-2 text-left font-bold text-gray-600 dark:text-gray-400"
                   colSpan={3}
                 >
-                  <a href="exterior-car-cleaning-montreal">Exterior</a>
+                  <a href="exterior-detailing-services">Exterior</a>
                 </td>
               </tr>
               <tr className="border-t border-gray-200 dark:border-gray-700">

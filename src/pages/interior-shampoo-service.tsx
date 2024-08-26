@@ -24,12 +24,12 @@ const FabricShampooExtraction: React.FC = () => {
       </Head>
       <div className="fabric-shampoo-container">
         <div className="header-with-arrows">
-          <Link href="/full-vacuum" className="arrow-link">
+          <Link href="/full-vacuum-service" className="arrow-link">
             <span>Previous</span>
             <FaArrowLeft style={{ marginRight: "8px" }} />
           </Link>
           <h1 className="service-title">Fabric Shampoo & Extraction Service</h1>
-          <Link href="/interior-chemical-clean" className="arrow-link">
+          <Link href="/interior-chemical-clean-service" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />
           </Link>
@@ -59,7 +59,7 @@ const FabricShampooExtraction: React.FC = () => {
             particularly soiled areas, stains, or spots that may require special
             attention. Once the inspection is complete, we prepare the interior
             for the shampooing process by{" "}
-            <a href="full-vacuum">
+            <a href="full-vacuum-service">
               vacuuming the surfaces to remove loose dirt and debris.
             </a>{" "}
             This preparation ensures that the shampooing process is as effective

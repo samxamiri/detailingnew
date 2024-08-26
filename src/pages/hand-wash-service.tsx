@@ -23,11 +23,11 @@ const HandWash: React.FC = () => {
       </Head>
       <div className="hand-wash__container">
         <div className="header-with-arrows">
-          <Link href="/paint-protection" className="arrow-link">
+          <Link href="/paint-protection-service" className="arrow-link">
             <FaArrowLeft style={{ marginRight: "8px" }} />
             <span>Previous</span>
           </Link>
-          <h1 className="paint-decontamination">Hand Wash Service</h1>
+          <h1 className="paint-decontamination-service">Hand Wash Service</h1>
           <Link href="/paint-decontamination" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />

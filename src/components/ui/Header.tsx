@@ -117,7 +117,7 @@ const Header = () => {
             aria-label="Main navigation"
           >
             <Link
-              href="/detailing-prices"
+              href="/detailing-packages"
               className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
               Pricing
@@ -132,13 +132,13 @@ const Header = () => {
               {dropdownOpen && (
                 <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md z-50">
                   <Link
-                    href="/interior-car-cleaning-montreal"
+                    href="/interior-detailing-services"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
                     Interior Detailing
                   </Link>
                   <Link
-                    href="/exterior-car-cleaning-montreal"
+                    href="/exterior-detailing-services"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
                     Exterior Detailing

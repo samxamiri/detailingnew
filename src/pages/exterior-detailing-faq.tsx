@@ -16,16 +16,16 @@ const WashAndWaxFAQ: React.FC = () => {
         <main className="flex-1 py-12 md:py-24 lg:py-32">
           <section className="container mx-auto px-4 md:px-6">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl xl:text-7xl text-center text-gray-900 dark:text-gray-100 mb-12">
-              Wash and Wax FAQ
+              Exterior Detailing FAQs
             </h1>
             <div className="max-w-[800px] mx-auto">
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
                   What is included in your{" "}
-                  <a href="hand-wash.tsx">Wash and Wax service</a>?
+                  <a href="hand-wash-service">hand wash service</a>?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
-                  Our Wash and Wax service includes a thorough hand wash of your
+                  Our hand wash service includes a thorough hand wash of your
                   vehicle, followed by a drying process using soft microfiber
                   towels. We then apply a high-quality spray wax to all exterior
                   surfaces, including the paint, glass, and trim. The wax
@@ -38,24 +38,25 @@ const WashAndWaxFAQ: React.FC = () => {
 
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
-                  How often should I get a Wash and Wax service?
+                  How often should I get a hand wash service?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
-                  The frequency of a Wash and Wax service depends on your
-                  driving habits, the environment your vehicle is exposed to,
-                  and your personal preference for maintaining its appearance.
-                  Generally, we recommend getting this service every 4-6 weeks
-                  to keep your car&apos;s paint looking vibrant and to maintain
-                  a protective barrier against dirt, UV rays, and other
-                  contaminants.
+                  The frequency of a hand wash service depends on your driving
+                  habits, the environment your vehicle is exposed to, and your
+                  personal preference for maintaining its appearance. Generally,
+                  we recommend getting this service every 4-6 weeks to keep your
+                  car&apos;s paint looking vibrant and to maintain a protective
+                  barrier against dirt, UV rays, and other contaminants.
                 </p>
               </div>
 
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
                   What is{" "}
-                  <a href="paint-decontamination">paint decontamination</a>, and
-                  why is it important?
+                  <a href="paint-decontamination-service">
+                    paint decontamination
+                  </a>
+                  , and why is it important?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Paint decontamination is a process used to remove bonded
@@ -121,7 +122,8 @@ const WashAndWaxFAQ: React.FC = () => {
               <div className="mb-8">
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-300 mb-4">
                   How long does the{" "}
-                  <a href="paint-protection">spray wax protection</a> last?
+                  <a href="paint-protection-service">spray wax protection</a>{" "}
+                  last?
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-400 leading-relaxed">
                   Spray wax typically provides protection for about 4-6 weeks,

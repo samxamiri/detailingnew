@@ -23,12 +23,12 @@ const FullVacuum: React.FC = () => {
       </Head>
       <div className="full-vacuum-container">
         <div className="header-with-arrows">
-          <Link href="/interior-chemical-clean" className="arrow-link">
+          <Link href="/interior-chemical-clean-service" className="arrow-link">
             <span>Previous</span>
             <FaArrowLeft style={{ marginRight: "8px" }} />
           </Link>
           <h1 className="service-title">Full Vacuum Service</h1>
-          <Link href="/carpet-shampoo" className="arrow-link">
+          <Link href="/interior-shampoo-service" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />
           </Link>

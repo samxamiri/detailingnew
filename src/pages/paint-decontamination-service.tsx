@@ -20,14 +20,14 @@ const PaintDecontamination: React.FC = () => {
       </Head>
       <div className="paint-decontamination__container">
         <div className="header-with-arrows">
-          <Link href="/hand-wash" className="arrow-link">
+          <Link href="/hand-wash-service" className="arrow-link">
             <FaArrowLeft style={{ marginRight: "8px" }} />
             <span>Previous</span>
           </Link>
           <h1 className="paint-decontamination__title">
             Paint Decontamination Service
           </h1>
-          <Link href="/paint-protection" className="arrow-link">
+          <Link href="/paint-protection-service" className="arrow-link">
             <span>Next</span>
             <FaArrowRight style={{ marginLeft: "8px" }} />
           </Link>
@@ -56,7 +56,7 @@ const PaintDecontamination: React.FC = () => {
           <p>
             Before we begin the decontamination process, we prepare your
             vehicle&apos;s surface by thoroughly{" "}
-            <a href="wash-and-wax">
+            <a href="hand-wash-service">
               washing it to remove loose dirt and debris.
             </a>{" "}
             This step is crucial for ensuring that the decontamination products
@@ -91,10 +91,10 @@ const PaintDecontamination: React.FC = () => {
           <p>
             For more aggressive decontamination, we use a clay bar to remove
             deeply embedded contaminants that cannot be removed through{" "}
-            <a href="wash-and-wax">washing</a> or iron remover alone. The clay
-            bar is a specialized tool that is carefully rubbed over the surface
-            of your vehicle, picking up and pulling out contaminants from the
-            paint.
+            <a href="hand-wash-service">washing</a> or iron remover alone. The
+            clay bar is a specialized tool that is carefully rubbed over the
+            surface of your vehicle, picking up and pulling out contaminants
+            from the paint.
           </p>
           <p>
             The clay bar treatment is particularly effective for removing tar,
@@ -102,9 +102,9 @@ const PaintDecontamination: React.FC = () => {
             the surface, it captures these contaminants, leaving the paint
             feeling smooth and free of any roughness. This step is essential for
             preparing the paint for{" "}
-            <a href="paint-protection">polishing or waxing</a>, as it ensures
-            that the surface is completely clean and ready to bond with any
-            protective products.
+            <a href="paint-protection-service">polishing or waxing</a>, as it
+            ensures that the surface is completely clean and ready to bond with
+            any protective products.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -136,7 +136,7 @@ const PaintDecontamination: React.FC = () => {
             contaminants have been removed. The paint should feel smooth to the
             touch, with no rough spots or imperfections. This clean surface is
             now perfectly prepped for{" "}
-            <a href="paint-protection">
+            <a href="paint-protection-service">
               the application of protective products, such as wax, sealant, or
               ceramic coating
             </a>
@@ -145,10 +145,11 @@ const PaintDecontamination: React.FC = () => {
           </p>
           <p>
             We recommend following up the decontamination process with a{" "}
-            <a href="paint-protection">protective treatment</a> to seal in the
-            results and protect the paint from future contamination. Our team
-            can guide you through the best options for your vehicle, ensuring
-            that your car remains in top condition for as long as possible.
+            <a href="paint-protection-service">protective treatment</a> to seal
+            in the results and protect the paint from future contamination. Our
+            team can guide you through the best options for your vehicle,
+            ensuring that your car remains in top condition for as long as
+            possible.
           </p>
 
           <h2 className="paint-decontamination__section-title">
@@ -168,9 +169,9 @@ const PaintDecontamination: React.FC = () => {
             are trained to handle all types of contaminants, using clay bars,
             clay mitts, and iron removers to deliver exceptional results.
             Whether you&apos;re preparing your car for a{" "}
-            <a href="paint-protection">protective treatment</a> or simply want
-            to restore its original shine, our Paint Decontamination service is
-            the ideal solution.
+            <a href="paint-protection-service">protective treatment</a> or
+            simply want to restore its original shine, our Paint Decontamination
+            service is the ideal solution.
           </p>
           <p>
             Don&apos;t let contaminants compromise the look and feel of your

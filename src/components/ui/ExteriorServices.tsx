@@ -8,21 +8,21 @@ const ExteriorServices: React.FC = () => {
       description:
         "Our hand wash service goes beyond the typical car wash, using premium products and techniques to gently cleanse your vehicle's exterior without causing any damage.",
       image: "/images/other/carwash.webp",
-      link: "/hand-wash",
+      link: "/hand-wash-service",
     },
     {
       title: "Paint Decontamination",
       description:
         "Paint decontamination is a crucial step in maintaining your vehicle's finish. We use specialized tools and products to remove contaminants that standard washes can't handle, such as industrial fallout, tar, and tree sap.",
       image: "/images/other/decontamination (1).webp",
-      link: "/paint-decontamination",
+      link: "/paint-decontamination-service",
     },
     {
       title: "Paint Protection",
       description:
         "Protect your investment with our paint protection service. We apply a high-quality spray protection that shields your vehicle's paint from harsh environmental elements, helping it stay vibrant and pristine for months.",
       image: "/images/other/paintprotection.webp",
-      link: "/paint-protection",
+      link: "/paint-protection-service",
     },
   ];
 
@@ -62,9 +62,9 @@ const ExteriorServices: React.FC = () => {
 
       {/* Link to the Exterior Cleaning FAQ */}
       <div className="mt-8 flex justify-center">
-        <Link href="/wash-and-wax-faq">
+        <Link href="/exterior-detailing-faq">
           <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700 transition-all">
-            View Exterior Cleaning FAQs
+            View Exterior Detailing FAQs
           </button>
         </Link>
       </div>
@@ -91,13 +91,13 @@ const ExteriorServices: React.FC = () => {
               <ul className="text-lg md:text-xl text-gray-700 dark:text-gray-300 space-y-4">
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/hand-wash" passHref>
+                  <Link href="/hand-wash-service" passHref>
                     <span className="hover-link cursor-pointer">Hand Wash</span>
                   </Link>
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/paint-decontamination" passHref>
+                  <Link href="/paint-decontamination-service" passHref>
                     <span className="hover-link cursor-pointer">
                       Paint Decontamination
                     </span>
@@ -105,7 +105,7 @@ const ExteriorServices: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="inline-block w-3 h-3 mr-2 bg-blue-500 rounded-full"></span>
-                  <Link href="/paint-protection" passHref>
+                  <Link href="/paint-protection-service" passHref>
                     <span className="hover-link cursor-pointer">
                       Complete Paint Protection on All Exterior Surfaces
                     </span>

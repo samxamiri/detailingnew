@@ -23,7 +23,7 @@ const InteriorChemicalClean: React.FC = () => {
       </Head>
       <div className="interior-chemical-clean__container">
         <div className="header-with-arrows">
-          <Link href="/carpet-shampoo" className="arrow-link">
+          <Link href="/interior-shampoo-service" className="arrow-link">
             <span>Previous</span>
             <FaArrowLeft style={{ marginRight: "8px" }} />
           </Link>
@@ -31,7 +31,7 @@ const InteriorChemicalClean: React.FC = () => {
             Complete Interior Chemical Clean
           </h1>
           <Link
-            href="/full-vacuum
+            href="/full-vacuum-service
           "
             className="arrow-link"
           >

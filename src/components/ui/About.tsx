@@ -23,29 +23,29 @@ export default function FAQComponent() {
             <div className="grid gap-12 lg:gap-16 items-center justify-center mt-12 lg:mt-24">
               <div className="max-w-[600px] mx-auto">
                 <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300 leading-relaxed">
-                  Interior Cleaning FAQ
+                  Interior Detailing FAQs
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed mt-4">
-                  Have questions about our interior cleaning services? Find
+                  Have questions about our interior detailing services? Find
                   answers to some of the most common questions we receive.
                 </p>
-                <Link href="/interior-cleaning-faq">
+                <Link href="/interior-detailing-faq">
                   <button className="mt-8 px-10 py-4 bg-blue-600 text-white rounded-lg text-xl hover:bg-blue-700 transition-all">
-                    View Interior Cleaning FAQ
+                    View Interior Detailing FAQs
                   </button>
                 </Link>
               </div>
               <div className="max-w-[600px] mx-auto">
                 <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300 leading-relaxed">
-                  Wash and Wax FAQ
+                  Exterior Detailing FAQs
                 </h2>
                 <p className="text-xl md:text-2xl text-gray-800 dark:text-gray-300 leading-relaxed mt-4">
-                  Have questions about our wash and wax services? Check out the
-                  answers to the questions we get asked the most.
+                  Have questions about our exterior detailing services? Check
+                  out the answers to the questions we get asked the most.
                 </p>
-                <Link href="/wash-and-wax-faq">
+                <Link href="/exterior-detailing-faq">
                   <button className="mt-8 px-10 py-4 bg-blue-600 text-white rounded-lg text-xl hover:bg-blue-700 transition-all">
-                    View Wash and Wax FAQ
+                    View Exterior Detailing FAQs
                   </button>
                 </Link>
               </div>
