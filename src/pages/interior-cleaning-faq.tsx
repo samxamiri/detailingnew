@@ -1,9 +1,20 @@
 import Layout from "@/components/ui/Layout";
+import Head from "next/head";
 import React from "react";
 
 const InteriorCleaningFAQ: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Interior Detailing Services FAQs | Sam's Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content="Have any questions regarding our interior detailing services? We have compiled a list of the most frequently asked questions for you to look at!"
+        />
+      </Head>
       <div className="interior-cleaning-faq__container min-h-[100dvh] flex flex-col bg-gray-100 dark:bg-gray-900">
         <main className="flex-1 py-12 md:py-24 lg:py-32">
           <section className="container mx-auto px-4 md:px-6">

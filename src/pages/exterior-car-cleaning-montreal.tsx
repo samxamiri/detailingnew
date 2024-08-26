@@ -8,7 +8,7 @@ const ExteriorServicesPage: React.FC = () => {
     <Layout>
       <Head>
         <title>
-          Exterior Car Detailing Services in Montreal | Sam&apos;s Mobile
+          Mobile Exterior Car Detailing Services in Montreal | Sam&apos;s Mobile
           Detailing
         </title>
         <meta

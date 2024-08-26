@@ -2,10 +2,22 @@ import Layout from "@/components/ui/Layout";
 import React from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Head from "next/head";
 
 const PaintDecontamination: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Paint Decontamination Services in Montreal | Sam's Mobile
+          Detailing
+        </title>
+        <meta
+          name="description"
+          content="Restore your car's finish with our thorough paint decontamination service. We remove embedded contaminants, ensuring a smooth, clean surface that's ready for waxing or protective coatings."
+        />
+      </Head>
       <div className="paint-decontamination__container">
         <div className="header-with-arrows">
           <Link href="/hand-wash" className="arrow-link">

@@ -2,10 +2,21 @@ import Layout from "@/components/ui/Layout";
 import React from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Head from "next/head";
 
 const PaintProtection: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Paint Protection Services in Montreal | Sam's Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content="Protect your vehicle's paint with our expert paint protection services. From waxes to ceramic coatings, we ensure your car's finish stays pristine, shielding it from the elements and maintaining its shine."
+        />
+      </Head>
       <div className="paint-protection__container">
         <div className="header-with-arrows">
           <Link href="/paint-decontamination" className="arrow-link">

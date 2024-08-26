@@ -2,10 +2,25 @@ import Layout from "../components/ui/Layout";
 import React from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Head from "next/head";
 
 const FullVacuum: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Full Vacuum and Blowout Service in Montreal | Sam's Mobile
+          Detailing
+        </title>
+        <meta
+          name="description"
+          content="Our full vacuum service is designed to provide a thorough and
+          meticulous clean for every inch of your vehicle's interior. This
+          process goes beyond a simple vacuum; it's a multi-step procedure
+          that ensures your car is spotless and free of any debris."
+        />
+      </Head>
       <div className="full-vacuum-container">
         <div className="header-with-arrows">
           <Link href="/interior-chemical-clean" className="arrow-link">

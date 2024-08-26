@@ -1,9 +1,17 @@
 import Layout from "@/components/ui/Layout";
+import Head from "next/head";
 import React from "react";
 
 const WashAndWaxFAQ: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title> Mobile Hand Wash FAQs | Sam's Mobile Detailing</title>
+        <meta
+          name="description"
+          content="Have any questions regarding our mobile hand wash services? We have compiled a list of the most frequently asked questions for you to look at!"
+        />
+      </Head>
       <div className="min-h-[100dvh] flex flex-col bg-gray-100 dark:bg-gray-900">
         <main className="flex-1 py-12 md:py-24 lg:py-32">
           <section className="container mx-auto px-4 md:px-6">

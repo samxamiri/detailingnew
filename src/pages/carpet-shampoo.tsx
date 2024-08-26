@@ -2,10 +2,25 @@ import Layout from "@/components/ui/Layout";
 import React from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Head from "next/head";
 
 const FabricShampooExtraction: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Interior Shampoo & Extraction Service | Sam's Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content=" Our shampoo service is designed to thoroughly
+          clean and refresh the fabrics in your vehicle, including carpets and
+          fabric seats. This service is ideal for removing dirt, stains, and
+          allergens that accumulate over time, ensuring your car's interior
+          looks and feels like new."
+        />
+      </Head>
       <div className="fabric-shampoo-container">
         <div className="header-with-arrows">
           <Link href="/full-vacuum" className="arrow-link">

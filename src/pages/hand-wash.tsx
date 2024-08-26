@@ -1,4 +1,5 @@
 import Layout from "@/components/ui/Layout";
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -6,6 +7,20 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const HandWash: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Hand Wash Services in Montreal | Sam's Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content="Our Hand Wash service is designed to provide your vehicle with the
+          meticulous care it deserves. We go beyond the standard car wash by
+          employing premium products, expert techniques, and a detailed process
+          that ensures your car's exterior is thoroughly cleaned and
+          protected."
+        />
+      </Head>
       <div className="hand-wash__container">
         <div className="header-with-arrows">
           <Link href="/paint-protection" className="arrow-link">

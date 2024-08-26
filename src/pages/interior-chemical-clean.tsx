@@ -2,10 +2,24 @@ import Layout from "@/components/ui/Layout";
 import React from "react";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Head from "next/head";
 
 const InteriorChemicalClean: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>
+          {" "}
+          Mobile Interior Chemical Cleaning in Montreal | Sam's Mobile Detailing
+        </title>
+        <meta
+          name="description"
+          content="Our Complete Interior Chemical Clean is the ultimate solution for
+          removing tough stains, grime, and dirt from all surfaces inside your
+          vehicle. From the vinyl and plastic surfaces to the leather, cracks, crevices, windows, and even the
+          headliner—no detail is overlooked."
+        />
+      </Head>
       <div className="interior-chemical-clean__container">
         <div className="header-with-arrows">
           <Link href="/carpet-shampoo" className="arrow-link">
