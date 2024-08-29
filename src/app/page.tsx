@@ -7,6 +7,8 @@ import Layout from "../components/ui/Layout";
 import DetailingPrices from "../components/ui/DetailingPrices";
 import Services from "../components/ui/services";
 import Head from "next/head";
+import OurServices from "@/components/ui/ourServices";
+import Testimonials from "@/components/ui/testimonials";
 
 const imagePairs = [
   {
@@ -52,18 +54,23 @@ const LandingPage = () => {
       <section id="hero">
         <Hero />
       </section>
-      <section id="detailingPrices">
+
+      {/* <section id="detailingPrices">
         <DetailingPrices />
-      </section>
-      <section id="services">
-        <Services />
-      </section>
-      <section id="benefits">
-        <Benefits />
+      </section> */}
+      <section id="ourServices">
+        <OurServices />
       </section>
       <section id="serviceArea">
         <ServiceArea />
       </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="benefits">
+        <Benefits />
+      </section>
+
       <section id="contact">
         <Contact />
       </section>

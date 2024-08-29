@@ -1,7 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import {
+  PhoneIcon,
+  EnvelopeIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/20/solid";
 import { useState, useEffect, useRef } from "react";
 
 interface IconProps {
@@ -26,12 +30,18 @@ const InstagramIcon: React.FC<IconProps> = ({ className }) => (
 );
 
 const Header = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isExteriorOpen, setIsExteriorOpen] = useState(false);
+  const [isInteriorOpen, setIsInteriorOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const exteriorDropdownRef = useRef<HTMLDivElement>(null);
+  const interiorDropdownRef = useRef<HTMLDivElement>(null);
 
-  const handleToggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+  const handleToggleExteriorDropdown = () => {
+    setIsExteriorOpen(!isExteriorOpen);
+  };
+
+  const handleToggleInteriorDropdown = () => {
+    setIsInteriorOpen(!isInteriorOpen);
   };
 
   const handleToggleMobileMenu = () => {
@@ -40,10 +50,16 @@ const Header = () => {
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
-      dropdownRef.current &&
-      !dropdownRef.current.contains(event.target as Node)
+      exteriorDropdownRef.current &&
+      !exteriorDropdownRef.current.contains(event.target as Node)
     ) {
-      setDropdownOpen(false);
+      setIsExteriorOpen(false);
+    }
+    if (
+      interiorDropdownRef.current &&
+      !interiorDropdownRef.current.contains(event.target as Node)
+    ) {
+      setIsInteriorOpen(false);
     }
   };
 
@@ -117,31 +133,51 @@ const Header = () => {
             aria-label="Main navigation"
           >
             <Link
-              href="/pricing"
+              href="/"
               className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
             >
-              Pricing
+              Home
             </Link>
-            <div className="relative" ref={dropdownRef}>
+            <div className="relative" ref={exteriorDropdownRef}>
               <button
-                className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0"
-                onClick={handleToggleDropdown}
+                className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0 flex items-center gap-1"
+                onClick={handleToggleExteriorDropdown}
               >
-                Detailing Services
+                Exterior
+                <ChevronDownIcon className="w-4 h-4" />
               </button>
-              {dropdownOpen && (
+              {isExteriorOpen && (
                 <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md z-50">
                   <Link
-                    href="/interior-detailing-services"
+                    href="/hand-car-wash-montreal"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
-                    Interior Detailing
+                    Premium Wash
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div className="relative" ref={interiorDropdownRef}>
+              <button
+                className="text-base font-medium hover:underline underline-offset-4 px-4 py-2 lg:px-0 lg:py-0 flex items-center gap-1"
+                onClick={handleToggleInteriorDropdown}
+              >
+                Interior
+                <ChevronDownIcon className="w-4 h-4" />
+              </button>
+              {isInteriorOpen && (
+                <div className="absolute top-full mt-2 w-full lg:w-48 bg-white shadow-lg rounded-md z-50">
+                  <Link
+                    href="/mini-interior-detail-montreal"
+                    className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
+                  >
+                    Mini Interior Detail
                   </Link>
                   <Link
-                    href="/exterior-detailing-services"
+                    href="/full-interior-cleaning"
                     className="block px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-100"
                   >
-                    Exterior Detailing
+                    Full Interior Cleaning
                   </Link>
                 </div>
               )}
