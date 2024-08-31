@@ -136,8 +136,8 @@ const PremiumWash: React.FC = () => {
                 <p className="text-gray-700">
                   Yes, we’re a fully mobile detailing unit. We only need access
                   to a hose and a power outlet. We service Kikrland,
-                  Pierrefonds, Vaudreuil, Nun's Island, Brossard, Dorval, Laval,
-                  Beaconsfield, and many more.
+                  Pierrefonds, Vaudreuil, Nun&apos;s Island, Brossard, Dorval,
+                  Laval, Beaconsfield, and many more.
                 </p>
               </div>
               <div>

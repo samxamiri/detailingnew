@@ -24,23 +24,23 @@ function Benefits() {
             <CheckCircleIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Appointment Confirmation</h3>
             <p className="text-gray-500">
-              You'll get an automated email and text confirmation days before
-              your appointment so we're both ready.
+              You&apos;ll get an automated email and text confirmation days
+              before your appointment so we&apos;re both ready.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 text-center">
             <ClockIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Finish in Time</h3>
             <p className="text-gray-500">
-              You have a busy schedule and we don't want to slow you down. We'll
-              work in a timely manner to finish the job.
+              You have a busy schedule and we don&apos;t want to slow you down.
+              We&apos;ll work in a timely manner to finish the job.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 text-center">
             <HandThumbUpIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Satisfaction Guaranteed</h3>
             <p className="text-gray-500">
-              We're not done with the job until we deliver the results we
+              We&apos;re not done with the job until we deliver the results we
               promised. If we need to redo a window tint or spend more time on
               the detail, we will!
             </p>
@@ -49,18 +49,18 @@ function Benefits() {
             <UserGroupIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Friendly Service</h3>
             <p className="text-gray-500">
-              You'll be taken care of from our first call to when you pick up
-              your vehicle. Detailing is important, but so is making sure you're
-              comfortable and confident in us.
+              You&apos;ll be taken care of from our first call to when you pick
+              up your vehicle. Detailing is important, but so is making sure
+              you&apos;re comfortable and confident in us.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 text-center">
             <CheckCircleIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
             <h3 className="text-xl font-bold mb-2">Clear Communication</h3>
             <p className="text-gray-500">
-              We're happy to provide as much information as you need to make the
-              best decision. We'll communicate throughout the entire process so
-              you're in the loop.
+              We&apos;re happy to provide as much information as you need to
+              make the best decision. We&apos;ll communicate throughout the
+              entire process so you&apos;re in the loop.
             </p>
           </div>
           <div className="bg-white rounded-lg p-6 text-center">

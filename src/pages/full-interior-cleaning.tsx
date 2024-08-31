@@ -53,7 +53,7 @@ const FullInteriorCleaning: React.FC = () => {
         <section className="bg-gray-50 py-16">
           <div className="container mx-auto">
             <h2 className="text-3xl font-semibold text-center">
-              Sam's Interior Cleaning Process
+              Sam&apos;s Interior Cleaning Process
             </h2>
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div>

@@ -17,7 +17,7 @@ const BoisBriandMobileDetailing: React.FC = () => {
               Trusted Mobile Detailing in BoisBriand
             </h1>
             <p className="mt-4 text-lg md:text-xl">
-              Big or small, Sam's Mobile Detailing is up for the job
+              Big or small, Sam&apos;s Mobile Detailing is up for the job
             </p>
           </div>
         </section>
@@ -31,22 +31,23 @@ const BoisBriandMobileDetailing: React.FC = () => {
               </h2>
               <p className="text-lg text-gray-700 mb-4">
                 Our goal is to be a hassle-free experience for you. We know
-                you're busy and we want to respect your time. That's why from
-                start to finish, we'll be proactive with communicating with you
-                to make sure you always know what's going on. If we're running
-                behind on time, we'll be sure to let you know. Here's a few
-                other things that make us your preferred choice:
+                you&apos;re busy and we want to respect your time. That&apos;s
+                why from start to finish, we&apos;ll be proactive with
+                communicating with you to make sure you always know what&apos;s
+                going on. If we&apos;re running behind on time, we&apos;ll be
+                sure to let you know. Here&apos;s a few other things that make
+                us your preferred choice:
               </p>
               <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
                 <li>
                   <strong>Always on time:</strong> We plan our routes to get to
-                  your appointment on time (and when we're not, we'll let you
-                  know ahead of time)
+                  your appointment on time (and when we&apos;re not, we&apos;ll
+                  let you know ahead of time)
                 </li>
                 <li>
                   <strong>Constant communication:</strong> From the first phone
-                  call to when we're completing your vehicle, we'll always keep
-                  you in the loop of what's going on
+                  call to when we&apos;re completing your vehicle, we&apos;ll
+                  always keep you in the loop of what&apos;s going on
                 </li>
 
                 <li>
@@ -63,7 +64,7 @@ const BoisBriandMobileDetailing: React.FC = () => {
                 </a>
                 ,{" "}
                 <a href="#" className="text-red-600 underline">
-                  Nun's Island
+                  Nun&apos;s Island
                 </a>
                 , or{" "}
                 <a href="#" className="text-red-600 underline">
@@ -95,10 +96,10 @@ const BoisBriandMobileDetailing: React.FC = () => {
                   <li>
                     <strong>Full Interior Cleaning:</strong> The goal is to
                     clean your interior back to the best condition possible.
-                    We'll clean the floor mats, door panels, center console,
-                    headliner, seats, etc. We'll open up all the compartments
-                    and get into all the nooks and crannies to give your car a
-                    like-new feel.
+                    We&apos;ll clean the floor mats, door panels, center
+                    console, headliner, seats, etc. We&apos;ll open up all the
+                    compartments and get into all the nooks and crannies to give
+                    your car a like-new feel.
                   </li>
                   <li>
                     <strong>Mini Interior Detail:</strong> Our mini interior
@@ -106,8 +107,8 @@ const BoisBriandMobileDetailing: React.FC = () => {
                     but need a bit of a touch-up. This service includes light
                     vacuuming of the floors and seats, as well as a thorough
                     wipe-down of all interior surfaces to remove dust and minor
-                    dirt. It's an ideal maintenance service to keep your car
-                    looking fresh between full detailing sessions.
+                    dirt. It&apos;s an ideal maintenance service to keep your
+                    car looking fresh between full detailing sessions.
                   </li>
                   <li>
                     <strong>Premium Wash:</strong> The goal is to clean the

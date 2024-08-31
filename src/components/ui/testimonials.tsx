@@ -28,7 +28,7 @@ const Testimonials: React.FC = () => {
     },
     {
       name: "Paul Octeau",
-      text: "Sam's Mobile Detailing worked wonders on my Polestar 2! The attention to detail is incredible, and Sam clearly takes pride in his work. Using McGuire products, he achieved an amazing shine that made my car look showroom-new.",
+      text: "Sams Mobile Detailing worked wonders on my Polestar 2! The attention to detail is incredible, and Sam clearly takes pride in his work. Using McGuire products, he achieved an amazing shine that made my car look showroom-new.",
     },
     {
       name: "Jason Lin",

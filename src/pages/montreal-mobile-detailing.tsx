@@ -16,7 +16,7 @@ const KirklandMobileDetailing: React.FC = () => {
             Trusted Mobile Detailing in Montreal
           </h1>
           <p className="mt-4 text-lg md:text-xl">
-            Big or small, Sam's Mobile Detailing is up for the job
+            Big or small, Sam&apos;s Mobile Detailing is up for the job
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ const KirklandMobileDetailing: React.FC = () => {
       <section className="service-menu-section py-16 px-4 bg-white">
         <div className="container max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Sam's Mobile Detailing Service Menu
+            Sam&apos;s Mobile Detailing Service Menu
           </h2>
           <p className="text-lg text-gray-700 mb-4">
             Here’s a list of the mobile detailing services we offer:
@@ -44,9 +44,9 @@ const KirklandMobileDetailing: React.FC = () => {
               is perfect for vehicles that are relatively clean but need a bit
               of a touch-up. This service includes light vacuuming of the floors
               and seats, as well as a thorough wipe-down of all interior
-              surfaces to remove dust and minor dirt. It's an ideal maintenance
-              service to keep your car looking fresh between full detailing
-              sessions.
+              surfaces to remove dust and minor dirt. It&apos;s an ideal
+              maintenance service to keep your car looking fresh between full
+              detailing sessions.
             </li>
             {/* <li>
               <strong>Wash and Wax:</strong> Want to add more shine and
