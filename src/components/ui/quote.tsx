@@ -65,7 +65,12 @@ const QuoteForm: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-12 md:py-16">
+    <section
+      className="w-full bg-cover bg-center py-12 md:py-16"
+      style={{
+        backgroundImage: "url('/images/other/rinse.jpg')", // Replace with the correct path to your image
+      }}
+    >
       <div className="container max-w-5xl mx-auto px-4 md:px-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-8">
           Get Started By Completing The Form

@@ -7,6 +7,10 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  // Print environment variables for debugging
+  console.log("GMAIL_USER:", process.env.GMAIL_USER);
+  console.log("GMAIL_PASS:", process.env.GMAIL_PASS);
+
   if (req.method === "POST") {
     const { name, email, phone, vehicle, services, details } = req.body;
 
@@ -17,12 +21,15 @@ export default async function handler(
         user: process.env.GMAIL_USER, // Your Gmail address
         pass: process.env.GMAIL_PASS, // Your Gmail password or App Password
       },
+      tls: {
+        rejectUnauthorized: false,
+      },
     });
 
     // Compose the email
     const mailOptions = {
       from: email,
-      to: "samsmobiledetailing@gmail.com",
+      to: "samsmobiledetatiling@gmail.com",
       subject: "New Quote Request",
       text: `
         Name: ${name}
