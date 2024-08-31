@@ -79,7 +79,9 @@ const Testimonials: React.FC = () => {
               className="flex flex-col md:flex-row items-center justify-center gap-6 p-6 bg-gray-10 rounded-lg "
             >
               <div className="space-y-2 text-center md:text-left">
-                <p className="text-gray-500 md:text-xl">"{testimonial.text}"</p>
+                <p className="text-gray-500 md:text-xl">
+                  &quot;{testimonial.text}&quot;
+                </p>
                 <h4 className="text-center text-xl font-bold">
                   {testimonial.name}
                 </h4>

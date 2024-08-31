@@ -1,6 +1,7 @@
 "use client";
 
 import Layout from "@/components/ui/Layout";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const MiniInteriorDetailMontreal: React.FC = () => {
@@ -139,9 +140,9 @@ const MiniInteriorDetailMontreal: React.FC = () => {
                 <h4 className="font-bold">Have more questions?</h4>
                 <p className="text-gray-700">
                   Visit our in-depth{" "}
-                  <a href="/FAQs" className="text-blue-500 underline">
+                  <Link href="/FAQs" className="text-blue-500 underline">
                     FAQ page
-                  </a>{" "}
+                  </Link>{" "}
                   where we answer a lot of your questions for our different
                   services.
                 </p>
