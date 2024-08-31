@@ -1,56 +1,77 @@
 import React from "react";
 import {
-  TrophyIcon as AwardIcon,
-  WrenchIcon,
-  SparklesIcon as SparkleIcon,
+  CheckCircleIcon,
   ClockIcon,
-} from "@heroicons/react/20/solid"; // Correct path for Heroicons v2
-import Link from "next/link"; // Ensure you import Link from Next.js
+  HandThumbUpIcon,
+  UserGroupIcon,
+  CurrencyDollarIcon,
+  TruckIcon,
+} from "@heroicons/react/20/solid";
 
 function Benefits() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Benefits of Booking with Us
+              Hassle Free Experience To All Our Customers
             </h2>
-            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Discover the advantages of choosing us for your car care needs.
-            </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[330px]">
-            <WrenchIcon className="w-12 h-12 mb-4" />
-            <h3 className="text-xl font-bold mb-2">Advanced Techniques</h3>
-            <p className="text-gray-500 dark:text-gray-400">
-              We use the latest tools and techniques to ensure a flawless
-              finish.
+          <div className="bg-white rounded-lg p-6 text-center">
+            <CheckCircleIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Appointment Confirmation</h3>
+            <p className="text-gray-500">
+              You'll get an automated email and text confirmation days before
+              your appointment so we're both ready.
             </p>
           </div>
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[400px]">
-            <SparkleIcon className="w-12 h-12 mb-4" />
-            <h3 className="text-xl font-bold mb-2">Guaranteed Results</h3>
-            <p className="text-gray-500 dark:text-gray-400">
-              You can trust us to transform your vehicle to showroom condition.
+          <div className="bg-white rounded-lg p-6 text-center">
+            <ClockIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Finish in Time</h3>
+            <p className="text-gray-500">
+              You have a busy schedule and we don't want to slow you down. We'll
+              work in a timely manner to finish the job.
             </p>
           </div>
-          <div className="bg-white border-2 border-gray-300 rounded-lg shadow-md p-6 dark:bg-gray-950 flex flex-col items-center justify-center text-center min-h-[330px]">
-            <ClockIcon className="w-12 h-12 mb-4" />
-            <h3 className="text-xl font-bold mb-2">Convenient Scheduling</h3>
-            <p className="text-gray-500 dark:text-gray-400">
-              Book your appointment at a time that works best for you.
+          <div className="bg-white rounded-lg p-6 text-center">
+            <HandThumbUpIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Satisfaction Guaranteed</h3>
+            <p className="text-gray-500">
+              We're not done with the job until we deliver the results we
+              promised. If we need to redo a window tint or spend more time on
+              the detail, we will!
             </p>
           </div>
-        </div>
-        <div className="flex justify-center mt-12">
-          <Link href="/pricing">
-            <button className="inline-flex h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 w-full">
-              View Pricing
-            </button>
-          </Link>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <UserGroupIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Friendly Service</h3>
+            <p className="text-gray-500">
+              You'll be taken care of from our first call to when you pick up
+              your vehicle. Detailing is important, but so is making sure you're
+              comfortable and confident in us.
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <CheckCircleIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Clear Communication</h3>
+            <p className="text-gray-500">
+              We're happy to provide as much information as you need to make the
+              best decision. We'll communicate throughout the entire process so
+              you're in the loop.
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <TruckIcon className="w-16 h-16 text-blue-500 mx-auto mb-4" />
+            <h3 className="text-xl font-bold mb-2">Variety of Services</h3>
+            <p className="text-gray-500">
+              Whether you need a mini interior cleaning, a deep interior
+              cleaning, or a full exterior wash, we can take care of it for you
+              in our shop.
+            </p>
+          </div>
         </div>
       </div>
     </section>

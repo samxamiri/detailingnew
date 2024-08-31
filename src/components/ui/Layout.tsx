@@ -1,8 +1,9 @@
 // src/components/ui/Layout.tsx
-
+// import QuoteForm from "./quote";
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import QuoteForm from "./quote";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <QuoteForm />
     </>
   );
 };

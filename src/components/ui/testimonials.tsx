@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
     },
     {
       name: "Yassine Lazoughli",
-      text: "The best detailing i got on my car so far. Took care of my Genny like he’s taking care of his abuelita🥰. Props to you Sam, I’ll definitely come back to you for car washing eventually! Washing in and out the dirt from the car ! 10/10",
+      text: "The best detailing I got on my car so far. Took care of my Genny like he’s taking care of his abuelita🥰. Props to you Sam, I’ll definitely come back to you for car washing eventually! Washing in and out the dirt from the car! 10/10",
     },
     {
       name: "chris zacchia",
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
     <section className="w-full py-12 md:py-24 lg:py-32 mb-12">
       <div className="container px-4 md:px-6 flex flex-col items-center">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl mb-6">
             Our Testimonials
           </h2>
         </div>
@@ -70,15 +70,22 @@ const Testimonials: React.FC = () => {
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}
+          showDots={true}
+          arrows={false}
         >
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center justify-center gap-6 p-6 bg-gray-100 rounded-lg shadow-lg"
+              className="flex flex-col md:flex-row items-center justify-center gap-6 p-6 bg-gray-10 rounded-lg "
             >
               <div className="space-y-2 text-center md:text-left">
-                <h4 className="text-xl font-bold">{testimonial.name}</h4>
                 <p className="text-gray-500 md:text-xl">"{testimonial.text}"</p>
+                <h4 className="text-center text-xl font-bold">
+                  {testimonial.name}
+                </h4>
+                <p className="text-center text-gray-700 md:text-lg">
+                  Google Review
+                </p>
               </div>
             </div>
           ))}

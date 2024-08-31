@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const OurServices: React.FC = () => {
   const services = [
@@ -8,6 +9,7 @@ const OurServices: React.FC = () => {
         "Our mini interior cleaning is perfect for vehicles that are relatively clean but need a bit of a touch-up. This service includes light vacuuming of the floors and seats, as well as a thorough wipe-down of all interior surfaces to remove dust and minor dirt. It's an ideal maintenance service to keep your car looking fresh between full detailing sessions.",
       image: "/images/other/IMG_7596.PNG",
       alt: "Mini Interior Cleaning",
+      link: "/mini-interior-detail-montreal", // Update with actual links
     },
     {
       title: "Full Interior Cleaning",
@@ -15,6 +17,7 @@ const OurServices: React.FC = () => {
         "Our full interior cleaning service is a deep clean that includes a comprehensive vacuuming of all carpets, seats, and mats, followed by a shampoo and hot water extraction to remove tough stains and odors. This service also includes detailed cleaning of all interior surfaces, including the dashboard, door panels, and center console, ensuring your car’s interior feels like new.",
       image: "/images/other/carpet.png",
       alt: "Full Interior Cleaning",
+      link: "/full-interior-cleaning", // Update with actual links
     },
     {
       title: "Exterior Premium Wash",
@@ -22,6 +25,7 @@ const OurServices: React.FC = () => {
         "Our exterior premium wash is a meticulous hand wash that addresses the toughest contaminants like sap and tar. We use specialized mitts and foam to ensure your vehicle’s paint is thoroughly cleaned without damage. After the wash, we apply a high-quality spray wax to add an extra layer of protection, ensuring your vehicle looks its best and is shielded from the elements.",
       image: "/images/other/IMG_7598.PNG",
       alt: "Exterior Premium Wash",
+      link: "/hand-car-wash-montreal", // Update with actual links
     },
   ];
 
@@ -50,6 +54,11 @@ const OurServices: React.FC = () => {
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
                 {service.description}
               </p>
+              <Link href={service.link} legacyBehavior>
+                <button className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                  Read More
+                </button>
+              </Link>
             </div>
           </div>
           <img

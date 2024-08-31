@@ -41,7 +41,7 @@ const FullInteriorCleaning: React.FC = () => {
             interior, and not a deep cleaning, then our{" "}
             <a
               href="mini-interior-detail-montreal"
-              className="text-red-500 underline"
+              className="text-blue-600 underline"
             >
               Mini-Interior Detail
             </a>{" "}
@@ -98,24 +98,32 @@ const FullInteriorCleaning: React.FC = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="bg-white py-16">
+        <section className="bg-gray-100 py-16">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold">Interior Cleaning Prices</h2>
-            <div className="mt-8 flex justify-center space-x-6">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold">Small Vehicle</h3>
-                <p>$160 - $200</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-8">
+              Interior Cleaning Prices
+            </h2>
+            <div className="mt-8 flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6">
+              <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  Small Vehicle
+                </h3>
+                <p className="text-2xl font-bold text-black-600">$160 - $200</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold">Medium Vehicle</h3>
-                <p>$180 - $240</p>
+              <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  Medium Vehicle
+                </h3>
+                <p className="text-2xl font-bold text-black-600">$180 - $240</p>
               </div>
-              <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold">Large Vehicle</h3>
-                <p>$260 - $340</p>
+              <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                  Large Vehicle
+                </h3>
+                <p className="text-2xl font-bold text-black-600">$260 - $340</p>
               </div>
             </div>
-            <button className="mt-8 bg-red-500 text-white px-6 py-3 rounded-lg">
+            <button className="mt-12 bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors duration-300">
               Start Your Quote
             </button>
           </div>
@@ -163,7 +171,7 @@ const FullInteriorCleaning: React.FC = () => {
                 </p>
               </div>
             </div>
-            <button className="mt-8 bg-red-500 text-white px-6 py-3 rounded-lg">
+            <button className="mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg">
               Start Your Quote
             </button>
           </div>

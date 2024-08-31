@@ -79,7 +79,7 @@ const MiniInteriorDetailMontreal: React.FC = () => {
               <h4 className="text-xl font-bold">Small (Miata/GTI)</h4>
               <p className="text-2xl font-semibold mt-2">$35 - $55</p>
             </div>
-            <div className="p-4 border-2 border-gray-300 rounded-lg bg-red-500 text-white">
+            <div className="p-4 border-2 border-gray-300 rounded-lg bg-blue-500 text-white">
               <h4 className="text-xl font-bold">
                 Medium (Toyota Camry/Range Rover)
               </h4>
@@ -139,7 +139,7 @@ const MiniInteriorDetailMontreal: React.FC = () => {
                 <h4 className="font-bold">Have more questions?</h4>
                 <p className="text-gray-700">
                   Visit our in-depth{" "}
-                  <a href="/FAQs" className="text-red-500 underline">
+                  <a href="/FAQs" className="text-blue-500 underline">
                     FAQ page
                   </a>{" "}
                   where we answer a lot of your questions for our different

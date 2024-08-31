@@ -1,22 +1,22 @@
 import React from "react";
+import Link from "next/link"; // Import Link from Next.js
 
 const ServiceArea: React.FC = () => {
   const serviceAreas = [
-    "Beaconsfield",
-    "Dorval",
-    "Île-Bizard",
-    "Kirkland",
-    "LaSalle",
-    "Nun's Island",
-    "Le Plateau-Mont-Royal",
-    "Notre-Dame-de-Grâce",
-    "Pierrefonds",
-    "Pointe-Claire",
-    "Sainte-Anne-de-Bellevue",
-    "Westmount",
-    "Laval",
-    "Vaudreuil",
-    "Île-Perrot",
+    { name: "Montreal", link: "/montreal-mobile-detailing" },
+    { name: "Ile-Perrot", link: "/ile-perrot-mobile-detailing" },
+    { name: "Laval", link: "/laval-mobile-detailing" },
+    { name: "Pincourt", link: "/pincourt-mobile-detailing" },
+    { name: "Vaudreuil", link: "/vaudreuil-mobile-detailing" },
+    { name: "Brossard", link: "/brossard-mobile-detailing" },
+    { name: "West-Island", link: "/west-island-mobile-detailing" },
+    { name: "Boisbriand", link: "/boisbriand-mobile-detailing" },
+    { name: "Châteauguay", link: "/chateauguay-mobile-detailing" },
+    { name: "Bois-Des-Filion", link: "/bois-des-filion-mobile-detailing" },
+    { name: "Saint-Eustache", link: "/saint-eustache-mobile-detailing" },
+    { name: "Deux-Montagnes", link: "/deux-montagnes-mobile-detailing" },
+    { name: "Beauharnois", link: "/beauharnois-mobile-detailing" },
+    { name: "Kahnawake", link: "/kahnawake-mobile-detailing" },
   ];
 
   return (
@@ -43,13 +43,13 @@ const ServiceArea: React.FC = () => {
               live. Regardless, we’ll do our best to schedule you in. Here are
               all the areas we service:
             </p>
-            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 text-red-500">
+            <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 text-blue-600">
               {serviceAreas.map((area) => (
-                <li key={area} className="flex items-center space-x-2">
+                <li key={area.name} className="flex items-center space-x-2">
                   <span role="img" aria-label="bullet point">
                     ➤
                   </span>
-                  <span>{area}</span>
+                  <Link href={area.link}>{area.name}</Link>
                 </li>
               ))}
             </ul>

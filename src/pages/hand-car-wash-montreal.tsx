@@ -46,7 +46,7 @@ const PremiumWash: React.FC = () => {
           <p className="mt-4 text-gray-700 md:text-lg">
             Other services we offer:
           </p>
-          <ul className="list-disc list-inside ml-4 text-red-500">
+          <ul className="list-disc list-inside ml-4 text-blue-600">
             <li>Mini Interior CLeaning</li>
             <li>Full Interior Cleaning</li>
           </ul>
@@ -60,37 +60,37 @@ const PremiumWash: React.FC = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">1</span>
+                <span className="text-blue-600 text-3xl font-bold">1</span>
                 <p>Clean wheels, tires, and gas cap</p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">2</span>
+                <span className="text-blue-600 text-3xl font-bold">2</span>
                 <p>Remove bugs and bird poo from vehicle</p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">3</span>
+                <span className="text-blue-600 text-3xl font-bold">3</span>
                 <p>Wash vehicle with quality mitts, products, and methods</p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">4</span>
+                <span className="text-blue-600 text-3xl font-bold">4</span>
                 <p>
                   Apply a spray wax for extra shine and protection (lasts a few
                   weeks)
                 </p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">5</span>
+                <span className="text-blue-600 text-3xl font-bold">5</span>
                 <p>
                   Dry vehicle with soft microfiber towel and air blower to blow
                   water out of crevices and wheels
                 </p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">6</span>
+                <span className="text-blue-600 text-3xl font-bold">6</span>
                 <p>Clean exterior glass and windows</p>
               </div>
               <div className="flex items-start gap-4">
-                <span className="text-red-500 text-3xl font-bold">7</span>
+                <span className="text-blue-600 text-3xl font-bold">7</span>
                 <p>Dress tires to make them shine</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const PremiumWash: React.FC = () => {
               <h4 className="text-xl font-bold">Small (Miata/GTI)</h4>
               <p className="text-2xl font-semibold mt-2">$50 - $90</p>
             </div>
-            <div className="p-4 border-2 border-gray-300 rounded-lg bg-red-500 text-white">
+            <div className="p-4 border-2 border-gray-300 rounded-lg bg-blue-600 text-white">
               <h4 className="text-xl font-bold">
                 Medium (Toyota Camry/Range Rover)
               </h4>
