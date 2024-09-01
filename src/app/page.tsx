@@ -71,9 +71,9 @@ const LandingPage = () => {
         <Benefits />
       </section>
 
-      <section id="contact">
+      {/* <section id="contact">
         <Contact />
-      </section>
+      </section> */}
     </Layout>
   );
 };

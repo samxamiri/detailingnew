@@ -23,7 +23,7 @@ const MiniInteriorDetailMontreal: React.FC = () => {
         {/* Hero Section */}
         <section className="relative w-full h-64 md:h-96 lg:h-[500px] bg-gray-800 text-white flex items-center justify-center">
           <img
-            src="/images/other/vacuum.jpg" // Replace with your hero image
+            src="/images/other/vacuum.jpg"
             alt="Mini Interior Detail"
             className="absolute inset-0 w-full h-full object-cover opacity-50"
           />
@@ -70,6 +70,14 @@ const MiniInteriorDetailMontreal: React.FC = () => {
             Depending on the size and condition, this service usually takes
             under two hours to complete.
           </p>
+          <div className="text-center mt-8">
+            <Link
+              href="#quote"
+              className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-red-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-700"
+            >
+              Start Your Quote
+            </Link>
+          </div>
         </section>
 
         {/* Pricing Section */}
@@ -148,6 +156,14 @@ const MiniInteriorDetailMontreal: React.FC = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              href="#quote"
+              className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-red-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-700"
+            >
+              Start Your Quote
+            </Link>
           </div>
         </section>
 

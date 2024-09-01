@@ -66,18 +66,19 @@ const QuoteForm: React.FC = () => {
 
   return (
     <section
+      id="quote"
       className="w-full bg-cover bg-center py-12 md:py-16"
       style={{
         backgroundImage: "url('/images/other/rinse.jpg')", // Replace with the correct path to your image
       }}
     >
       <div className="container max-w-5xl mx-auto px-4 md:px-8">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
+        <h2 className="text-2xl font-bold text-white-100 mb-8">
           Get Started By Completing The Form
         </h2>
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-8 shadow-lg rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="bg-white bg-opacity-85 p-8 shadow-lg rounded-lg grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           <div className="col-span-1">
             <label

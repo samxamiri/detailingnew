@@ -1,4 +1,5 @@
 import Layout from "@/components/ui/Layout";
+import Link from "next/link";
 import React from "react";
 
 const PremiumWash: React.FC = () => {
@@ -50,6 +51,14 @@ const PremiumWash: React.FC = () => {
             <li>Mini Interior CLeaning</li>
             <li>Full Interior Cleaning</li>
           </ul>
+          <div className="container mx-auto px-4 py-6 text-center">
+            <Link
+              href="#quote"
+              className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-red-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-700"
+            >
+              Start Your Quote
+            </Link>
+          </div>
         </section>
 
         {/* Features Section */}
@@ -175,6 +184,14 @@ const PremiumWash: React.FC = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="container mx-auto px-4 py-6 text-center">
+            <Link
+              href="#quote"
+              className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-red-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-700"
+            >
+              Start Your Quote
+            </Link>
           </div>
         </section>
         {/* Gallery Section */}

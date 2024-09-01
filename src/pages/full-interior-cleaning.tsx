@@ -1,4 +1,5 @@
 import Layout from "@/components/ui/Layout";
+import Link from "next/link";
 import React from "react";
 
 const FullInteriorCleaning: React.FC = () => {
@@ -47,6 +48,14 @@ const FullInteriorCleaning: React.FC = () => {
             </a>{" "}
             might be better suited for you.
           </p>
+          <div className="container mx-auto px-4 py-6 text-center">
+            <Link
+              href="#quote"
+              className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-red-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-700"
+            >
+              Start Your Quote
+            </Link>
+          </div>
         </section>
 
         {/* Cleaning Process Section */}
@@ -124,7 +133,7 @@ const FullInteriorCleaning: React.FC = () => {
               </div>
             </div>
             <button className="mt-12 bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-700 transition-colors duration-300">
-              Start Your Quote
+              <Link href="#quote">Start Your Quote</Link>
             </button>
           </div>
         </section>
@@ -172,7 +181,7 @@ const FullInteriorCleaning: React.FC = () => {
               </div>
             </div>
             <button className="mt-8 bg-blue-600 text-white px-6 py-3 rounded-lg">
-              Start Your Quote
+              <Link href="#quote">Start Your Quote</Link>
             </button>
           </div>
         </section>

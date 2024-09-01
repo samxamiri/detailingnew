@@ -93,6 +93,15 @@ const Testimonials: React.FC = () => {
           ))}
         </Carousel>
       </div>
+      <div className="container flex justify-center mt-8">
+        <a
+          href="#quote"
+          className="inline-flex h-14 items-center justify-center rounded-md bg-blue-600 px-12 text-lg font-medium text-white shadow transition-colors hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-700"
+          aria-label="Start Your Quote"
+        >
+          Start Your Quote
+        </a>
+      </div>
     </section>
   );
 };

@@ -32,11 +32,11 @@ const Hero = () => {
         </p>
 
         <Link
-          href="/pricing"
+          href="#quote"
           className="inline-flex mt-6 h-14 items-center justify-center rounded-md bg-gray-900 px-12 text-lg font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 w-full sm:w-auto"
           aria-label="Book detailing packages now"
         >
-          Book Now
+          Start Your Quote
         </Link>
       </div>
     </section>
